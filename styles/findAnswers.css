@@ -21,6 +21,11 @@
   row-gap: 15px;
   margin-top: 15px;
 }
+@media (max-width: 800px) {
+  .sectionFindAnswers .containerForBlocks {
+    column-gap: 4%;
+  }
+}
 .sectionFindAnswers .containerForBlocks .blockOfQuestion {
   width: 20%;
   background-color: white;
@@ -31,6 +36,12 @@
   transition: 450ms ease;
   border-radius: 4px;
   position: relative;
+}
+@media (max-width: 800px) {
+  .sectionFindAnswers .containerForBlocks .blockOfQuestion {
+    width: 48%;
+    padding: 20px 13px;
+  }
 }
 .sectionFindAnswers .containerForBlocks .blockOfQuestion:hover {
   cursor: pointer;
@@ -44,6 +55,12 @@
   font-size: 18px;
   transition: 450ms ease;
   letter-spacing: 1px;
+  padding-right: 20px;
+}
+@media (max-width: 800px) {
+  .sectionFindAnswers .containerForBlocks .blockOfQuestion span {
+    font-size: 17px;
+  }
 }
 .sectionFindAnswers .containerForBlocks .blockOfQuestion img {
   width: 25px;

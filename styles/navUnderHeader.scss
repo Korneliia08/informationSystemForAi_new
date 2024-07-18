@@ -1,18 +1,39 @@
-nav {
+.navForOptions {
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0;
+  }
 
   .containerForOptions {
     display: flex;
     column-gap: 25px;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+
+    }
 
     .blockForOptionAndIcon {
+
+      @media (max-width: 800px) {
+        &:after {
+          visibility: hidden;
+        }
+        padding: 14px;
+        border-bottom: 1px solid dimgrey;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
       display: flex;
       align-items: center;
       column-gap: 5px;
       position: relative;
-
 
       img {
         width: 20px;
@@ -63,6 +84,10 @@ nav {
     display: flex;
     align-items: center;
     column-gap: 15px;
+    @media (max-width: 800px) {
+justify-content: center;
+      padding: 10px;
+    }
 
     span {
       color: white;

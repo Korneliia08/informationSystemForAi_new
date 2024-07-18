@@ -7,17 +7,29 @@ header {
   padding: 80px 0;
   row-gap: 25px;
 }
+@media (max-width: 800px) {
+  header {
+    row-gap: 15px;
+    padding: 50px 0;
+  }
+}
 header h1 {
   color: white;
   font-size: 40px;
   letter-spacing: 2px;
   text-shadow: 0px 1px 1px black;
 }
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
 header .blockForInputAndBtn {
   display: flex;
   position: relative;
   border-radius: 10px;
   width: 750px;
+  max-width: 93%;
 }
 header .blockForInputAndBtn input {
   width: 100%;
@@ -26,6 +38,12 @@ header .blockForInputAndBtn input {
   border: none;
   font-size: 20px;
   color: #2f2f2f;
+}
+@media (max-width: 800px) {
+  header .blockForInputAndBtn input {
+    padding: 10px 100px 10px 10px;
+    font-size: 15px;
+  }
 }
 header .blockForInputAndBtn input:focus, header .blockForInputAndBtn input:focus-within {
   outline: 2px solid #51CFDB;
@@ -43,6 +61,12 @@ header .blockForInputAndBtn button {
   color: #2d2d2d;
   text-shadow: 0px 0px 1px #444444;
   transition: 450ms ease;
+}
+@media (max-width: 800px) {
+  header .blockForInputAndBtn button {
+    width: 80px;
+    font-size: 12px;
+  }
 }
 header .blockForInputAndBtn button:hover {
   cursor: pointer;

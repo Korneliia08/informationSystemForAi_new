@@ -1,25 +1,51 @@
-nav {
+.navForOptions {
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
 }
-nav .containerForOptions {
+@media (max-width: 800px) {
+  .navForOptions {
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0;
+  }
+}
+.navForOptions .containerForOptions {
   display: flex;
   column-gap: 25px;
 }
-nav .containerForOptions .blockForOptionAndIcon {
+@media (max-width: 800px) {
+  .navForOptions .containerForOptions {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+}
+.navForOptions .containerForOptions .blockForOptionAndIcon {
   display: flex;
   align-items: center;
   column-gap: 5px;
   position: relative;
 }
-nav .containerForOptions .blockForOptionAndIcon img {
+@media (max-width: 800px) {
+  .navForOptions .containerForOptions .blockForOptionAndIcon {
+    padding: 14px;
+    border-bottom: 1px solid dimgrey;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .navForOptions .containerForOptions .blockForOptionAndIcon:after {
+    visibility: hidden;
+  }
+}
+.navForOptions .containerForOptions .blockForOptionAndIcon img {
   width: 20px;
 }
-nav .containerForOptions .blockForOptionAndIcon img:hover {
+.navForOptions .containerForOptions .blockForOptionAndIcon img:hover {
   cursor: pointer;
 }
-nav .containerForOptions .blockForOptionAndIcon a {
+.navForOptions .containerForOptions .blockForOptionAndIcon a {
   color: white;
   font-size: 18px;
   letter-spacing: 1px;
@@ -27,11 +53,11 @@ nav .containerForOptions .blockForOptionAndIcon a {
   transition: 450ms ease;
   text-transform: uppercase;
 }
-nav .containerForOptions .blockForOptionAndIcon a:hover {
+.navForOptions .containerForOptions .blockForOptionAndIcon a:hover {
   text-decoration: underline;
   color: #51CFDB;
 }
-nav .containerForOptions .blockForOptionAndIcon:after {
+.navForOptions .containerForOptions .blockForOptionAndIcon:after {
   display: block;
   content: "";
   width: 0.04pc;
@@ -41,15 +67,21 @@ nav .containerForOptions .blockForOptionAndIcon:after {
   right: -10px;
   bottom: 0;
 }
-nav .containerForOptions .blockForOptionAndIcon:last-child:after {
+.navForOptions .containerForOptions .blockForOptionAndIcon:last-child:after {
   display: none !important;
 }
-nav .blockForStatus {
+.navForOptions .blockForStatus {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
-nav .blockForStatus span {
+@media (max-width: 800px) {
+  .navForOptions .blockForStatus {
+    justify-content: center;
+    padding: 10px;
+  }
+}
+.navForOptions .blockForStatus span {
   color: white;
   font-size: 19px;
   letter-spacing: 1px;
@@ -57,11 +89,11 @@ nav .blockForStatus span {
   text-transform: uppercase;
   transition: 450ms ease;
 }
-nav .blockForStatus span:hover {
+.navForOptions .blockForStatus span:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-nav .blockForStatus .blockCircle {
+.navForOptions .blockForStatus .blockCircle {
   width: 18px;
   height: 18px;
   border-radius: 100%;
