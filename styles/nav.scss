@@ -1,0 +1,78 @@
+.divForLogoAndNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .blockForLogo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+    img {
+      width: 20px;
+    }
+
+    span {
+      margin-left: 10px;
+      color: white;
+    }
+  }
+
+  nav {
+    padding: 18px 0;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+
+    .leftPartOfNav {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 17px;
+        font-weight: 200;
+        transition: 450ms ease;
+
+        &:hover {
+          color: #51CFDB;
+        }
+      }
+    }
+
+    .rightPartOfNav {
+      display: flex;
+      column-gap: 15px;
+      align-items: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 17px;
+        font-weight: 200;
+        transition: 450ms ease;
+
+        &:hover {
+          color: #51CFDB;
+        }
+      }
+
+      .signUpBtn {
+        background-color: #51CFDB;
+        color: black;
+        padding: 8px 15px;
+        transition: 450ms ease;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #40b3be;
+          color: black;
+        }
+      }
+    }
+  }
+}

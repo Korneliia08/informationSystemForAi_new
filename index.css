@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containerForWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerForWrapper .backgroundWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerForWrapper .backgroundWrapper.backForNav {
+  background-color: #000000;
+}
+.containerForWrapper .backgroundWrapper.white {
+  background-color: white;
+}
+.containerForWrapper .backgroundWrapper.backForHeader {
+  background: rgb(49, 58, 89);
+  background: linear-gradient(90deg, rgb(49, 58, 89) 0%, rgb(68, 101, 144) 35%, rgb(93, 165, 228) 100%);
+}
+.containerForWrapper .backgroundWrapper.backForBottomNavUnderHeader {
+  background-color: #2A2941;
+}
+.containerForWrapper .backgroundWrapper.navOfAllCategories {
+  background-color: #111324;
+  display: none;
+}
+.containerForWrapper .backgroundWrapper.footerBack {
+  background-color: white;
+}
+.containerForWrapper .backgroundWrapper.colorOfFindAnswers {
+  background-color: #F6F6F7;
+}
+.containerForWrapper .backgroundWrapper.colorForWhyUsLove {
+  background-color: #111324;
+}
+.containerForWrapper .backgroundWrapper .contentWrapperShort {
+  max-width: 1140px;
+  width: 100%;
+  min-height: 10px;
+}
+.containerForWrapper .backgroundWrapper .contentWrapperWide {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

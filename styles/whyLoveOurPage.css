@@ -1,0 +1,34 @@
+.sectionWhyLoveUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+.sectionWhyLoveUs h2 {
+  color: white;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+.sectionWhyLoveUs p {
+  color: white;
+  font-size: 19px;
+  margin-bottom: 20px;
+  width: 600px;
+  text-align: center;
+}
+.sectionWhyLoveUs button {
+  color: white;
+  background-color: #7856FF;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-shadow: 0px 0px 1px #0a0a0a;
+  transition: 450ms ease;
+}
+.sectionWhyLoveUs button:hover {
+  cursor: pointer;
+  background-color: #6444e3;
+}
+
+/*# sourceMappingURL=whyLoveOurPage.css.map */

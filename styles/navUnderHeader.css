@@ -1,0 +1,71 @@
+nav {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav .containerForOptions {
+  display: flex;
+  column-gap: 25px;
+}
+nav .containerForOptions .blockForOptionAndIcon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  position: relative;
+}
+nav .containerForOptions .blockForOptionAndIcon img {
+  width: 20px;
+}
+nav .containerForOptions .blockForOptionAndIcon img:hover {
+  cursor: pointer;
+}
+nav .containerForOptions .blockForOptionAndIcon a {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 450ms ease;
+  text-transform: uppercase;
+}
+nav .containerForOptions .blockForOptionAndIcon a:hover {
+  text-decoration: underline;
+  color: #51CFDB;
+}
+nav .containerForOptions .blockForOptionAndIcon:after {
+  display: block;
+  content: "";
+  width: 0.04pc;
+  height: 100%;
+  background-color: #818181;
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+}
+nav .containerForOptions .blockForOptionAndIcon:last-child:after {
+  display: none !important;
+}
+nav .blockForStatus {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+nav .blockForStatus span {
+  color: white;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: 450ms ease;
+}
+nav .blockForStatus span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav .blockForStatus .blockCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #B6EB7A;
+}
+
+/*# sourceMappingURL=navUnderHeader.css.map */

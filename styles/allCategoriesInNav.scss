@@ -1,0 +1,24 @@
+.allCategoriesInNav {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  padding: 40px 0;
+
+  .leftPart, .rightPart {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 19px;
+      letter-spacing: 1px;
+      transition: 450ms ease;
+
+      &:hover {
+        color: #40B3BE;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containerForWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .backgroundWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &.backForNav {
+      background-color: #000000;
+    }
+
+    &.white {
+      background-color: white;
+
+    }
+
+    &.backForHeader {
+      background: rgb(49, 58, 89);
+      background: linear-gradient(90deg, rgba(49, 58, 89, 1) 0%, rgba(68, 101, 144, 1) 35%, rgba(93, 165, 228, 1) 100%);
+    }
+
+    &.backForBottomNavUnderHeader {
+      background-color: #2A2941;
+    }
+
+    &.navOfAllCategories {
+      background-color: #111324;
+      display: none;
+    }
+
+    &.footerBack {
+      background-color: white;
+    }
+
+    &.colorOfFindAnswers {
+      background-color: #F6F6F7;
+    }
+
+    &.colorForWhyUsLove {
+      background-color: #111324;
+    }
+
+    .contentWrapperShort {
+      max-width: 1140px;
+      width: 100%;
+      min-height: 10px;
+    }
+
+    .contentWrapperWide {
+      max-width: 1440px;
+      width: 100%;
+      min-height: 10px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+
+  .blockForLogo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    img {
+      width: 28px;
+    }
+
+    span {
+      color: #1c1c1c;
+      font-weight: 400;
+      font-size: 16px;
+      text-shadow: 0px 0px 1px #cbcbcb;
+    }
+  }
+
+  .containerForNavigation {
+    display: flex;
+    column-gap: 15px;
+
+    a {
+      color: black;
+      font-size: 16px;
+      position: relative;
+      text-decoration: none;
+
+
+      &:after {
+        width: 0.04pc;
+        height: 100%;
+        position: absolute;
+        content: "";
+        display: block;
+        right: -8px;
+        top: 0;
+        background-color: black;
+      }
+
+      &:nth-last-of-type::after {
+        display: none;
+      }
+    }
+
+
+  }
+}

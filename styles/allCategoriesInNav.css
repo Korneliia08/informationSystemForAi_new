@@ -1,0 +1,23 @@
+.allCategoriesInNav {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  padding: 40px 0;
+}
+.allCategoriesInNav .leftPart, .allCategoriesInNav .rightPart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.allCategoriesInNav .leftPart a, .allCategoriesInNav .rightPart a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  letter-spacing: 1px;
+  transition: 450ms ease;
+}
+.allCategoriesInNav .leftPart a:hover, .allCategoriesInNav .rightPart a:hover {
+  color: #40B3BE;
+}
+
+/*# sourceMappingURL=allCategoriesInNav.css.map */

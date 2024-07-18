@@ -1,0 +1,88 @@
+nav {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .containerForOptions {
+    display: flex;
+    column-gap: 25px;
+
+    .blockForOptionAndIcon {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      position: relative;
+
+
+      img {
+        width: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .whiteArrowCategories {
+      }
+
+      a {
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: 450ms ease;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+          color: #51CFDB;
+        }
+      }
+
+      &:after {
+        display: block;
+        content: "";
+        width: 0.04pc;
+        height: 100%;
+        background-color: #818181;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+      }
+
+      &:last-child {
+        &:after {
+          display: none !important;
+
+        }
+      }
+    }
+  }
+
+  .blockForStatus {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    span {
+      color: white;
+      font-size: 19px;
+      letter-spacing: 1px;
+      font-weight: 200;
+      text-transform: uppercase;
+      transition: 450ms ease;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .blockCircle {
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      background-color: #B6EB7A;
+    }
+  }
+}

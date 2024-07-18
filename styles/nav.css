@@ -1,0 +1,68 @@
+.divForLogoAndNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.divForLogoAndNav .blockForLogo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.divForLogoAndNav .blockForLogo img {
+  width: 20px;
+}
+.divForLogoAndNav .blockForLogo span {
+  margin-left: 10px;
+  color: white;
+}
+.divForLogoAndNav nav {
+  padding: 18px 0;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.divForLogoAndNav nav .leftPartOfNav {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.divForLogoAndNav nav .leftPartOfNav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 200;
+  transition: 450ms ease;
+}
+.divForLogoAndNav nav .leftPartOfNav a:hover {
+  color: #51CFDB;
+}
+.divForLogoAndNav nav .rightPartOfNav {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.divForLogoAndNav nav .rightPartOfNav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 200;
+  transition: 450ms ease;
+}
+.divForLogoAndNav nav .rightPartOfNav a:hover {
+  color: #51CFDB;
+}
+.divForLogoAndNav nav .rightPartOfNav .signUpBtn {
+  background-color: #51CFDB;
+  color: black;
+  padding: 8px 15px;
+  transition: 450ms ease;
+  border-radius: 5px;
+}
+.divForLogoAndNav nav .rightPartOfNav .signUpBtn:hover {
+  background-color: #40b3be;
+  color: black;
+}
+
+/*# sourceMappingURL=nav.css.map */
