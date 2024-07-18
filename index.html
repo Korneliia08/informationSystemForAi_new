@@ -14,6 +14,7 @@
     <link href="./styles/allCategoriesInNav.css" rel="stylesheet">
     <link href="./styles/findAnswers.css" rel="stylesheet">
     <link href="./styles/whyLoveOurPage.css" rel="stylesheet">
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
 </head>
 <body>
 <div class="containerForWrapper">
@@ -24,7 +25,7 @@
                     <img alt="logo" src="./assets/icons/logo.svg">
                     <span>Operating System</span>
                 </div>
-                <nav>
+                <nav id="mobileMenu">
                     <div class="leftPartOfNav">
                         <a href="#">Features</a>
                         <a href="#">Pricing</a>
@@ -40,6 +41,11 @@
                         <a class="signUpBtn" href="#">Sign Up</a>
                     </div>
                 </nav>
+                <button class="hamburger hamburger--collapse" id="navHamburger" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                </button>
             </div>
         </div>
     </div>

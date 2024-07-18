@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 .divForLogoAndNav .blockForLogo {
   display: flex;
   align-items: center;
-  width: 20%;
 }
 .divForLogoAndNav .blockForLogo img {
   width: 20px;
@@ -15,16 +15,59 @@
   margin-left: 10px;
   color: white;
 }
+.divForLogoAndNav .hamburger {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav .hamburger {
+    display: block;
+  }
+}
+.divForLogoAndNav .hamburger .hamburger-inner {
+  background-color: white !important;
+}
+.divForLogoAndNav .hamburger .hamburger-inner:after, .divForLogoAndNav .hamburger .hamburger-inner:before {
+  background-color: white !important;
+}
 .divForLogoAndNav nav {
   padding: 18px 0;
   display: flex;
-  width: 60%;
+  column-gap: 10px;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav {
+    position: absolute;
+    right: -700px;
+    width: 300px;
+    padding: 0px 0 18px 0;
+    max-width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: 700ms;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    top: 57.5px;
+    border-bottom-left-radius: 22px;
+    border-bottom: 2px solid #2a2941;
+    border-left: 2px solid #2a2941;
+  }
+}
+.divForLogoAndNav nav.is-active {
+  right: -20px;
 }
 .divForLogoAndNav nav .leftPartOfNav {
   display: flex;
   column-gap: 20px;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .leftPartOfNav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .divForLogoAndNav nav .leftPartOfNav a {
   color: white;
@@ -34,13 +77,37 @@
   font-weight: 200;
   transition: 450ms ease;
 }
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .leftPartOfNav a {
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #acacac;
+    border-top: 1px solid #acacac;
+  }
+  .divForLogoAndNav nav .leftPartOfNav a:first-of-type {
+    border-top: 0px solid #acacac;
+  }
+}
 .divForLogoAndNav nav .leftPartOfNav a:hover {
   color: #51CFDB;
 }
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .leftPartOfNav a:hover {
+    color: #1c1c1c;
+  }
+}
 .divForLogoAndNav nav .rightPartOfNav {
   display: flex;
-  column-gap: 15px;
+  column-gap: 10px;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .rightPartOfNav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .divForLogoAndNav nav .rightPartOfNav a {
   color: white;
@@ -50,8 +117,23 @@
   font-weight: 200;
   transition: 450ms ease;
 }
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .rightPartOfNav a {
+    color: #000000;
+    border-top: 1px solid #acacac;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #acacac;
+  }
+}
 .divForLogoAndNav nav .rightPartOfNav a:hover {
   color: #51CFDB;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .rightPartOfNav a:hover {
+    color: #1c1c1c;
+  }
 }
 .divForLogoAndNav nav .rightPartOfNav .signUpBtn {
   background-color: #51CFDB;
@@ -59,6 +141,11 @@
   padding: 8px 15px;
   transition: 450ms ease;
   border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .divForLogoAndNav nav .rightPartOfNav .signUpBtn {
+    border-radius: 0;
+  }
 }
 .divForLogoAndNav nav .rightPartOfNav .signUpBtn:hover {
   background-color: #40b3be;

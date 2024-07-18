@@ -15,3 +15,13 @@ whiteArrowCategories.addEventListener("click", () => {
     whiteArrowCategories.style.transform = "rotate(360deg)";
   }
 });
+
+let navHamburger = document.querySelector("#navHamburger");
+navHamburger.addEventListener("click", () => {
+  if (navHamburger.classList.contains("is-active")) {
+    document.querySelector("#mobileMenu").classList.remove("is-active");
+  } else {
+    document.querySelector("#mobileMenu").classList.add("is-active");
+  }
+  navHamburger.classList.toggle("is-active");
+});

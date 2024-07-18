@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 
   .blockForLogo {
     display: flex;
     align-items: center;
-    width: 20%;
+    // width: 20%;
 
     img {
       width: 20px;
@@ -18,18 +19,65 @@
     }
   }
 
+  .hamburger {
+    display: none;
+    @media (max-width: 1000px) {
+      display: block;
+    }
+
+    .hamburger-inner {
+      background-color: white !important;
+
+      &:after, &:before {
+
+        background-color: white !important;
+      }
+    }
+  }
+
   nav {
+
     padding: 18px 0;
     display: flex;
-    width: 60%;
+    //  width: 60%;
+    column-gap: 10px;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+      position: absolute;
+      right: -700px;
+      width: 300px;
+      padding: 0px 0 18px 0;
+      max-width: 70vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      transition: 700ms;
+      background-color: white;
+      color: black;
+      z-index: 1000;
+      top: 57.5px;
+      border-bottom-left-radius: 22px;
+      border-bottom: 2px solid #2a2941;
+      border-left: 2px solid #2a2941;
+    }
+
+    &.is-active {
+      right: -20px;
+    }
 
     .leftPartOfNav {
       display: flex;
       column-gap: 20px;
       align-items: center;
+      @media (max-width: 1000px) {
+
+
+        display: flex;
+        flex-direction: column;
+      }
 
       a {
+
         color: white;
         text-decoration: none;
         letter-spacing: 1px;
@@ -37,16 +85,37 @@
         font-weight: 200;
         transition: 450ms ease;
 
+        @media (max-width: 1000px) {
+          color: black;
+          width: 100%;
+          text-align: center;
+          padding: 8px;
+          border-bottom: 1px solid #acacac;
+          border-top: 1px solid #acacac;
+          &:first-of-type {
+
+            border-top: 0px solid #acacac;
+          }
+        }
+
         &:hover {
           color: #51CFDB;
+          @media (max-width: 1000px) {
+            color: #1c1c1c;
+          }
         }
       }
     }
 
     .rightPartOfNav {
       display: flex;
-      column-gap: 15px;
+      column-gap: 10px;
       align-items: center;
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+
+      }
 
       a {
         color: white;
@@ -55,9 +124,20 @@
         font-size: 17px;
         font-weight: 200;
         transition: 450ms ease;
+        @media (max-width: 1000px) {
+          color: #000000;
+          border-top: 1px solid #acacac;
+          width: 100%;
+          text-align: center;
+          padding: 8px;
+          border-bottom: 1px solid #acacac;
+        }
 
         &:hover {
           color: #51CFDB;
+          @media (max-width: 1000px) {
+            color: #1c1c1c;
+          }
         }
       }
 
@@ -67,6 +147,9 @@
         padding: 8px 15px;
         transition: 450ms ease;
         border-radius: 5px;
+        @media (max-width: 1000px) {
+          border-radius: 0;
+        }
 
         &:hover {
           background-color: #40b3be;
