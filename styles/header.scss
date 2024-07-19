@@ -29,6 +29,60 @@ header {
     width: 750px;
     max-width: 93%;
 
+    .searchHistory {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      border-radius: 5px;
+      display: none;
+      z-index: 5000;
+      border: 1px solid #dfdfdf;
+      background: white;
+      width: 100%;
+
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 7px 0;
+      @media (max-width: 800px) {
+        row-gap: 2px;
+        top: 45px;
+      }
+
+      &.active {
+        display: flex;
+      }
+
+      .element {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        font-size: clamp(15px, 2vw + 2px, 22px);
+        @media (max-width: 800px) {
+          padding: 3px 7px;
+        }
+
+        &:hover {
+          background: rgba(45, 45, 45, 0.081);
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+
+        span {
+          display: none;
+          color: #9c0000;
+          font-family: "Arial Black";
+
+          &:hover {
+            color: #ca0000;
+          }
+        }
+      }
+    }
+
     input {
       width: 100%;
       padding: 15px 120px 15px 20px;

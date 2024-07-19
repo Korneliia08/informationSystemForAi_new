@@ -25,3 +25,50 @@ navHamburger.addEventListener("click", () => {
   }
   navHamburger.classList.toggle("is-active");
 });
+let history = [];
+
+function setFromHistory(text) {
+  console.log(text);
+  searchInput.value = text;
+  searchButton.click();
+}
+
+const refresh = () => {
+  let his = document.querySelector("#searchHistory");
+  his.innerHTML = history
+    .reverse()
+    .slice(0, 8)
+    .map((k) => {
+      return `<div class="element" onclick="setFromHistory('${k}')"><p>${k.slice(0, 40)}</p><span>X</span></div>`;
+    })
+    .join("");
+  if (history.length > 15) {
+    history = history.slice(0, -2);
+  }
+  history.reverse();
+};
+try {
+  if (sessionStorage.key("history")) {
+    history = sessionStorage.getItem("history").split(",");
+  }
+} catch (error) {}
+
+refresh();
+let searchHistory = document.querySelector("#searchHistory");
+let searchInput = document.querySelector("#searchInput");
+
+searchInput.addEventListener("focus", () => {
+  searchHistory.classList.add("active");
+});
+searchInput.addEventListener("blur", () => {
+  setTimeout(() => {
+    searchHistory.classList.remove("active");
+  }, 110);
+});
+
+let searchButton = document.querySelector("#searchButton");
+searchButton.addEventListener("click", () => {
+  history.push(searchInput.value);
+  sessionStorage.setItem("history", history);
+  refresh();
+});
