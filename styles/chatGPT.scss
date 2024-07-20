@@ -7,6 +7,43 @@
   position: fixed;
   flex-direction: column;
 
+  .popUpNoAnswer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(33, 33, 33, 0.27);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+
+    .popUp {
+      background-color: rgba(255, 255, 255, 0.86);
+      padding: 20px 50px;
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      box-shadow: 0px 0px 1px 1px #e7e7e7;
+      flex-direction: column;
+      border-radius: 5px;
+
+      .title {
+        color: #0c0c0c;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      span {
+        color: #0c0c0c;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+    }
+
+  }
+
   .topBelt {
     width: 100%;
     background-color: #eeeeee;
@@ -94,6 +131,7 @@
         width: 900px;
         position: relative;
         margin-top: 80px;
+        overflow: hidden;
 
         .searchInputChat {
           padding: 12px 15px;
@@ -107,20 +145,27 @@
         }
 
         .btnSend {
-          background-color: #F4F4F4;
+          background-color: #D7D7D7;
           position: absolute;
+          width: 35px;
+          height: 35px;
           right: 5px;
-          bottom: 0;
+          bottom: 5px;
           border: none;
-          border-left: 1px inset #e1e1e1;
+          border-radius: 100%;
           transition: 450ms ease;
 
-          &:hover {
-            cursor: pointer;
+          &.isActive {
+            background-color: black;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
 
-          img {
-            width: 36.5px;
+          i {
+            font-size: 24px;
+            color: white;
           }
         }
       }

@@ -7,6 +7,38 @@
   position: fixed;
   flex-direction: column;
 }
+.windowOfChat .popUpNoAnswer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.27);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+}
+.windowOfChat .popUpNoAnswer .popUp {
+  background-color: rgba(255, 255, 255, 0.86);
+  padding: 20px 50px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  box-shadow: 0px 0px 1px 1px #e7e7e7;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.windowOfChat .popUpNoAnswer .popUp .title {
+  color: #0c0c0c;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.windowOfChat .popUpNoAnswer .popUp span {
+  color: #0c0c0c;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 .windowOfChat .topBelt {
   width: 100%;
   background-color: #eeeeee;
@@ -76,6 +108,7 @@
   width: 900px;
   position: relative;
   margin-top: 80px;
+  overflow: hidden;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .searchInputChat {
   padding: 12px 15px;
@@ -88,19 +121,25 @@
   overflow: hidden;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend {
-  background-color: #F4F4F4;
+  background-color: #D7D7D7;
   position: absolute;
+  width: 35px;
+  height: 35px;
   right: 5px;
-  bottom: 0;
+  bottom: 5px;
   border: none;
-  border-left: 1px inset #e1e1e1;
+  border-radius: 100%;
   transition: 450ms ease;
 }
-.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend:hover {
+.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend.isActive {
+  background-color: black;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend.isActive:hover {
   cursor: pointer;
 }
-.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend img {
-  width: 36.5px;
+.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend i {
+  font-size: 24px;
+  color: white;
 }
 .windowOfChat .containerForTwoParts .rightPart {
   display: flex;
