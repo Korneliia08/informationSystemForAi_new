@@ -9,18 +9,27 @@
 
   .topBelt {
     width: 100%;
-    background-color: #00ac00;
-    padding: 20px;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    border-bottom: 1.5px solid #2f2f72;
+    display: flex;
+    align-items: center;
 
     .leftContainer {
       display: flex;
+      align-items: center;
+      column-gap: 40px;
 
       .blockForImgAndA {
+        display: flex;
+
         img {
         }
 
         a {
           text-decoration: none;
+          color: #1c1c1c;
+          font-size: 16px;
         }
       }
     }
@@ -31,12 +40,52 @@
   }
 
   .containerForTwoParts {
+    flex-grow: 200;
     width: 100%;
     display: flex;
-    background-color: deeppink;
+    background-color: #F7F7F7;
+    padding: 40px 60px;
 
     .leftPart {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      row-gap: 15px;
+
+      .logoAndTitle {
+        display: flex;
+
+        .image {
+
+        }
+
+        .title {
+          font-size: 34px;
+          color: #0d3d80;
+          letter-spacing: 4px;
+        }
+      }
+
+      .content {
+        font-size: 17px;
+        color: #262626;
+      }
+
+      .imageOfChat {
+
+      }
+
+      .searchInput {
+        margin-top: 80px;
+        padding: 12px 15px;
+        width: 800px;
+        border-radius: 5px;
+        border: 1px solid #6c6c6c;
+        background-color: white;
+        font-size: 17px;
+        color: #2d2d2d;
+      }
     }
 
     .rightPart {
@@ -47,9 +96,9 @@
   .spanClose {
     position: absolute;
     right: 25px;
-    top: 25px;
-    color: white;
-    font-size: 28px;
+    top: 8px;
+    color: #252525;
+    font-size: 22px;
     transition: 450ms ease;
 
     &:hover {
