@@ -171,8 +171,13 @@
           font-size: 17px;
           color: #2d2d2d;
           width: 100%;
-          border: 1px solid #4d4d4d;
+          border: 2px solid #a6a6a6;
           overflow: hidden;
+
+          &:focus, &:focus-within {
+            outline: none;
+            border: 2px solid rgba(0, 22, 136, 0.69);
+          }
         }
 
         .btnSend {
@@ -185,6 +190,7 @@
           border: none;
           border-radius: 100%;
           transition: 450ms ease;
+
 
           &.isActive {
             background-color: black;

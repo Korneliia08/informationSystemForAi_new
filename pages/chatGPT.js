@@ -3,6 +3,10 @@ let windowOfChat = document.querySelector(".windowOfChat");
 let spanClose = document.querySelector(".spanClose");
 
 let searchInputChat = document.querySelector(".searchInputChat");
+let btnSend = document.querySelector(".btnSend");
+let questionInInputFieldFromClient = document.querySelector(
+  ".questionInInputFieldFromClient",
+);
 
 iconOfChat.addEventListener("click", () => {
   windowOfChat.style.display = "flex";
@@ -10,8 +14,8 @@ iconOfChat.addEventListener("click", () => {
 });
 
 spanClose.addEventListener("click", () => {
-    document.querySelector("body").style.overflowY = "initial";
-    windowOfChat.style.display = "none";
+  document.querySelector("body").style.overflowY = "initial";
+  windowOfChat.style.display = "none";
 });
 
 searchInputChat.addEventListener("input", (event) => {
@@ -28,14 +32,18 @@ btnSend.addEventListener("click", checkQuestionFromClient);
 let isAnswer = false;
 
 function checkQuestionFromClient() {
-  questions.forEach((obj) => {
-    if (obj.question === questionInInputFieldFromClient) {
-      isAnswer = true;
-    } else {
-      isAnswer = false;
-    }
-  });
-  showWindowIfNoAnswer();
+  if (questionInInputFieldFromClient.length !== 0) {
+    questions.forEach((obj) => {
+      if (obj.question === questionInInputFieldFromClient) {
+        isAnswer = true;
+      } else {
+        isAnswer = false;
+      }
+    });
+    showWindowIfNoAnswer();
+  } else {
+    btnSend.disabled = "false";
+  }
 }
 
 function showWindowIfNoAnswer() {

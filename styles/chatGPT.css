@@ -145,8 +145,12 @@
   font-size: 17px;
   color: #2d2d2d;
   width: 100%;
-  border: 1px solid #4d4d4d;
+  border: 2px solid #a6a6a6;
   overflow: hidden;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .searchInputChat:focus, .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .searchInputChat:focus-within {
+  outline: none;
+  border: 2px solid rgba(0, 22, 136, 0.69);
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .btnSend {
   background-color: #D7D7D7;
