@@ -79,7 +79,12 @@ searchButton.addEventListener("click", () => {
 });
 
 function search() {
-  history.push(searchInput.value);
-  sessionStorage.setItem("history", history);
+  if (history[history.length - 1] === searchInput.value) {
+    searchInput.value = "";
+  } else {
+    history.push(searchInput.value);
+    sessionStorage.setItem("history", history);
+    searchInput.value = "";
+  }
   refresh();
 }
