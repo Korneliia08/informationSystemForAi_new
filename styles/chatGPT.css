@@ -152,19 +152,27 @@
   width: 900px;
   height: 400px;
   flex-grow: 100;
+  overflow-y: auto;
 }
-.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot {
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .bot {
   padding: 8px 10px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
-.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot span {
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .bot img {
+  width: 30px;
+  margin-right: 10px;
+  height: min-content;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .bot span {
   background-color: #f1f1f1;
   color: #151515;
   padding: 8px;
   border-radius: 5px;
   font-size: 18px;
+  height: auto;
+  word-wrap: break-word;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .client {
   padding: 8px 10px;

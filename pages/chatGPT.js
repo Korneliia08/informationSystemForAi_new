@@ -7,7 +7,7 @@ let btnSend = document.querySelector(".btnSend");
 let questionInInputFieldFromClient = document.querySelector(
   ".questionInInputFieldFromClient",
 );
-
+let answer = "";
 iconOfChat.addEventListener("click", () => {
   windowOfChat.style.display = "flex";
   document.querySelector("body").style.overflowY = "hidden";
@@ -28,15 +28,22 @@ searchInputChat.addEventListener("input", (event) => {
 });
 
 btnSend.addEventListener("click", checkQuestionFromClient);
-
+btnSend.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    checkQuestionFromClient();
+  }
+});
 let isAnswer = false;
 
 function checkQuestionFromClient() {
   isAnswer = false;
   if (questionInInputFieldFromClient.length !== 0) {
     questions.forEach((obj) => {
-      if (obj.question === questionInInputFieldFromClient) {
+      if (
+        areStringsSimilar(obj.question, questionInInputFieldFromClient, 0.75)
+      ) {
         isAnswer = true;
+        answer = obj.answer;
       }
     });
   } else {
@@ -81,5 +88,18 @@ function showQuestionInChat() {
   searchInputChat.value = "";
   btnSend.disabled = "disabled";
   btnSend.classList.remove("isActive");
+  if (answer.length > 0)
+    setTimeout(
+      () => {
+        const id = "message_" + new Date().getTime();
+        chat.innerHTML += `<div class="bot">
+                        <img src="./../assets/images/robot2.png">
+                       <span id="${id}"></span>
+                    </div>`;
+        write(id, answer);
+        answer = "";
+      },
+      Math.round(Math.random() * 2000 + 1200),
+    );
   showWindowIfNoAnswer();
 }
