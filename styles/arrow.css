@@ -1,0 +1,42 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: -60px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #000000;
+  color: #000000;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: right 0.3s ease, transform 0.3s ease, scale 1s;
+  z-index: 1000;
+}
+.scroll-to-top i {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.scroll-to-top:hover {
+  scale: 1.1;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+}
+.show {
+  animation: bounce 0.5s 0.1s;
+  right: 20px;
+}
+
+/*# sourceMappingURL=arrow.css.map */

@@ -10470,9 +10470,9 @@ main {
 }
 
 .iconOfChat {
-  width: 100px;
+  width: 70px;
   position: fixed;
-  bottom: 15px;
+  bottom: 75px;
   right: 20px;
   z-index: 2000;
 }
