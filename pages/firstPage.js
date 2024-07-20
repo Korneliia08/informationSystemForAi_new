@@ -91,7 +91,14 @@ function firstPage() {
                     </tbody>
                 </table>
             </section>
-        
+          <div class="information blue">
+                <div class="leftP">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div class="rightP">        
+                  Future of AI 
+                </div>
+            </div>
             <section>
                 <h2>Future of AI in Account Management</h2>
                 <p>The future of AI in account management is promising, with continuous advancements in technology leading to even more sophisticated tools and capabilities. Emerging trends include:</p>
