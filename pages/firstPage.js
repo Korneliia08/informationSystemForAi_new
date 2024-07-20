@@ -51,7 +51,7 @@ function firstPage() {
             </section>
                <div class="information red">
                 <div class="leftP">
-                    <i class="fa-solid fa-check"></i>
+             <i class="fa-solid fa-exclamation"></i>
                 </div>
                 <div class="rightP">        
                   Explore AI
