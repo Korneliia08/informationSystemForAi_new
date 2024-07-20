@@ -1,0 +1,167 @@
+.documentationPage {
+  display: flex;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #666d78;
+
+  .information {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &.green {
+      .leftP {
+        background: #00ac00;
+      }
+
+      .rightP {
+        background: rgba(176, 255, 168, 0.78);
+        color: black;
+        font-size: 1.4em;
+      }
+    }
+
+    .leftP {
+      padding: 10px;
+      width: 90px;
+      flex-shrink: 0;
+      min-height: 50px;
+
+    }
+
+    .rightP {
+      padding: 10px;
+      flex-grow: 100;
+      min-height: 50px;
+    }
+
+  }
+
+
+  .left {
+
+
+    h1 {
+      text-align: left;
+
+      font-family: 'Graphik Web', Helvetica, sans-serif;
+      font-size: 3em;
+      line-height: 1.167em;
+
+      font-weight: bolder;
+      font-style: normal;
+      color: #111324;
+      width: 100%;
+
+      margin: 10px auto 34px auto;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 15px 0 5px 0;
+      color: #111324;
+    }
+
+    p {
+
+
+      font-size: 1.7em;
+      line-height: 1.2em;
+      padding: 0;
+      margin: 0 auto 0.5em;
+      text-align: left;
+    }
+
+    table, table tr, table tr td, table tr th {
+      border: 1px solid #959595;
+      border-collapse: collapse;
+    }
+
+    table {
+      margin: 20px;
+      width: 100%;
+
+      thead tr {
+        background: #000820;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      tr {
+        td, th {
+          padding: 5px;
+        }
+
+        &:nth-of-type(even) {
+          background: rgba(227, 227, 227, 0.53);
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    flex-shrink: 0;
+
+    h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #2d2d2d;
+      text-transform: uppercase;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    ul li {
+      list-style-type: none;
+      padding-left: 7px;
+      font-size: 17px;
+
+      color: #2d2d2d;
+    }
+
+    li {
+      padding-top: 5px;
+    }
+  }
+}
+
+.listPage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+
+  h1 {
+    margin: 30px 0 15px 0;
+    font-family: 'Graphik Web', Helvetica, sans-serif;
+    font-size: 2em;
+    line-height: 1.167em;
+    font-weight: bolder;
+    font-style: normal;
+    color: #111324;
+    width: 100%;
+    text-align: center;
+
+    padding: 0;
+  }
+
+  ul li {
+    list-style-type: none;
+    padding: 5px;
+
+    a {
+
+      font-style: normal;
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #2e6fbc;
+      text-decoration: none;
+    }
+  }
+}

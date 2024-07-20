@@ -1,0 +1,129 @@
+.documentationPage {
+  display: flex;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #666d78;
+}
+.documentationPage .information {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.documentationPage .information.green .leftP {
+  background: #00ac00;
+}
+.documentationPage .information.green .rightP {
+  background: rgba(176, 255, 168, 0.78);
+  color: black;
+  font-size: 1.4em;
+}
+.documentationPage .information .leftP {
+  padding: 10px;
+  width: 90px;
+  flex-shrink: 0;
+  min-height: 50px;
+}
+.documentationPage .information .rightP {
+  padding: 10px;
+  flex-grow: 100;
+  min-height: 50px;
+}
+.documentationPage .left h1 {
+  text-align: left;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-size: 3em;
+  line-height: 1.167em;
+  font-weight: bolder;
+  font-style: normal;
+  color: #111324;
+  width: 100%;
+  margin: 10px auto 34px auto;
+  padding: 0;
+}
+.documentationPage .left h2 {
+  margin: 15px 0 5px 0;
+  color: #111324;
+}
+.documentationPage .left p {
+  font-size: 1.7em;
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0 auto 0.5em;
+  text-align: left;
+}
+.documentationPage .left table, .documentationPage .left table tr, .documentationPage .left table tr td, .documentationPage .left table tr th {
+  border: 1px solid #959595;
+  border-collapse: collapse;
+}
+.documentationPage .left table {
+  margin: 20px;
+  width: 100%;
+}
+.documentationPage .left table thead tr {
+  background: #000820;
+  color: white;
+  text-transform: uppercase;
+}
+.documentationPage .left table tr td, .documentationPage .left table tr th {
+  padding: 5px;
+}
+.documentationPage .left table tr:nth-of-type(even) {
+  background: rgba(227, 227, 227, 0.53);
+}
+.documentationPage .right {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  flex-shrink: 0;
+}
+.documentationPage .right h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #2d2d2d;
+  text-transform: uppercase;
+}
+.documentationPage .right ul {
+  padding: 0;
+}
+.documentationPage .right ul li {
+  list-style-type: none;
+  padding-left: 7px;
+  font-size: 17px;
+  color: #2d2d2d;
+}
+.documentationPage .right li {
+  padding-top: 5px;
+}
+
+.listPage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+.listPage h1 {
+  margin: 30px 0 15px 0;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 1.167em;
+  font-weight: bolder;
+  font-style: normal;
+  color: #111324;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.listPage ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+.listPage ul li a {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #2e6fbc;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=documentationPage.css.map */

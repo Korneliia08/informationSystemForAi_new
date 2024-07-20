@@ -16,6 +16,9 @@
 
     &.backForNav {
       background-color: #000000;
+      position: fixed;
+      top: 0;
+      height: max-content; z-index: 10000;
     }
 
     &.white {
@@ -65,6 +68,10 @@
       min-height: 10px;
       padding-left: 20px;
       padding-right: 20px;
+
+      &.fixed {
+
+      }
     }
   }
 }

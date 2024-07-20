@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: relative;
 }
 .divForLogoAndNav .blockForLogo {
   display: flex;
