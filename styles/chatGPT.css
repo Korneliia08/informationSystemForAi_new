@@ -21,7 +21,6 @@
   top: 0;
 }
 .windowOfChat .popUpNoAnswer .popUp {
-  background-color: rgba(255, 255, 255, 0.86);
   padding: 20px 50px;
   width: 450px;
   display: flex;
@@ -31,11 +30,16 @@
   flex-direction: column;
   border-radius: 5px;
   position: relative;
+  background: linear-gradient(180deg, hsl(0, 0%, 100%) 30%, hsla(0, 0%, 100%, 0.5) 100%);
 }
 .windowOfChat .popUpNoAnswer .popUp .fa-x {
   position: absolute;
   right: 10px;
   top: 10px;
+  cursor: pointer;
+}
+.windowOfChat .popUpNoAnswer .popUp .fa-x:hover {
+  scale: 1.05;
 }
 .windowOfChat .popUpNoAnswer .popUp .title {
   color: #0c0c0c;

@@ -21,7 +21,7 @@
     top: 0;
 
     .popUp {
-      background-color: rgba(255, 255, 255, 0.86);
+      //   background-color: rgba(255, 255, 255, 0.86);
       padding: 20px 50px;
       width: 450px;
       display: flex;
@@ -30,13 +30,21 @@
       box-shadow: 0px 0px 1px 1px #e7e7e7;
       flex-direction: column;
       border-radius: 5px;
-position: relative;
-      .fa-x{
+      position: relative;
+      background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 30%, hsla(0, 0%, 100%, 0.5) 100%);
+
+      .fa-x {
         position: absolute;
         right: 10px;
-        top:10px;
+        top: 10px;
+        cursor: pointer;
 
+        &:hover {
+          scale: 1.05;
+        }
       }
+
+
       .title {
         color: #0c0c0c;
         font-size: 25px;
@@ -77,40 +85,42 @@ position: relative;
           color: white;
           font-size: 17px;
           letter-spacing: 2px;
+        }
       }
     }
 
-    .rightContainer {
-      display: flex;
-      column-gap: 18px;
-      padding-right: 10px;
-      align-items: center;
+      .rightContainer {
+        display: flex;
+        column-gap: 18px;
+        padding-right: 10px;
+        align-items: center;
 
-      i:hover {
-        cursor: pointer;
-      }
-
-      .color {
-        transition: 100ms;
-        font-size: 22px;
-        color: white;
-
-        &.is-active {
-          transform: rotate(-180deg);
-
-        }
-      }
-
-      .spanClose {
-        color: #ffffff;
-        font-size: 25px;
-        transition: 450ms ease;
-
-        &:hover {
+        i:hover {
           cursor: pointer;
         }
+
+        .color {
+          transition: 100ms;
+          font-size: 22px;
+          color: white;
+
+          &.is-active {
+            transform: rotate(-180deg);
+
+          }
+        }
+
+        .spanClose {
+          color: #ffffff;
+          font-size: 25px;
+          transition: 450ms ease;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
-    }
+
   }
 
   .containerForTwoParts {
@@ -124,7 +134,7 @@ position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-     flex-grow: 70;
+      flex-grow: 70;
       row-gap: 15px;
 
       .logoAndTitle {
@@ -237,6 +247,5 @@ position: relative;
       }
     }
   }
-
 
 }
