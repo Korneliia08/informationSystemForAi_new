@@ -73,10 +73,9 @@ function showQuestionInChat() {
   blockForContentAndImage.style.display = "none";
   blockForCommunication.style.display = "flex";
   chat.innerHTML += `<div class="client">
-                        <span>
-                             ${questionInInputFieldFromClient}
-                         </span>
+                        <span id="${id}"></span>
                     </div>`;
+  write(id, questionInInputFieldFromClient);
   searchInputChat.value = "";
   btnSend.disabled = "disabled";
   btnSend.classList.remove("isActive");
