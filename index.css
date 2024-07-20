@@ -68,6 +68,10 @@ main {
   width: 100%;
 }
 
+.disabled {
+  cursor: not-allowed !important;
+}
+
 .iconOfChat {
   width: 100px;
   position: fixed;

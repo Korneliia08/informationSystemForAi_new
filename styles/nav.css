@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
 }
+.divForLogoAndNav .blockForLogo a {
+  text-decoration: none !important;
+}
 .divForLogoAndNav .blockForLogo img {
   width: 20px;
 }

@@ -16,6 +16,9 @@ footer .blockForLogo {
   align-items: center;
   column-gap: 10px;
 }
+footer .blockForLogo a {
+  text-decoration: none !important;
+}
 footer .blockForLogo img {
   width: 28px;
 }

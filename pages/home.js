@@ -10,25 +10,25 @@ function homePage() {
                             <span>AI in Account Management</span>
                             <img alt="" src="./../assets/icons/blueArrow.png">
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI for Customer Support</span>
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI-driven Marketing</span>
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI in Data Analysis</span>
                         </div>
-                        <div class="blockOfQuestion">
-                            <span>AI in Operations</span>
+                        <div class="blockOfQuestion disabled">
+                            <span>AI in Operations</span> 
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI for Business Intelligence</span>
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI in programing</span>
                         </div>
-                        <div class="blockOfQuestion">
+                        <div class="blockOfQuestion disabled">
                             <span>AI in shopping</span>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ function homePage() {
                     <p>From Australia to Zimbabwe, and everywhere in between, companies count on Campaign Monitor for
                         email campaigns that boost the bottom line.
                     </p>
-                    <button>Get started for free</button>
+                    <button  class="disabled">Get started for free</button>
                 </section>
             </div>
         </div>
