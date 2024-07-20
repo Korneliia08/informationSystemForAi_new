@@ -16,3 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+let aiChangeColor = document.querySelector("#aiChangeColor");
+aiChangeColor.addEventListener("click", () => {
+  aiChangeColor.classList.toggle("is-active");
+});

@@ -3,19 +3,16 @@ let windowOfChat = document.querySelector(".windowOfChat");
 let spanClose = document.querySelector(".spanClose");
 
 let searchInputChat = document.querySelector(".searchInputChat");
-let btnSend = document.querySelector(".btnSend");
 
-let questionInInputFieldFromClient = "";
+iconOfChat.addEventListener("click", () => {
+  windowOfChat.style.display = "flex";
+  document.querySelector("body").style.overflowY = "hidden";
+});
 
-iconOfChat.addEventListener(
-  "click",
-  () => (windowOfChat.style.display = "block"),
-);
-
-spanClose.addEventListener(
-  "click",
-  () => (windowOfChat.style.display = "none"),
-);
+spanClose.addEventListener("click", () => {
+    document.querySelector("body").style.overflowY = "initial";
+    windowOfChat.style.display = "none";
+});
 
 searchInputChat.addEventListener("input", (event) => {
   questionInInputFieldFromClient = event.target.value;
