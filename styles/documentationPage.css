@@ -3,6 +3,7 @@
   padding: 30px 0;
   font-size: 14px;
   color: #666d78;
+  column-gap: 30px;
 }
 .documentationPage .information {
   display: flex;
@@ -38,6 +39,10 @@
   min-height: 70px;
   justify-content: center;
   align-items: center;
+  display: flex;
+}
+.documentationPage .information .leftP i {
+  font-size: 30px;
 }
 .documentationPage .information .rightP {
   display: flex;
@@ -57,12 +62,13 @@
   font-style: normal;
   color: #111324;
   width: 100%;
-  margin: 10px auto 34px auto;
+  margin: 10px auto 21px auto;
   padding: 0;
 }
 .documentationPage .left h2 {
-  margin: 15px 0 5px 0;
+  margin: 35px 0 15px 0;
   color: #111324;
+  font-size: 1.9em;
 }
 .documentationPage .left p {
   font-size: 1.7em;
@@ -72,12 +78,12 @@
   text-align: left;
 }
 .documentationPage .left table, .documentationPage .left table tr, .documentationPage .left table tr td, .documentationPage .left table tr th {
-  border: 1px solid #959595;
   border-collapse: collapse;
 }
 .documentationPage .left table {
-  margin: 20px;
   width: 100%;
+  border-bottom: 2px solid #000813;
+  font-size: 1.3em;
 }
 .documentationPage .left table thead tr {
   background: #000820;
@@ -85,7 +91,7 @@
   text-transform: uppercase;
 }
 .documentationPage .left table tr td, .documentationPage .left table tr th {
-  padding: 5px;
+  padding: 12px;
 }
 .documentationPage .left table tr:nth-of-type(even) {
   background: rgba(227, 227, 227, 0.53);

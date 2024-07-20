@@ -3,13 +3,15 @@
   padding: 30px 0;
   font-size: 14px;
   color: #666d78;
+  column-gap: 30px;
 
   .information {
     display: flex;
     width: 100%;
     overflow: hidden;
     border-radius: 5px;
-margin: 25px 0;
+    margin: 25px 0;
+
     &.green {
       .leftP {
         background: rgba(0, 172, 0, 0.63);
@@ -25,18 +27,20 @@ margin: 25px 0;
       }
     }
 
-    &.red{ .leftP {
-      background: rgba(172, 0, 0, 0.63);
+    &.red {
+      .leftP {
+        background: rgba(172, 0, 0, 0.63);
 
-      i {
-        color: white;
+        i {
+          color: white;
+        }
+      }
+
+      .rightP {
+        background: rgba(255, 130, 130, 0.51);
+        color: black;
       }
     }
-
-   .rightP {
-      background: rgba(255, 130, 130, 0.51);
-      color: black;
-    }}
 
     .leftP {
       padding: 10px;
@@ -45,7 +49,11 @@ margin: 25px 0;
       min-height: 70px;
       justify-content: center;
       align-items: center;
+      display: flex;
 
+      i {
+        font-size: 30px
+      }
 
     }
 
@@ -57,6 +65,7 @@ margin: 25px 0;
       flex-grow: 100;
       min-height: 70px;
       font-size: 1.4em;
+
     }
 
   }
@@ -77,13 +86,14 @@ margin: 25px 0;
       color: #111324;
       width: 100%;
 
-      margin: 10px auto 34px auto;
+      margin: 10px auto 21px auto;
       padding: 0;
     }
 
     h2 {
-      margin: 15px 0 5px 0;
+      margin: 35px 0 15px 0;
       color: #111324;
+      font-size: 1.9em;
     }
 
     p {
@@ -97,13 +107,15 @@ margin: 25px 0;
     }
 
     table, table tr, table tr td, table tr th {
-      border: 1px solid #959595;
+
       border-collapse: collapse;
     }
 
     table {
-      margin: 20px;
+      //     margin: 20px;
       width: 100%;
+      border-bottom: 2px solid #000813;
+      font-size: 1.3em;
 
       thead tr {
         background: #000820;
@@ -113,7 +125,7 @@ margin: 25px 0;
 
       tr {
         td, th {
-          padding: 5px;
+          padding: 12px;
         }
 
         &:nth-of-type(even) {

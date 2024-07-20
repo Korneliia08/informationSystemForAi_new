@@ -2,7 +2,13 @@ body {
   position: relative;
 }
 
+$fa-font-path: './../assets/fontawesome/webfonts';
+// importing core styling file
+@import './assets/fontawesome/scss/fontawesome.scss';
 
+// our project needs Classic Solid, Brands, and Sharp Solid
+@import './assets/fontawesome/scss/solid.scss';
+@import './assets/fontawesome/scss/brands.scss';
 * {
   margin: 0;
   box-sizing: border-box;
@@ -93,9 +99,9 @@ main {
 }
 
 .iconOfChat {
-  width: 100px;
+  width: 70px;
   position: fixed;
-  bottom: 15px;
+  bottom: 75px;
   right: 20px;
   z-index: 2000;
 
