@@ -13,13 +13,12 @@ function firstPage() {
             </section>
             <div class="information green">
                 <div class="leftP">
-                
+                    <i class="fa-solid fa-check"></i>
                 </div>
                 <div class="rightP">        
-                Benefits of AI in Account Management
+                    Benefits of AI in Account Management
                 </div>
-
-                </div>
+            </div>
             <section>
                 <h2>Benefits of AI in Account Management</h2>
                 <p>AI offers several key benefits in the realm of account management:</p>
@@ -50,7 +49,14 @@ function firstPage() {
                 <p>AI-powered predictive analytics help in forecasting future customer needs and behaviors, enabling proactive account management.</p>
 <!--                <img src="images/predictive_analytics.jpg" alt="Predictive Analytics">-->
             </section>
-        
+               <div class="information red">
+                <div class="leftP">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="rightP">        
+                  Explore AI
+                </div>
+            </div>
             <section>
                 <h2>Case Studies</h2>
                 <p>Explore how AI has transformed account management in various organizations:</p>
