@@ -51,6 +51,7 @@
   display: flex;
   align-items: center;
   column-gap: 40px;
+  flex-grow: 100;
 }
 .windowOfChat .topBelt .leftContainer .blockForImgAndA {
   display: flex;
@@ -59,6 +60,31 @@
   text-decoration: none;
   color: #1c1c1c;
   font-size: 16px;
+}
+.windowOfChat .topBelt .rightContainer {
+  display: flex;
+  column-gap: 18px;
+  padding-right: 10px;
+  align-items: center;
+}
+.windowOfChat .topBelt .rightContainer i:hover {
+  cursor: pointer;
+}
+.windowOfChat .topBelt .rightContainer .color {
+  transition: 100ms;
+  font-size: 22px;
+  color: red;
+}
+.windowOfChat .topBelt .rightContainer .color.is-active {
+  transform: rotate(-90deq);
+}
+.windowOfChat .topBelt .rightContainer .spanClose {
+  color: #252525;
+  font-size: 25px;
+  transition: 450ms ease;
+}
+.windowOfChat .topBelt .rightContainer .spanClose:hover {
+  cursor: pointer;
 }
 .windowOfChat .containerForTwoParts {
   flex-grow: 200;
@@ -92,6 +118,8 @@
 .windowOfChat .containerForTwoParts .leftPart .blockForContentAndImage {
   display: flex;
   align-items: center;
+  padding-bottom: 60px;
+  flex-grow: 1000;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForContentAndImage .content {
   font-size: 20px;
@@ -107,7 +135,7 @@
   align-items: center;
   width: 900px;
   position: relative;
-  margin-top: 80px;
+  margin-top: 20px;
   overflow: hidden;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend .searchInputChat {
@@ -143,17 +171,6 @@
 }
 .windowOfChat .containerForTwoParts .rightPart {
   display: flex;
-}
-.windowOfChat .spanClose {
-  position: absolute;
-  right: 25px;
-  top: 8px;
-  color: #252525;
-  font-size: 22px;
-  transition: 450ms ease;
-}
-.windowOfChat .spanClose:hover {
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=chatGPT.css.map */
