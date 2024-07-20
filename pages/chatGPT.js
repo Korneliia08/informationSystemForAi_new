@@ -72,10 +72,12 @@ let chat = document.querySelector(".chat");
 function showQuestionInChat() {
   blockForContentAndImage.style.display = "none";
   blockForCommunication.style.display = "flex";
+  const id = "message_" + new Date().getTime();
   chat.innerHTML += `<div class="client">
-                        <span id="${id}"></span>
+                       <span id="${id}">${questionInInputFieldFromClient}</span>
+
                     </div>`;
-  write(id, questionInInputFieldFromClient);
+  //write(id, questionInInputFieldFromClient);
   searchInputChat.value = "";
   btnSend.disabled = "disabled";
   btnSend.classList.remove("isActive");
