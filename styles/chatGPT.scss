@@ -1,0 +1,59 @@
+.windowOfChat {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: black;
+  z-index: 15000;
+  position: fixed;
+  flex-direction: column;
+
+  .topBelt {
+    width: 100%;
+    background-color: #00ac00;
+    padding: 20px;
+
+    .leftContainer {
+      display: flex;
+
+      .blockForImgAndA {
+        img {
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .rightContainer {
+
+    }
+  }
+
+  .containerForTwoParts {
+    width: 100%;
+    display: flex;
+    background-color: deeppink;
+
+    .leftPart {
+      display: flex;
+    }
+
+    .rightPart {
+      display: flex;
+    }
+  }
+
+  .spanClose {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: white;
+    font-size: 28px;
+    transition: 450ms ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

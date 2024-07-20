@@ -1,3 +1,8 @@
+body {
+  position: relative;
+}
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -18,7 +23,8 @@
       background-color: #000000;
       position: fixed;
       top: 0;
-      height: max-content; z-index: 10000;
+      height: max-content;
+      z-index: 10000;
     }
 
     &.white {
@@ -80,4 +86,16 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.iconOfChat {
+  width: 100px;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 2000;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
