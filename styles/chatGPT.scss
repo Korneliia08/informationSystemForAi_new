@@ -87,7 +87,6 @@
       .color {
         transition: 100ms;
         font-size: 22px;
-
         color: white;
 
         &.is-active {
@@ -100,7 +99,7 @@
         color: #ffffff;
         font-size: 25px;
         transition: 450ms ease;
-
+ 
         &:hover {
           cursor: pointer;
         }
