@@ -46,11 +46,17 @@ function checkQuestionFromClient() {
   }
 }
 
+let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
+
 function showWindowIfNoAnswer() {
-  let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
   if (!isAnswer) {
     setTimeout(() => {
       popUpNoAnswer.style.display = "flex";
     }, 2500);
   }
 }
+
+let GPTpopupX = document.querySelector("#GPTpopupX");
+GPTpopupX.addEventListener("click", () => {
+  popUpNoAnswer.style.display = "none";
+});
