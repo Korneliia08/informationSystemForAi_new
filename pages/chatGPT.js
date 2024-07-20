@@ -51,7 +51,10 @@ function showWindowIfNoAnswer() {
   if (!isAnswer) {
     setTimeout(() => {
       popUpNoAnswer.style.display = "flex";
+      btnSend.disabled = "";
     }, 2500);
+  } else {
+    btnSend.disabled = "";
   }
 }
 
@@ -69,14 +72,13 @@ let chat = document.querySelector(".chat");
 function showQuestionInChat() {
   blockForContentAndImage.style.display = "none";
   blockForCommunication.style.display = "flex";
-  //let spanQuestion = document.createElement("span");
-  //  spanQuestion.innerText = questionInInputFieldFromClient;
-  // chat.append(spanQuestion);
   chat.innerHTML += `<div class="client">
                         <span>
                              ${questionInInputFieldFromClient}
                          </span>
                     </div>`;
   searchInputChat.value = "";
+  btnSend.disabled = "disabled";
+  btnSend.classList.remove("isActive");
   showWindowIfNoAnswer();
 }

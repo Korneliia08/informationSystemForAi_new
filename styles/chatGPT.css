@@ -152,10 +152,17 @@
   height: 400px;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot {
-  color: blue;
-  position: absolute;
-  left: 0;
-  background-color: fuchsia;
+  padding: 8px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot span {
+  background-color: #f1f1f1;
+  color: #151515;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 18px;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .client {
   padding: 8px 10px;
