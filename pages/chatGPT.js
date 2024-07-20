@@ -10,8 +10,8 @@ iconOfChat.addEventListener("click", () => {
 });
 
 spanClose.addEventListener("click", () => {
-    document.querySelector("body").style.overflowY = "initial";
-    windowOfChat.style.display = "none";
+  document.querySelector("body").style.overflowY = "initial";
+  windowOfChat.style.display = "none";
 });
 
 searchInputChat.addEventListener("input", (event) => {
@@ -38,11 +38,17 @@ function checkQuestionFromClient() {
   showWindowIfNoAnswer();
 }
 
+let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
+
 function showWindowIfNoAnswer() {
-  let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
   if (!isAnswer) {
     setTimeout(() => {
       popUpNoAnswer.style.display = "flex";
     }, 2500);
   }
 }
+
+let GPTpopupX = document.querySelector("#GPTpopupX");
+GPTpopupX.addEventListener("click", () => {
+  popUpNoAnswer.style.display = "none";
+});
