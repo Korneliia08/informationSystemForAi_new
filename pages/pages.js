@@ -2,7 +2,7 @@ let mainForContent = document.querySelector("#mainForContent");
 mainForContent.innerHTML = homePage();
 
 function choosePage(page) {
-  console.log(page);
+  window.scrollTo({ x: 0, y: 0, behavior: "smooth" });
   switch (page) {
     case "aiInMenagement":
       mainForContent.innerHTML = AiInManagement();

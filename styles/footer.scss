@@ -13,6 +13,12 @@ footer {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    a {
+
+      text-decoration: none !important;
+    }
+
+
 
     img {
       width: 28px;

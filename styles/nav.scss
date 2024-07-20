@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-    
+
 
   .blockForLogo {
     display: flex;
     align-items: center;
     // width: 20%;
+    a {
+
+      text-decoration: none !important;
+    }
 
     img {
       width: 20px;

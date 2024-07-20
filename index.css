@@ -64,4 +64,8 @@ main {
   width: 100%;
 }
 
+.disabled {
+  cursor: not-allowed !important;
+}
+
 /*# sourceMappingURL=index.css.map */

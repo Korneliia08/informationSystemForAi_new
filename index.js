@@ -66,9 +66,20 @@ searchInput.addEventListener("blur", () => {
   }, 110);
 });
 
+searchInput.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    search();
+  }
+});
+
 let searchButton = document.querySelector("#searchButton");
 searchButton.addEventListener("click", () => {
+  search();
+});
+
+function search() {
   history.push(searchInput.value);
   sessionStorage.setItem("history", history);
   refresh();
-});
+}
