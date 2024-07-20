@@ -150,6 +150,7 @@
   position: relative;
   width: 900px;
   height: 400px;
+  flex-grow: 100;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot {
   padding: 8px 10px;
@@ -176,7 +177,6 @@
   padding: 8px;
   border-radius: 5px;
   font-size: 18px;
-  width: 100%;
   height: auto;
   word-wrap: break-word;
 }
