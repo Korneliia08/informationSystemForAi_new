@@ -19,6 +19,7 @@
       display: flex;
       align-items: center;
       column-gap: 40px;
+      flex-grow: 100;
 
       .blockForImgAndA {
         display: flex;
@@ -35,7 +36,35 @@
     }
 
     .rightContainer {
+      display: flex;
+      column-gap: 18px;
+      padding-right: 10px;
+      align-items: center;
 
+      i:hover {
+        cursor: pointer;
+      }
+
+      .color {
+        transition: 100ms;
+        font-size: 22px;
+        color: red;
+
+        &.is-active {
+          transform: rotate(-90deq);
+
+        }
+      }
+
+      .spanClose {
+        color: #252525;
+        font-size: 25px;
+        transition: 450ms ease;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 
@@ -135,16 +164,4 @@
     }
   }
 
-  .spanClose {
-    position: absolute;
-    right: 25px;
-    top: 8px;
-    color: #252525;
-    font-size: 22px;
-    transition: 450ms ease;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
 }
