@@ -1,3 +1,8 @@
+body {
+  position: relative;
+}
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -85,4 +90,16 @@ main {
 
 .disabled {
   cursor: not-allowed !important;
+}
+
+.iconOfChat {
+  width: 100px;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 2000;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
