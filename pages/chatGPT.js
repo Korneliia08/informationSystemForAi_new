@@ -4,13 +4,13 @@ let spanClose = document.querySelector(".spanClose");
 
 let searchInputChat = document.querySelector(".searchInputChat");
 
-iconOfChat.addEventListener(
-  "click",
-  () => (windowOfChat.style.display = "block"),
-);
+iconOfChat.addEventListener("click", () => {
+  windowOfChat.style.display = "flex";
+  document.querySelector("body").style.overflowY = "hidden";
+});
 
-spanClose.addEventListener(
-  "click",
-  () => (windowOfChat.style.display = "none"),
-);
+spanClose.addEventListener("click", () => {
+  document.querySelector("body").style.overflowY = "initial";
+  windowOfChat.style.display = "none";
+});
 searchInputChat.addEventListener("input", () => alert("s"));
