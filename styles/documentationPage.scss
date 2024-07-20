@@ -45,7 +45,9 @@ margin: 25px 0;
       min-height: 70px;
       justify-content: center;
       align-items: center;
-
+      i{
+        font-size:30px
+      }
 
     }
 
@@ -57,6 +59,7 @@ margin: 25px 0;
       flex-grow: 100;
       min-height: 70px;
       font-size: 1.4em;
+
     }
 
   }

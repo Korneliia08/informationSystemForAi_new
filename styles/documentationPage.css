@@ -39,6 +39,9 @@
   justify-content: center;
   align-items: center;
 }
+.documentationPage .information .leftP i {
+  font-size: 30px;
+}
 .documentationPage .information .rightP {
   display: flex;
   align-items: center;
