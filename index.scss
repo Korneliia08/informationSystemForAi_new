@@ -98,14 +98,35 @@ main {
   cursor: not-allowed !important;
 }
 
-.iconOfChat {
-  width: 70px;
+.blockForIcon {
+  display: flex;
   position: fixed;
-  bottom: 75px;
+  bottom: 90px;
   right: 20px;
   z-index: 2000;
 
+  .iconOfChat {
+    font-size: 50px;
+    color: #599AD5;
+    filter: drop-shadow(1px 2px 2px black);
+    transition: 400ms ease;
+  }
+
+  span {
+    position: absolute;
+    color: #585858;
+    font-weight: 500;
+    top: -4px;
+    right: 4px;
+    text-shadow: 0px 1px 1px black;
+    z-index: 2005;
+    font-size: 14px;
+    transform: rotate(330deg);
+  }
+
   &:hover {
     cursor: pointer;
+    zoom: 1.02;
+    color: #287ac5;
   }
 }

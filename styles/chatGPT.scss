@@ -21,7 +21,7 @@
     top: 0;
 
     .popUp {
-      //   background-color: rgba(255, 255, 255, 0.86);
+      background-color: rgba(255, 255, 255, 0.86);
       padding: 20px 50px;
       width: 450px;
       display: flex;
@@ -85,42 +85,42 @@
           color: white;
           font-size: 17px;
           letter-spacing: 2px;
+
         }
       }
     }
 
-      .rightContainer {
-        display: flex;
-        column-gap: 18px;
-        padding-right: 10px;
-        align-items: center;
+    .rightContainer {
+      display: flex;
+      column-gap: 18px;
+      padding-right: 10px;
+      align-items: center;
 
-        i:hover {
-          cursor: pointer;
-        }
+      i:hover {
+        cursor: pointer;
+      }
 
-        .color {
-          transition: 100ms;
-          font-size: 22px;
-          color: white;
+      .color {
+        transition: 100ms;
+        font-size: 22px;
+        color: white;
 
-          &.is-active {
-            transform: rotate(-180deg);
+        &.is-active {
+          transform: rotate(-180deg);
 
-          }
-        }
-
-        .spanClose {
-          color: #ffffff;
-          font-size: 25px;
-          transition: 450ms ease;
-
-          &:hover {
-            cursor: pointer;
-          }
         }
       }
 
+      .spanClose {
+        color: #ffffff;
+        font-size: 25px;
+        transition: 450ms ease;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .containerForTwoParts {
@@ -136,6 +136,7 @@
       align-items: center;
       flex-grow: 70;
       row-gap: 15px;
+
 
       .logoAndTitle {
         display: flex;
@@ -171,7 +172,37 @@
         .imageOfChat {
           width: 180px;
         }
+      }
 
+      .blockForCommunication {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        width: 900px;
+        height: 400px;
+
+        .forBot {
+          color: blue;
+          position: absolute;
+          left: 0;
+          background-color: fuchsia;
+        }
+
+        .client {
+          padding: 8px 10px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          span {
+            background-color: #f1f1f1;
+            color: #151515;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+
+          }
+        }
       }
 
       .blockForInputAndBtnSend {
@@ -224,9 +255,8 @@
           }
         }
       }
-
-
     }
+
 
     .rightPart {
       display: flex;
@@ -247,5 +277,6 @@
       }
     }
   }
-
 }
+
+

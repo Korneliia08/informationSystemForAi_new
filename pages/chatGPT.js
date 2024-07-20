@@ -32,18 +32,17 @@ btnSend.addEventListener("click", checkQuestionFromClient);
 let isAnswer = false;
 
 function checkQuestionFromClient() {
+  isAnswer = false;
   if (questionInInputFieldFromClient.length !== 0) {
     questions.forEach((obj) => {
       if (obj.question === questionInInputFieldFromClient) {
         isAnswer = true;
-      } else {
-        isAnswer = false;
       }
     });
-    showWindowIfNoAnswer();
   } else {
     btnSend.disabled = "false";
   }
+  showQuestionInChat();
 }
 
 let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
@@ -60,3 +59,24 @@ let GPTpopupX = document.querySelector("#GPTpopupX");
 GPTpopupX.addEventListener("click", () => {
   popUpNoAnswer.style.display = "none";
 });
+
+let blockForContentAndImage = document.querySelector(
+  ".blockForContentAndImage",
+);
+let blockForCommunication = document.querySelector(".blockForCommunication");
+let chat = document.querySelector(".chat");
+
+function showQuestionInChat() {
+  blockForContentAndImage.style.display = "none";
+  blockForCommunication.style.display = "flex";
+  //let spanQuestion = document.createElement("span");
+  //  spanQuestion.innerText = questionInInputFieldFromClient;
+  // chat.append(spanQuestion);
+  chat.innerHTML += `<div class="client">
+                        <span>
+                             ${questionInInputFieldFromClient}
+                         </span>
+                    </div>`;
+  searchInputChat.value = "";
+  showWindowIfNoAnswer();
+}

@@ -21,6 +21,7 @@
   top: 0;
 }
 .windowOfChat .popUpNoAnswer .popUp {
+  background-color: rgba(255, 255, 255, 0.86);
   padding: 20px 50px;
   width: 450px;
   display: flex;
@@ -142,6 +143,32 @@
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForContentAndImage .imageOfChat {
   width: 180px;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  width: 900px;
+  height: 400px;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .forBot {
+  color: blue;
+  position: absolute;
+  left: 0;
+  background-color: fuchsia;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .client {
+  padding: 8px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.windowOfChat .containerForTwoParts .leftPart .blockForCommunication .client span {
+  background-color: #f1f1f1;
+  color: #151515;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 18px;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForInputAndBtnSend {
   display: flex;
