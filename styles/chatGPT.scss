@@ -76,16 +76,25 @@
 
       .blockForImgAndA {
         display: flex;
-
-        img {
-        }
+        align-items: center;
 
         a {
           text-decoration: none;
           color: white;
           font-size: 17px;
           letter-spacing: 2px;
+          transition: 400ms ease;
+        }
 
+        i {
+          color: white;
+          margin-right: 5px;
+        }
+
+        &:hover {
+          i, a {
+            color: #51CFDB;
+          }
         }
       }
     }

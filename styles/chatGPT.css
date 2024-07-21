@@ -68,12 +68,21 @@
 }
 .windowOfChat .topBelt .leftContainer .blockForImgAndA {
   display: flex;
+  align-items: center;
 }
 .windowOfChat .topBelt .leftContainer .blockForImgAndA a {
   text-decoration: none;
   color: white;
   font-size: 17px;
   letter-spacing: 2px;
+  transition: 400ms ease;
+}
+.windowOfChat .topBelt .leftContainer .blockForImgAndA i {
+  color: white;
+  margin-right: 5px;
+}
+.windowOfChat .topBelt .leftContainer .blockForImgAndA:hover i, .windowOfChat .topBelt .leftContainer .blockForImgAndA:hover a {
+  color: #51CFDB;
 }
 .windowOfChat .topBelt .rightContainer {
   display: flex;
