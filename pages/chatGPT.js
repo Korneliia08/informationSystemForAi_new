@@ -28,7 +28,7 @@ searchInputChat.addEventListener("input", (event) => {
 });
 
 btnSend.addEventListener("click", checkQuestionFromClient);
-btnSend.addEventListener("keydown", function (event) {
+searchInputChat.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     checkQuestionFromClient();
   }
@@ -38,6 +38,7 @@ let isAnswer = false;
 function checkQuestionFromClient() {
   isAnswer = false;
   if (questionInInputFieldFromClient.length !== 0) {
+    addToGptHistory(questionInInputFieldFromClient);
     questions.forEach((obj) => {
       if (
         areStringsSimilar(obj.question, questionInInputFieldFromClient, 0.75)
@@ -56,9 +57,21 @@ let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
 
 function showWindowIfNoAnswer() {
   if (!isAnswer) {
+    const id = "message_" + new Date().getTime() + "bot";
+    chat.innerHTML += `<div class="bot" id="gptLoading">
+                        <img src="./../assets/images/robot2.png">
+                       <span id="${id + "_"}" ></span>
+                    </div>`;
+    write(id + "_", "Loading.......");
     setTimeout(() => {
       popUpNoAnswer.style.display = "flex";
       btnSend.disabled = "";
+      document.querySelector("#gptLoading").remove();
+      chat.innerHTML += `<div class="bot" id="gptLoading">
+                        <img src="./../assets/images/robot2.png">
+                       <span id="${id}" ></span>
+                    </div>`;
+      write(id, "I don't have answer do you.");
     }, 2500);
   } else {
     btnSend.disabled = "";
@@ -77,20 +90,28 @@ let blockForCommunication = document.querySelector(".blockForCommunication");
 let chat = document.querySelector(".chat");
 
 function showQuestionInChat() {
-  blockForContentAndImage.style.display = "none";
+  // blockForContentAndImage.style.display = "none";
+  blockForContentAndImage.style.position = "absolute";
+  // blockForContentAndImage.style.top = "30%";
+  blockForContentAndImage.style.opacity = "0.15";
   blockForCommunication.style.display = "flex";
   const id = "message_" + new Date().getTime();
   chat.innerHTML += `<div class="client">
                        <span id="${id}">${questionInInputFieldFromClient}</span>
-
                     </div>`;
-  //write(id, questionInInputFieldFromClient);
   searchInputChat.value = "";
   btnSend.disabled = "disabled";
   btnSend.classList.remove("isActive");
-  if (answer.length > 0)
+  if (answer.length > 0) {
+    const idLoading = "message_" + new Date().getTime() + "bot";
+    chat.innerHTML += `<div class="bot" id="${idLoading + "loading"}">
+                          <img src="./../assets/images/robot2.png">
+                         <span id="${idLoading}" ></span>
+                      </div>`;
+    write(idLoading, "Loading.......");
     setTimeout(
       () => {
+        document.querySelector("#" + idLoading + "loading").remove();
         const id = "message_" + new Date().getTime();
         chat.innerHTML += `<div class="bot">
                         <img src="./../assets/images/robot2.png">
@@ -101,5 +122,43 @@ function showQuestionInChat() {
       },
       Math.round(Math.random() * 2000 + 1200),
     );
+  }
   showWindowIfNoAnswer();
+}
+
+let gptHistory = [];
+try {
+  gptHistory = sessionStorage.getItem("gptHistory").split(",");
+
+  if (!gptHistory) gptHistory = [];
+} catch (error) {}
+let gptSearchHistory = document.querySelector("#gptSearchHistory");
+writeHistoryGpt();
+
+function addToGptHistory(text) {
+  gptHistory.push(text);
+
+  sessionStorage.setItem("gptHistory", gptHistory);
+  writeHistoryGpt();
+}
+
+function writeHistoryGpt() {
+  gptSearchHistory.innerHTML = "";
+  gptHistory
+    .slice(0, 10)
+    .reverse()
+    .forEach((k) => {
+      gptSearchHistory.innerHTML += `<div onclick="setFromHistory('${k}')" class="element">${k}</div>`;
+    });
+}
+
+function setFromHistory(text) {
+  if (text) {
+    console.log(document.querySelector(".searchInputChat"));
+    document.querySelector(".searchInputChat").value = text;
+    questionInInputFieldFromClient = text;
+    btnSend.click();
+  } else {
+    console.error(text);
+  }
 }
