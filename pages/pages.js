@@ -14,4 +14,5 @@ function choosePage(page) {
       mainForContent.innerHTML = firstPage();
       break;
   }
+  closeSubMenu();
 }
