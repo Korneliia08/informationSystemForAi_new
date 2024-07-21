@@ -148,7 +148,9 @@ function writeHistoryGpt() {
     .slice(0, 10)
     .reverse()
     .forEach((k) => {
-      gptSearchHistory.innerHTML += `<div onclick="setFromHistory('${k}')" class="element">${k}</div>`;
+      if (k.replaceAll(" ", "").length > 0) {
+        gptSearchHistory.innerHTML += `<div onclick="setFromHistory('${k}')" class="element">${k}</div>`;
+      }
     });
 }
 
