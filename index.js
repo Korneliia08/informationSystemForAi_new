@@ -1,10 +1,10 @@
 let navOfAllCategories = document.querySelector(".navOfAllCategories");
 
 let whiteArrowCategories = document.querySelector(".whiteArrowCategories");
-
+let categories_button = document.querySelector("#categories_button");
 let displayAllCategories = false;
 
-whiteArrowCategories.addEventListener("click", () => {
+categories_button.addEventListener("click", () => {
   if (!displayAllCategories) {
     navOfAllCategories.style.display = "flex";
     whiteArrowCategories.style.transform = "rotate(180deg)";
