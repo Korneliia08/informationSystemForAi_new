@@ -17,10 +17,14 @@ footer .blockForLogo {
   column-gap: 10px;
 }
 footer .blockForLogo a {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
   text-decoration: none !important;
 }
 footer .blockForLogo img {
   width: 28px;
+  margin-right: 5px;
 }
 footer .blockForLogo span {
   color: #1c1c1c;
@@ -46,6 +50,9 @@ footer .containerForNavigation a {
   font-size: 16px;
   position: relative;
   text-decoration: none;
+}
+footer .containerForNavigation a:hover {
+  color: #142e61;
 }
 footer .containerForNavigation a:not(:last-of-type)::after {
   width: 0.04pc;
