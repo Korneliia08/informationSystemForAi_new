@@ -4,7 +4,7 @@
   font-size: 14px;
   color: #474b51;
   column-gap: 30px;
-  
+
   border-bottom: 2px solid #2A2941;
 
   .information {
@@ -222,6 +222,11 @@
       line-height: 1;
       color: #2e6fbc;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #0f3561;
+      }
     }
   }
 }
