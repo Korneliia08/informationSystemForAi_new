@@ -88,10 +88,11 @@ function search() {
   if (history[history.length - 1] === searchInput.value) {
     searchInput.value = "";
   } else {
-    if()
-    history.push(searchInput.value);
-    sessionStorage.setItem("history", history);
-    searchInput.value = "";
+    if (searchInput.value.replaceAll(" ", "").length > 0) {
+      history.push(searchInput.value);
+      sessionStorage.setItem("history", history);
+      searchInput.value = "";
+    }
   }
   refresh();
 }
