@@ -125,7 +125,7 @@
 }
 .windowOfChat .topBelt .leftContainer .blockForImgAndA a {
   text-decoration: none;
-  color: var(--color);
+  color: white;
   font-size: 17px;
   letter-spacing: 2px;
   transition: 400ms ease;
@@ -136,7 +136,7 @@
   }
 }
 .windowOfChat .topBelt .leftContainer .blockForImgAndA i {
-  color: var(--color);
+  color: white;
   margin-right: 5px;
 }
 @media (max-width: 500px) {
@@ -159,13 +159,13 @@
 .windowOfChat .topBelt .rightContainer .color {
   transition: 100ms;
   font-size: 22px;
-  color: var(--color);
+  color: white;
 }
 .windowOfChat .topBelt .rightContainer .color.is-active {
   transform: rotate(-180deg);
 }
 .windowOfChat .topBelt .rightContainer .spanClose {
-  color: var(--color);
+  color: white;
   font-size: 25px;
   transition: 450ms ease;
 }

@@ -36,6 +36,7 @@ searchInputChat.addEventListener("keydown", function (event) {
 let isAnswer = false;
 
 function checkQuestionFromClient() {
+  if (questionInInputFieldFromClient.trim().length == 0) return;
   isAnswer = false;
   if (questionInInputFieldFromClient.length !== 0) {
     addToGptHistory(questionInInputFieldFromClient);

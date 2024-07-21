@@ -127,7 +127,7 @@
 
         a {
           text-decoration: none;
-          color: var(--color);
+          color: white;
           font-size: 17px;
           letter-spacing: 2px;
           transition: 400ms ease;
@@ -137,7 +137,7 @@
         }
 
         i {
-          color: var(--color);
+          color: white;
           margin-right: 5px;
           @media (max-width: 500px) {
             display: none;
@@ -166,7 +166,7 @@
       .color {
         transition: 100ms;
         font-size: 22px;
-        color: var(--color);
+        color: white;
 
         &.is-active {
           transform: rotate(-180deg);
@@ -174,7 +174,7 @@
       }
 
       .spanClose {
-        color: var(--color);
+        color: white;
         font-size: 25px;
         transition: 450ms ease;
 
