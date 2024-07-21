@@ -114,6 +114,8 @@
   flex-grow: 70;
   row-gap: 15px;
   padding-right: 20px;
+  position: relative;
+  justify-content: center;
 }
 .windowOfChat .containerForTwoParts .leftPart .logoAndTitle {
   display: flex;
@@ -167,6 +169,7 @@
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .bot span {
   background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.33);
   color: #151515;
   padding: 8px;
   border-radius: 5px;
@@ -181,7 +184,7 @@
   justify-content: flex-end;
 }
 .windowOfChat .containerForTwoParts .leftPart .blockForCommunication .client span {
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.33);
   color: #151515;
   padding: 8px;
   border-radius: 5px;
@@ -248,6 +251,18 @@
   width: 100%;
   font-size: 2rem;
   border-bottom: 1px solid rgba(205, 205, 205, 0.7);
+}
+.windowOfChat .containerForTwoParts .rightPart .element {
+  font-size: 23px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+}
+.windowOfChat .containerForTwoParts .rightPart .element:hover {
+  color: #656565;
 }
 
 /*# sourceMappingURL=chatGPT.css.map */

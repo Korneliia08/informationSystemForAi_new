@@ -137,7 +137,8 @@
       flex-grow: 70;
       row-gap: 15px;
       padding-right: 20px;
-
+      position: relative;
+      justify-content: center;
 
       .logoAndTitle {
         display: flex;
@@ -198,6 +199,7 @@
 
           span {
             background-color: #f1f1f1;
+            background-color: rgba(241, 241, 241, 0.33);
             color: #151515;
             padding: 8px;
             border-radius: 5px;
@@ -216,7 +218,8 @@
           justify-content: flex-end;
 
           span {
-            background-color: #f1f1f1;
+            //    background-color: #f1f1f1;
+            background-color: rgba(241, 241, 241, 0.33);
             color: #151515;
             padding: 8px;
             border-radius: 5px;
@@ -297,6 +300,19 @@
         width: 100%;
         font-size: 2rem;
         border-bottom: 1px solid rgba(205, 205, 205, 0.7);
+      }
+
+      .element {
+        font-size: 23px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+      &:hover{
+        color: #656565;
+      }
       }
     }
   }
