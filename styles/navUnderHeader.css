@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navForOptions {
     flex-direction: column;
     row-gap: 3px;
@@ -14,7 +14,7 @@
   display: flex;
   column-gap: 25px;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navForOptions .containerForOptions {
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@
   column-gap: 5px;
   position: relative;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navForOptions .containerForOptions .blockForOptionAndIcon {
     padding: 7px;
     border-bottom: 1px solid dimgrey;
@@ -75,7 +75,7 @@
   align-items: center;
   column-gap: 15px;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navForOptions .blockForStatus {
     justify-content: center;
     padding: 10px;

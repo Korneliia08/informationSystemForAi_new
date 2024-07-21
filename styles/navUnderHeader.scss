@@ -2,7 +2,7 @@
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     row-gap: 3px;
     padding: 0;
@@ -11,7 +11,7 @@
   .containerForOptions {
     display: flex;
     column-gap: 25px;
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       flex-direction: column;
       align-items: center;
       row-gap: 3px;
@@ -20,7 +20,7 @@
 
     .blockForOptionAndIcon {
 
-      @media (max-width: 800px) {
+      @media (max-width: 900px) {
         &:after {
           visibility: hidden;
         }
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
     column-gap: 15px;
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       justify-content: center;
       padding: 10px;
     }
