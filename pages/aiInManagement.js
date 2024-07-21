@@ -4,7 +4,7 @@ function AiInManagement() {
         <div class="contentWrapperShort listPage">
   <h1>Account Management</h1>
     <ul>
-        <li><a  href="#"  onclick="choosePage('firstPage')">Account management</a></li>
+        <li><a  href="#"  onclick="choosePage('firstPage');closeSubMenu()">Account management</a></li>
         <li><a href="#" class="disabled">Account settings</a></li>
         <li><a href="#" class="disabled">Authentication and custom domains</a></li>
         <li><a href="#" class="disabled">How to get help</a></li>
