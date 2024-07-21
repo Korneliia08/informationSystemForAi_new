@@ -17,7 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const themeToggleButton = document.querySelector(".color"); // Adjust this selector to your theme toggle button
 let aiChangeColor = document.querySelector("#aiChangeColor");
 aiChangeColor.addEventListener("click", () => {
   aiChangeColor.classList.toggle("is-active");
+
+  document.body.classList.toggle("dark-theme");
 });
