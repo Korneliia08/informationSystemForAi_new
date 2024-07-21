@@ -23,7 +23,7 @@
 .divForLogoAndNav .hamburger {
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav .hamburger {
     display: block;
   }
@@ -40,7 +40,7 @@
   column-gap: 10px;
   justify-content: space-between;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav {
     position: absolute;
     right: -700px;
@@ -68,7 +68,7 @@
   column-gap: 20px;
   align-items: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .leftPartOfNav {
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
   font-weight: 200;
   transition: 450ms ease;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .leftPartOfNav a {
     color: black;
     width: 100%;
@@ -98,7 +98,7 @@
 .divForLogoAndNav nav .leftPartOfNav a:hover {
   color: #51CFDB;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .leftPartOfNav a:hover {
     color: #1c1c1c;
   }
@@ -108,7 +108,7 @@
   column-gap: 10px;
   align-items: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .rightPartOfNav {
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@
   font-weight: 200;
   transition: 450ms ease;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .rightPartOfNav a {
     color: #000000;
     border-top: 1px solid #acacac;
@@ -135,7 +135,7 @@
 .divForLogoAndNav nav .rightPartOfNav a:hover {
   color: #51CFDB;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .rightPartOfNav a:hover {
     color: #1c1c1c;
   }
@@ -147,7 +147,7 @@
   transition: 450ms ease;
   border-radius: 5px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .divForLogoAndNav nav .rightPartOfNav .signUpBtn {
     border-radius: 0;
   }
