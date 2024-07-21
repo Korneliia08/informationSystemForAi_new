@@ -4,7 +4,9 @@
   font-size: 14px;
   color: #474b51;
   column-gap: 30px;
-
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
   border-bottom: 2px solid #2A2941;
 
   .information {
@@ -67,9 +69,15 @@
       justify-content: center;
       align-items: center;
       display: flex;
+      @media (max-width: 800px) {
+        min-height: 35px;
+      }
 
       i {
-        font-size: 30px
+        font-size: 30px;
+        @media (max-width: 800px) {
+          font-size: 22px
+        }
       }
 
     }
@@ -85,6 +93,11 @@
       letter-spacing: 2px;
       font-weight: bold;
       color: #232323;
+      @media (max-width: 800px) {
+        min-height: 35px;
+
+        font-size: 1.5em;
+      }
     }
 
   }
@@ -99,7 +112,6 @@
       font-family: 'Graphik Web', Helvetica, sans-serif;
       font-size: 3em;
       line-height: 1.167em;
-
       font-weight: bolder;
       font-style: normal;
       color: #111324;
@@ -107,18 +119,29 @@
 
       margin: 10px auto 21px auto;
       padding: 0;
+      @media (max-width: 800px) {
+        font-size: 2em;
+        margin: 4px auto 7px auto;
+      }
     }
 
     h2 {
       margin: 35px 0 15px 0;
       color: #111324;
       font-size: 1.9em;
+      @media (max-width: 800px) {
+        font-size: 1.5em;
+        margin: 25px 0 10px 0;
+      }
     }
 
     h3 {
       color: black;
       font-size: 1.4em;
       margin: 10px 0;
+      @media (max-width: 800px) {
+        font-size: 1.4em;
+      }
     }
 
     p {
@@ -129,6 +152,15 @@
       padding: 0;
       margin: 0 auto 0.5em;
       text-align: left;
+      @media (max-width: 800px) {
+        font-size: 1.4em;
+      }
+    }
+
+    li {
+      @media (max-width: 800px) {
+        font-size: 1.4em;
+      }
     }
 
     table, table tr, table tr td, table tr th {
@@ -141,6 +173,9 @@
       width: 100%;
       border-bottom: 2px solid #000813;
       font-size: 1.3em;
+      @media (max-width: 800px) {
+        font-size: 1.1em;
+      }
 
       thead tr {
         background: #000820;
@@ -151,6 +186,9 @@
       tr {
         td, th {
           padding: 12px;
+          @media (max-width: 800px) {
+            padding: 0px;
+          }
         }
 
         &:nth-of-type(even) {
@@ -165,6 +203,9 @@
     flex-direction: column;
     width: 350px;
     flex-shrink: 0;
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     h3 {
       font-size: 20px;

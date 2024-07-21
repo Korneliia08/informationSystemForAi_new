@@ -6,6 +6,11 @@
   column-gap: 30px;
   border-bottom: 2px solid #2A2941;
 }
+@media (max-width: 800px) {
+  .documentationPage {
+    font-size: 12px;
+  }
+}
 .documentationPage .information {
   display: flex;
   width: 100%;
@@ -52,8 +57,18 @@
   align-items: center;
   display: flex;
 }
+@media (max-width: 800px) {
+  .documentationPage .information .leftP {
+    min-height: 35px;
+  }
+}
 .documentationPage .information .leftP i {
   font-size: 30px;
+}
+@media (max-width: 800px) {
+  .documentationPage .information .leftP i {
+    font-size: 22px;
+  }
 }
 .documentationPage .information .rightP {
   display: flex;
@@ -67,6 +82,12 @@
   font-weight: bold;
   color: #232323;
 }
+@media (max-width: 800px) {
+  .documentationPage .information .rightP {
+    min-height: 35px;
+    font-size: 1.5em;
+  }
+}
 .documentationPage .left h1 {
   text-align: left;
   font-family: "Graphik Web", Helvetica, sans-serif;
@@ -79,15 +100,32 @@
   margin: 10px auto 21px auto;
   padding: 0;
 }
+@media (max-width: 800px) {
+  .documentationPage .left h1 {
+    font-size: 2em;
+    margin: 4px auto 7px auto;
+  }
+}
 .documentationPage .left h2 {
   margin: 35px 0 15px 0;
   color: #111324;
   font-size: 1.9em;
 }
+@media (max-width: 800px) {
+  .documentationPage .left h2 {
+    font-size: 1.5em;
+    margin: 25px 0 10px 0;
+  }
+}
 .documentationPage .left h3 {
   color: black;
   font-size: 1.4em;
   margin: 10px 0;
+}
+@media (max-width: 800px) {
+  .documentationPage .left h3 {
+    font-size: 1.4em;
+  }
 }
 .documentationPage .left p {
   font-size: 1.7em;
@@ -95,6 +133,16 @@
   padding: 0;
   margin: 0 auto 0.5em;
   text-align: left;
+}
+@media (max-width: 800px) {
+  .documentationPage .left p {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 800px) {
+  .documentationPage .left li {
+    font-size: 1.4em;
+  }
 }
 .documentationPage .left table, .documentationPage .left table tr, .documentationPage .left table tr td, .documentationPage .left table tr th {
   border-collapse: collapse;
@@ -104,6 +152,11 @@
   border-bottom: 2px solid #000813;
   font-size: 1.3em;
 }
+@media (max-width: 800px) {
+  .documentationPage .left table {
+    font-size: 1.1em;
+  }
+}
 .documentationPage .left table thead tr {
   background: #000820;
   color: white;
@@ -111,6 +164,11 @@
 }
 .documentationPage .left table tr td, .documentationPage .left table tr th {
   padding: 12px;
+}
+@media (max-width: 800px) {
+  .documentationPage .left table tr td, .documentationPage .left table tr th {
+    padding: 0px;
+  }
 }
 .documentationPage .left table tr:nth-of-type(even) {
   background: rgba(227, 227, 227, 0.53);
@@ -120,6 +178,11 @@
   flex-direction: column;
   width: 350px;
   flex-shrink: 0;
+}
+@media (max-width: 1000px) {
+  .documentationPage .right {
+    display: none;
+  }
 }
 .documentationPage .right h3 {
   font-size: 20px;
