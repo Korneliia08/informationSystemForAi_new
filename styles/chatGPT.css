@@ -262,16 +262,16 @@
   border-bottom: 1px solid rgba(205, 205, 205, 0.7);
 }
 .windowOfChat .containerForTwoParts .rightPart .element {
-  font-size: 23px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  font-size: 19px;
+  padding: 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 3px;
 }
 .windowOfChat .containerForTwoParts .rightPart .element:hover {
   color: #656565;
+  background-color: #ececec;
 }
 
 /*# sourceMappingURL=chatGPT.css.map */

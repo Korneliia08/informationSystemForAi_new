@@ -312,16 +312,17 @@
       }
 
       .element {
-        font-size: 23px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      cursor: pointer;
+        font-size: 19px;
+        padding: 4px;
+        cursor: pointer;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.35);
-      &:hover{
-        color: #656565;
-      }
+        border-radius: 3px;
+        // border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+        &:hover {
+          color: #656565;
+          background-color: #ececec;
+        }
       }
     }
   }
