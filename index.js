@@ -16,6 +16,12 @@ categories_button.addEventListener("click", () => {
   }
 });
 
+function closeSubMenu() {
+  navOfAllCategories.style.display = "none";
+  displayAllCategories = false;
+  whiteArrowCategories.style.transform = "rotate(360deg)";
+}
+
 let navHamburger = document.querySelector("#navHamburger");
 navHamburger.addEventListener("click", () => {
   if (navHamburger.classList.contains("is-active")) {
