@@ -58,20 +58,20 @@ let popUpNoAnswer = document.querySelector(".popUpNoAnswer");
 function showWindowIfNoAnswer() {
   if (!isAnswer) {
     const id = "message_" + new Date().getTime() + "bot";
-    chat.innerHTML += `<div class="bot" id="gptLoading">
+    chat.innerHTML += `<div class="bot" id="${id}loading">
                         <img src="./../assets/images/robot2.png">
                        <span id="${id + "_"}" ></span>
                     </div>`;
-    write(id + "_", "Loading.......");
+    write(id + "_", "Loading.......", true);
     setTimeout(() => {
       popUpNoAnswer.style.display = "flex";
       btnSend.disabled = "";
-      document.querySelector("#gptLoading").remove();
+      document.querySelector(`#${id}loading`).remove();
       chat.innerHTML += `<div class="bot" id="gptLoading">
                         <img src="./../assets/images/robot2.png">
                        <span id="${id}" ></span>
                     </div>`;
-      write(id, "I don't have answer do you.");
+      write(id, "I don't have answer do you.", true);
     }, 2500);
   } else {
     btnSend.disabled = "";
@@ -108,7 +108,7 @@ function showQuestionInChat() {
                           <img src="./../assets/images/robot2.png">
                          <span id="${idLoading}" ></span>
                       </div>`;
-    write(idLoading, "Loading.......");
+    write(idLoading, "Loading.......", true);
     setTimeout(
       () => {
         document.querySelector("#" + idLoading + "loading").remove();

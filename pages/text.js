@@ -43,7 +43,7 @@ function correctMistake(letterCount, currentSpeed, id, text, index) {
   }
 }
 
-function type(id, text, index) {
+function type(id, text, index, disableMistake) {
   let element = document.getElementById(id);
   let blockForCommunication = document.querySelector(".blockForCommunication");
   blockForCommunication.scrollTo(0, blockForCommunication.scrollHeight);
@@ -54,21 +54,26 @@ function type(id, text, index) {
     if (lettersRemaining <= 0) {
       setNewSpeed();
     }
-    if (Math.random() < 0.005) {
-      setTimeout(
-        () => makeMistake(5, currentSpeed / 5, id, text, index),
-        currentSpeed / 3,
-      );
+
+    if (!disableMistake) {
+      if (Math.random() < 0.005) {
+        setTimeout(
+          () => makeMistake(5, currentSpeed / 5, id, text, index),
+          currentSpeed / 3,
+        );
+      } else {
+        setTimeout(() => type(id, text, index, disableMistake), currentSpeed);
+      }
     } else {
-      setTimeout(() => type(id, text, index), currentSpeed);
+      setTimeout(() => type(id, text, index, disableMistake), currentSpeed);
     }
   }
 }
 
-function write(id, text) {
+function write(id, text, disableMistake = false) {
   let index = 0;
   setNewSpeed();
-  type(id, text, index);
+  type(id, text, index, disableMistake);
 }
 
 setNewSpeed();

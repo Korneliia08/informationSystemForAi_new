@@ -8,7 +8,7 @@ function firstPage() {
                 <h1 id="anhor1">AI in Account Management</h1>
 
             <section>
-                <h2>Introduction</h2>
+                <h2 id="anhor2">Introduction</h2>
                 <p>Artificial Intelligence (AI) is revolutionizing the way businesses handle account management. From automating routine tasks to providing deeper insights into customer behavior, AI is becoming an indispensable tool for account managers.</p>
             </section>
             <div class="information green">
@@ -20,7 +20,7 @@ function firstPage() {
                 </div>
             </div>
             <section>
-                <h2>Benefits of AI in Account Management</h2>
+                <h2 id="anhor3">Benefits of AI in Account Management</h2>
                 <p>AI offers several key benefits in the realm of account management:</p>
                 <ul>
                     <li><strong>Automation of Routine Tasks:</strong> Reduces manual workload and increases efficiency and accuracy.</li>
@@ -31,7 +31,7 @@ function firstPage() {
             </section>
         
             <section>
-                <h2>Key Features of AI-Powered Account Management Tools</h2>
+                <h2 id="anhor4">Key Features of AI-Powered Account Management Tools</h2>
        
                 <h3>Automated Data Entry</h3>
                 <p>AI systems can automatically capture and input data from various sources, minimizing human error and saving time.</p>
@@ -58,7 +58,7 @@ function firstPage() {
                 </div>
             </div>
             <section>
-                <h2>Case Studies</h2>
+                <h2 id="anhor5">Case Studies</h2>
                 <p>Explore how AI has transformed account management in various organizations:</p>
                 <table>
                     <thead>
@@ -100,7 +100,7 @@ function firstPage() {
                 </div>
             </div>
             <section>
-                <h2>Future of AI in Account Management</h2>
+                <h2 id="anhor6">Future of AI in Account Management</h2>
                 <p>The future of AI in account management is promising, with continuous advancements in technology leading to even more sophisticated tools and capabilities. Emerging trends include:</p>
                 <ul>
                     <li>Greater integration with CRM systems for seamless data management.</li>
@@ -114,11 +114,11 @@ function firstPage() {
             <h3>In this page:</h3>
             <ul>
             <li> <a href="#anhor1">AI in Account Management</a></li>
-            <li>Introduction</li>
-            <li>Benefits of AI in Account Management</li>
-                <li>Key Features of AI-Powered Account Management Tools</li>
-                <li>Case Studies</li>
-                <li>Future of AI in Account Management</li>
+            <li><a href="#anhor2">Introduction</a></li>
+            <li><a href="#anhor3">Benefits of AI in Account Management</a></li>
+                <li><a href="#anhor4">Key Features of AI-Powered Account Management Tools</a></li>
+                <li><a href="#anhor5">Case Studies</a></li>
+                <li><a href="#anhor6">Future of AI in Account Management</a></li>
             </ul>
 </div>
             </div>
