@@ -102,8 +102,12 @@ main {
   display: flex;
   position: fixed;
   bottom: 90px;
-  right: 20px;
+  right: 22px;
   z-index: 2000;
+
+  img {
+    width: 50px;
+  }
 
   .iconOfChat {
     font-size: 50px;
