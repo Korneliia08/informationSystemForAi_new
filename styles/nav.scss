@@ -10,7 +10,11 @@
     // width: 20%;
     a {
 
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
       text-decoration: none !important;
+
     }
 
     img {

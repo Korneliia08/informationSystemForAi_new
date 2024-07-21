@@ -5,7 +5,7 @@ function firstPage() {
         <div class="left">
         
 
-                <h1>AI in Account Management</h1>
+                <h1 id="anhor1">AI in Account Management</h1>
 
             <section>
                 <h2>Introduction</h2>
@@ -113,7 +113,7 @@ function firstPage() {
             <div class="right">
             <h3>In this page:</h3>
             <ul>
-            <li>AI in Account Management</li>
+            <li> <a href="#anhor1">AI in Account Management</a></li>
             <li>Introduction</li>
             <li>Benefits of AI in Account Management</li>
                 <li>Key Features of AI-Powered Account Management Tools</li>
