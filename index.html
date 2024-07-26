@@ -29,52 +29,85 @@
             <span>Sorry, we don't have an answer to your question at the moment. We'll take this into account to improve our service. Thank you for your understanding!</span>
         </div>
     </div>
-    <div class="topBelt">
-        <div class="leftContainer">
-            <div class="blockForImgAndA disabled">
-                <i class="fa-solid fa-headset"></i>
-                <a class="disabled" href="#">HarmonyBot</a>
+
+    <div class="containerForParts">
+        <div class="leftPart">
+            <div class="topBlock">
+
+                <button><i class="fa-solid fa-plus"></i> New chat</button>
+                <button><i class="fa-solid fa-folder-plus"></i></button>
             </div>
-            <div class="blockForImgAndA disabled">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a class="disabled" href="#">Search</a>
+            <input class="search" placeholder="Search conversation" type="text">
+            <div class="center">
+                <div class="element"><i class="fa-regular fa-comment-dots"></i><span>What is AI</span><i class="fa-solid fa-pencil lighter"></i><i
+                        class="fa-regular fa-trash-can lighter"></i>
+                </div>
             </div>
-            <div class="blockForImgAndA disabled">
-                <i class="fa-regular fa-circle-question"></i>
-                <a class="disabled" href="#">Help</a>
-            </div>
-            <div class="blockForImgAndA disabled">
-                <i class="fa-solid fa-book"></i>
-                <a class="disabled" href="#">Notebook</a>
+            <div class="bottom">
+                <button>
+                    <i class="fa-regular fa-trash-can"></i> Clear conversation
+                </button>
+                <button>
+                    <i class="fa-solid fa-gear"></i>Settings
+                </button>
             </div>
         </div>
-        <div class="rightContainer"><i class="fa-solid fa-circle-half-stroke color" id="aiChangeColor"></i> <span
-                class="spanClose"><i
-                class="fa-solid fa-x"></i></span></div>
-    </div>
-    <div class="containerForTwoParts">
-        <div class="leftPart">
-            <div class="logoAndTitle">
-                <img alt="chat assistant logo" class="image" src="./assets/images/chatAssistant.png">
-                <span class="title">HarmonyBot</span></div>
-            <div class="blockForContentAndImage">
-                <p class="content">Your Personal AI Helper</p>
-                <img alt="robot" class="imageOfChat" src="./assets/images/robot.png">
+        <div class="centerPart">
+            <div class="top">
+                <i class="fa-solid fa-left-long "></i>
+                <div class="topBelt">
+
+                    <div class="blockForImgAndA disabled">
+                        <i class="fa-solid fa-headset"></i>
+                        <a class="disabled" href="#">HarmonyBot</a>
+
+                    </div>
+                    <div class="blockForImgAndA borderIcon">
+                        <i class="fa-solid fa-circle-half-stroke color" id="aiChangeColor"></i>
+                        <span class="spanClose">
+                          <i class="fa-solid fa-x"></i>
+                        </span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-left-long fa-rotate-180"></i>
             </div>
-            <div class="blockForCommunication">
-                <div class="chat"></div>
+            <div class="bottom">
+                <div class="logoAndTitle">
+                    <img alt="chat assistant logo" class="image" src="./assets/images/chatAssistant.png">
+                    <span class="title">HarmonyBot</span></div>
+                <div class="blockForContentAndImage">
+                    <p class="content">Your Personal AI Helper</p>
+                    <img alt="robot" class="imageOfChat" src="./assets/images/robot.png">
+                </div>
+                <div class="blockForCommunication">
+                    <div class="chat"></div>
+                </div>
+                <div class="blockForInputAndBtnSend">
+                    <input class="searchInputChat" placeholder="Ask me anything...." type="text">
+                    <button class="btnSend"><i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+                <p class="textUnderInput">Verify important information, as HarmonyBot can make mistakes.</p>
             </div>
-            <div class="blockForInputAndBtnSend">
-                <input class="searchInputChat" placeholder="Ask me anything...." type="text">
-                <button class="btnSend"><i class="fa-solid fa-arrow-up"></i></button>
-            </div>
+
         </div>
         <div class="rightPart">
-            <h3>Search history:</h3>
+            <div class="topBlock">
+
+                <button>New prompt</button>
+                <button><i class="fa-solid fa-folder-plus"></i></button>
+            </div>
+            <input class="search" placeholder="Search" type="text">
+            <!--            <h3>Search history:</h3>-->
             <div id="gptSearchHistory">
 
             </div>
+            <div class="noData">
+                <i class="fa-solid fa-not-equal"></i>
+                <span>
 
+                No data
+                </span>
+            </div>
 
         </div>
     </div>
@@ -215,5 +248,7 @@
 <script src="pages/pages.js"></script>
 <script src="pages/chatGPT.js"></script>
 <script src="pages/arrow.js"></script>
+
+
 </body>
 </html>

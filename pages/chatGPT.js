@@ -133,7 +133,7 @@ try {
 
   if (!gptHistory) gptHistory = [];
 } catch (error) {}
-let gptSearchHistory = document.querySelector("#gptSearchHistory");
+//let gptSearchHistory = document.querySelector("#gptSearchHistory");
 writeHistoryGpt();
 
 function addToGptHistory(text) {
@@ -144,13 +144,13 @@ function addToGptHistory(text) {
 }
 
 function writeHistoryGpt() {
-  gptSearchHistory.innerHTML = "";
+  // gptSearchHistory.innerHTML = "";
   gptHistory
     .slice(0, 10)
     .reverse()
     .forEach((k) => {
       if (k.replaceAll(" ", "").length > 0) {
-        gptSearchHistory.innerHTML += `<div onclick="setFromHistory('${k}')" class="element">${k}</div>`;
+        //    gptSearchHistory.innerHTML += `<div onclick="setFromHistory('${k}')" class="element">${k}</div>`;
       }
     });
 }
