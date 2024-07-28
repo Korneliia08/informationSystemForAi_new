@@ -103,6 +103,7 @@
   right: 10px;
   top: 10px;
   cursor: pointer;
+  color: var(--color_chat);
 }
 .windowOfChat .popUpNoAnswer .popUp .fa-x:hover {
   scale: 1.05;
@@ -292,9 +293,6 @@
   margin-left: 7px;
   border-left: 2px solid var(--color);
 }
-.windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon a:hover i, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon a:hover a, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon a:hover button, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon i:hover i, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon i:hover a, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon i:hover button, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon button:hover i, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon button:hover a, .windowOfChat .containerForParts .centerPart .top .topBelt .borderIcon button:hover button {
-  color: var(--highlight-color);
-}
 .windowOfChat .containerForParts .centerPart .top .topBelt .fa-headset {
   padding-right: 7px;
 }
@@ -321,9 +319,6 @@
   .windowOfChat .containerForParts .centerPart .top .topBelt .blockForImgAndA i {
     display: none;
   }
-}
-.windowOfChat .containerForParts .centerPart .top .topBelt .blockForImgAndA i:hover, .windowOfChat .containerForParts .centerPart .top .topBelt .blockForImgAndA a:hover {
-  color: var(--highlight-color);
 }
 .windowOfChat .containerForParts .centerPart .top .topBelt .rightContainer {
   display: flex;

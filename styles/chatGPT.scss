@@ -110,6 +110,7 @@
         right: 10px;
         top: 10px;
         cursor: pointer;
+        color: var(--color_chat);;
 
         &:hover {
           scale: 1.05;
@@ -353,7 +354,7 @@
 
               &:hover {
                 i, a, button {
-                  color: var(--highlight-color);
+                  //      color: var(--highlight-color);
                 }
               }
 
@@ -394,7 +395,7 @@
 
             i, a {
               &:hover {
-                color: var(--highlight-color);
+                //    color: var(--highlight-color);
               }
             }
 
