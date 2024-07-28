@@ -191,9 +191,15 @@
           column-gap: 15px;
 
           width: 100%;
+
           background-color: transparent;
           border-radius: 5px;
           border: 1px solid #5a5a5a;
+
+          &.noFrame {
+            border: none ;
+          }
+
           padding: 17px;
 
           &:hover {
