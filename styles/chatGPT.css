@@ -254,7 +254,7 @@
   font-size: 22px;
 }
 .windowOfChat .containerForParts .centerPart .top > i:hover {
-  color: black;
+  color: var(--color_chat);
   cursor: pointer;
 }
 .windowOfChat .containerForParts .centerPart .top > i:first-of-type {
