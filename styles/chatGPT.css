@@ -50,6 +50,30 @@
   flex-direction: column;
   column-gap: 50px;
 }
+.windowOfChat .topBeltBackground {
+  height: 30px;
+  width: 100%;
+  background: rgb(46, 92, 251);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3px;
+  column-gap: 10px;
+  background: linear-gradient(90deg, rgb(46, 92, 251) 0%, rgb(13, 1, 91) 98%);
+  padding-right: 10px;
+}
+.windowOfChat .topBeltBackground i {
+  color: white;
+}
+.windowOfChat .topBeltBackground .login {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 4px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .windowOfChat .popUpNoAnswer {
   width: 100vw;
   height: 100vh;
@@ -314,14 +338,6 @@
 .windowOfChat .containerForParts .centerPart .top .topBelt .rightContainer i:hover {
   cursor: pointer;
 }
-.windowOfChat .containerForParts .centerPart .top .topBelt .rightContainer .color {
-  transition: 100ms;
-  font-size: 22px;
-  color: white;
-}
-.windowOfChat .containerForParts .centerPart .top .topBelt .rightContainer .color.is-active {
-  transform: rotate(-180deg);
-}
 .windowOfChat .containerForParts .centerPart .top .topBelt .rightContainer .spanClose {
   color: white;
   font-size: 25px;
@@ -340,6 +356,7 @@
   position: relative;
   justify-content: center;
   max-width: 70vw;
+  width: 100%;
 }
 .windowOfChat .containerForParts .centerPart .bottom .logoAndTitle {
   display: flex;
@@ -390,6 +407,8 @@
   display: flex;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.33);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .windowOfChat .containerForParts .centerPart .bottom .blockForCommunication .bot img {
   width: 30px;
@@ -412,6 +431,8 @@
   background-color: rgba(241, 241, 241, 0.33);
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 .windowOfChat .containerForParts .centerPart .bottom .blockForCommunication .client span {
   color: var(--color_chat);
@@ -469,6 +490,16 @@
 .windowOfChat .containerForParts .centerPart .bottom .blockForInputAndBtnSend .btnSend i {
   font-size: 24px;
   color: var(--send-button-icon-color);
+}
+
+.color {
+  transition: 100ms;
+  color: white;
+  position: relative;
+}
+.color.is-active {
+  top: -2px;
+  transform: rotate(-180deg);
 }
 
 /*# sourceMappingURL=chatGPT.css.map */

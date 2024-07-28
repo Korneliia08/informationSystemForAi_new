@@ -50,6 +50,36 @@
   flex-direction: column;
   column-gap: 50px;
   /// border-bottom: 7px solid var(--header-background-color);
+  .topBeltBackground {
+    height: 30px;
+    width: 100%;
+    background: rgb(46, 92, 251);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3px;
+    column-gap: 10px;
+    background: linear-gradient(90deg, rgba(46, 92, 251, 1) 0%, rgba(13, 1, 91, 1) 98%);
+    padding-right: 10px;
+
+    i {
+      color: white;
+    }
+
+    .login {
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      padding: 4px;
+      color: white;;
+      border-radius: 4px;
+      cursor: pointer;
+
+      i {
+
+      }
+    }
+  }
 
   .popUpNoAnswer {
     width: 100vw;
@@ -197,7 +227,7 @@
           border: 1px solid #5a5a5a;
 
           &.noFrame {
-            border: none ;
+            border: none;
           }
 
           padding: 17px;
@@ -389,15 +419,6 @@
               cursor: pointer;
             }
 
-            .color {
-              transition: 100ms;
-              font-size: 22px;
-              color: white;
-
-              &.is-active {
-                transform: rotate(-180deg);
-              }
-            }
 
             .spanClose {
               color: white;
@@ -424,6 +445,8 @@
         position: relative;
         justify-content: center;
         max-width: 70vw;
+        width: 100%;
+
 
         .logoAndTitle {
           display: flex;
@@ -482,6 +505,8 @@
             display: flex;
             justify-content: flex-start;
             background-color: rgba(255, 255, 255, 0.33);
+            padding-left: 40px;
+            padding-right: 40px;
 
             img {
               width: 30px;
@@ -509,6 +534,8 @@
             background-color: rgba(241, 241, 241, 0.33);
             border-top: 1px solid #dfdfdf;
             border-bottom: 1px solid #dfdfdf;
+            padding-left: 55px;
+            padding-right: 55px;
 
             span {
 
@@ -585,5 +612,17 @@
     }
 
 
+  }
+}
+
+.color {
+  transition: 100ms;
+  // font-size: 18px;
+  color: white;
+  position: relative;
+
+  &.is-active {
+    top: -2px;
+    transform: rotate(-180deg);
   }
 }
