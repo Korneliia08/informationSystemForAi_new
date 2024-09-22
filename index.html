@@ -29,27 +29,34 @@
             <span>Sorry, we don't have an answer to your question at the moment. We'll take this into account to improve our service. Thank you for your understanding!</span>
         </div>
     </div>
+<!--  <div class="topBeltBackgroundBlue"></div>-->
     <div class="topBeltBackground">
-        <i class="fa-solid fa-gear"></i>
+
+        <a class="active">Chat</a>
+        <a class="">Files</a>
+        <a class="">Users</a>
+        <a class="">Settings</a>
+        <a class="">Data Science</a>
+<!--   -->
+<!--        <i class="fa-solid fa-gear"></i>-->
 
 
-        <button class="login"><i class="fa-solid fa-user"></i> Login</button>
+<!--        <button class="login"><i class="fa-solid fa-user"></i> Login</button>-->
     </div>
     <div class="containerForParts">
         <div class="leftPart">
             <div class="topBlock">
 
-                <button><i class="fa-solid fa-plus"></i> New chat</button>
+                <button class="newChat-js"><i class="fa-solid fa-plus"></i> New chat</button>
                 <button><i class="fa-solid fa-folder-plus"></i></button>
 
             </div>
             <input class="search" placeholder="Search conversation" type="text">
-            <div class="center">
-                <div class="element"><i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
-                </div>
+            <div class="center chatContainer-js">
+
             </div>
             <div class="bottom">
-                <button class="noFrame">
+                <button class="noFrame clearConversation-js">
                     <i class="fa-regular fa-trash-can"></i> Clear conversation
                 </button>
                 <button class="noFrame" id="aiChangeColor">
@@ -64,7 +71,7 @@
 
                     <div class="blockForImgAndA disabled">
                         <i class="fa-solid fa-headset"></i>
-                        <a class="disabled" href="#">HarmonyBot</a>
+                        <a class="disabled" href="#">Guru AI</a>
 
                     </div>
                     <div class="blockForImgAndA borderIcon">
@@ -77,9 +84,9 @@
                 <i class="fa-solid fa-left-long fa-rotate-180"></i>
             </div>
             <div class="bottom">
-                <div class="logoAndTitle">
-                    <img alt="chat assistant logo" class="image" src="./assets/images/chatAssistant.png">
-                    <span class="title">HarmonyBot</span></div>
+<!--                <div class="logoAndTitle">-->
+<!--                    <img alt="chat assistant logo" class="image" src="./assets/images/chatAssistant.png">-->
+<!--                    <span class="title">Guru AI</span></div>-->
                 <div class="blockForContentAndImage">
                     <!--                    <p class="content">Your Personal AI Helper</p>-->
                     <!--                    <img alt="robot" class="imageOfChat" src="./assets/images/robot.png">-->
@@ -89,9 +96,10 @@
                 </div>
                 <div class="blockForInputAndBtnSend">
                     <input class="searchInputChat" placeholder="Ask me anything...." type="text">
-                    <button class="btnSend"><i class="fa-solid fa-arrow-up"></i></button>
+                  <button class="btnSendFile"> <i class="fa-solid fa-download"></i></button>
+                  <button class="btnSend"> <i class="fa-solid fa-arrow-up"></i></button>
                 </div>
-                <p class="textUnderInput">Verify important information, as HarmonyBot can make mistakes.</p>
+                <p class="textUnderInput">Verify important information, as Guru AI can make mistakes.</p>
             </div>
 
         </div>

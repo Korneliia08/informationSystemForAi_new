@@ -165,3 +165,44 @@ function setFromHistory(text) {
     console.error(text);
   }
 }
+
+document.querySelector('.clearConversation-js').addEventListener('click',()=>{
+  chat.innerHTML=''
+})
+let indexChat = 1;
+let activeChat = 1
+const chatContainer = document.querySelector('.chatContainer-js');
+const chatDisplay = document.querySelector('.chat'); // Upewnij się, że masz element do wyświetlania czatu
+
+chatContainer.innerHTML += `
+  <div class="element chat-js" data-id="${indexChat}">
+    <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
+  </div>`;
+
+let backUpChat = {};
+
+document.querySelector('.newChat-js').addEventListener('click', () => {
+  indexChat++;
+  chatContainer.innerHTML += `
+  <div class="element chat-js" data-id="${indexChat}">
+    <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
+  </div>`;
+});
+
+chatContainer.addEventListener('click', (event) => {
+  let chatElement = event.target;
+  if (!chatElement.classList.contains('chat-js')) {
+    chatElement = chatElement.closest('.chat-js');
+  }
+
+  if (chatElement) {
+    const dataId = chatElement.dataset.id;
+
+    // Zapisz obecny stan czatu do backUpChat
+    backUpChat['k' + activeChat] = chatDisplay.innerHTML; // Użyj chatDisplay
+    activeChat = dataId;
+
+    // Ustaw nową zawartość czatu
+    chatDisplay.innerHTML = backUpChat['k' + dataId] || ''; // Użyj chatDisplay
+  }
+});
