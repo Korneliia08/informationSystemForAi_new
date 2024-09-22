@@ -35,10 +35,18 @@ searchInputChat.addEventListener("keydown", function (event) {
 });
 let isAnswer = false;
 
-function checkQuestionFromClient() {
+function checkQuestionFromClient() {  console.log(activeChat);
   if (questionInInputFieldFromClient.trim().length == 0) return;
   isAnswer = false;
   if (questionInInputFieldFromClient.length !== 0) {
+ const button =document.querySelector(`[data-id="${activeChat}"]`);
+    console.log(button);
+    if(button.innerHTML.includes('Enter q')){
+   button.innerHTML=
+     ` <i class="fa-regular fa-comment-dots"></i><span>${questionInInputFieldFromClient.trim().slice(0,15)}</span>`
+
+
+ }
     addToGptHistory(questionInInputFieldFromClient);
     questions.forEach((obj) => {
       if (
@@ -169,8 +177,9 @@ function setFromHistory(text) {
 document.querySelector('.clearConversation-js').addEventListener('click',()=>{
   chat.innerHTML=''
 
-  chatContainer.innerHTML=''
-  addChat()
+  const button =document.querySelector(`[data-id="${activeChat}"]`);
+  button.remove()
+
 })
 let indexChat = 1;
 let activeChat = 1
@@ -178,8 +187,8 @@ const chatContainer = document.querySelector('.chatContainer-js');
 const chatDisplay = document.querySelector('.chat'); // Upewnij się, że masz element do wyświetlania czatu
 
 chatContainer.innerHTML += `
-  <div class="element chat-js" data-id="${indexChat}">
-    <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
+  <div class="element chat-js" data-id="${indexChat}" data->
+    <i class="fa-regular fa-comment-dots"></i><span>Enter question</span>
   </div>`;
 
 let backUpChat = {};
@@ -193,7 +202,7 @@ function addChat(){
   indexChat++;
   chatContainer.innerHTML += `
   <div class="element chat-js" data-id="${indexChat}">
-    <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
+    <i class="fa-regular fa-comment-dots"></i><span>Enter question</span>
   </div>`;
 
 }
