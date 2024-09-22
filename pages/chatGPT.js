@@ -196,7 +196,9 @@ let backUpChat = {};
 document.querySelector('.newChat-js').addEventListener('click', () => {
 
   addChat()
-
+  const button =document.querySelector(`[data-id="${indexChat}"]`);
+  console.log(button);
+  button.click()
 });
 function addChat(){
   indexChat++;
