@@ -657,3 +657,20 @@
     transform: rotate(-180deg);
   }
 }
+
+.spanClose {
+  color: white;
+  // font-size: 25px;
+  transition: 400ms ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+.hover {
+  &:hover {
+    cursor: pointer;
+  }
+}

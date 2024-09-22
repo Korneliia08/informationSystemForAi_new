@@ -526,4 +526,16 @@
   transform: rotate(-180deg);
 }
 
+.spanClose {
+  color: white;
+  transition: 400ms ease;
+}
+.spanClose:hover {
+  cursor: pointer;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=chatGPT.css.map */
