@@ -71,8 +71,26 @@
   gap: 20px;
 }
 .windowOfChat .topBeltBackground a {
+  cursor: pointer;
   font-size: 19px;
   color: white;
+}
+.windowOfChat .topBeltBackground a.circle {
+  border-radius: 100%;
+  width: 37px;
+  display: flex;
+  height: 37px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.windowOfChat .topBeltBackground a.circle:hover {
+  background-color: #0000d1;
 }
 .windowOfChat .topBeltBackground a.active {
   background: #0075dd;
@@ -512,7 +530,7 @@
   background-color: var(--send-button-active-background-color);
 }
 .windowOfChat .containerForParts .centerPart .bottom .blockForInputAndBtnSend .btnSend i, .windowOfChat .containerForParts .centerPart .bottom .blockForInputAndBtnSend .btnSendFile i {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--send-button-icon-color);
 }
 

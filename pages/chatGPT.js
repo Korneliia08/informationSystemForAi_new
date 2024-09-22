@@ -168,6 +168,9 @@ function setFromHistory(text) {
 
 document.querySelector('.clearConversation-js').addEventListener('click',()=>{
   chat.innerHTML=''
+
+  chatContainer.innerHTML=''
+  addChat()
 })
 let indexChat = 1;
 let activeChat = 1
@@ -182,14 +185,20 @@ chatContainer.innerHTML += `
 let backUpChat = {};
 
 document.querySelector('.newChat-js').addEventListener('click', () => {
+
+  addChat()
+
+});
+function addChat(){
   indexChat++;
   chatContainer.innerHTML += `
   <div class="element chat-js" data-id="${indexChat}">
     <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
   </div>`;
-});
 
+}
 chatContainer.addEventListener('click', (event) => {
+
   let chatElement = event.target;
   if (!chatElement.classList.contains('chat-js')) {
     chatElement = chatElement.closest('.chat-js');

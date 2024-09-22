@@ -70,13 +70,33 @@
     padding-right: 10px;
       gap: 20px;
     a {
+      cursor: pointer;
       font-size: 19px;
       color: white;
+      &.circle{
+        border-radius: 100%;
+        width: 37px;
+        display: flex;
+        height: 37px;
+        cursor: pointer;
+        color: white;
+        text-transform: uppercase;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        font-size: 15px;
+        &:hover{
+          background-color: #0000d1;
+
+        }
+      }
     &.active{
       background: #0075dd;
       padding: 5px 10px;
       border-radius: 13%;
     }
+
 
     }
 
@@ -633,7 +653,7 @@
             }
 
             i {
-              font-size: 24px;
+              font-size: 20px;
               color: var(--send-button-icon-color);
             }
           }
