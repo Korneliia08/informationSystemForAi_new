@@ -1,0 +1,14 @@
+.backForMainSection2 {
+  display: flex;
+  justify-content: space-between;
+  background: #181238;
+
+  height: 100vh;
+
+  .card {
+    width: 25%;
+    height: 400px;
+    background: red;
+  }
+
+}

@@ -18,7 +18,7 @@
 }
 .divForLogoAndNav .blockForLogo span {
   margin-left: 10px;
-  color: white;
+  color: rgba(255, 255, 255, 0.71);
 }
 .divForLogoAndNav .hamburger {
   display: none;
@@ -75,7 +75,7 @@
   }
 }
 .divForLogoAndNav nav .leftPartOfNav a {
-  color: white;
+  color: rgba(255, 255, 255, 0.71);
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 17px;

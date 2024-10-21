@@ -12,13 +12,18 @@
     <link href="./styles/header.css" rel="stylesheet">
     <link href="./styles/navUnderHeader.css" rel="stylesheet">
     <link href="./styles/allCategoriesInNav.css" rel="stylesheet">
+    <link href="./styles/headerCards.css" rel="stylesheet">
     <link href="./styles/findAnswers.css" rel="stylesheet">
     <link href="./styles/whyLoveOurPage.css" rel="stylesheet">
     <link href="./styles/documentationPage.css" rel="stylesheet">
     <link href="./styles/arrow.css" rel="stylesheet">
     <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <link href="./styles/chatGPT.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
     <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="windowOfChat">
@@ -118,132 +123,174 @@
     </div>
 
 </div>
-<div class="blockForIcon iconOfChat" id="iconOfChat">
-    <!--    <span>HarmonyBot</span>-->
-    <!--    <i class="fa-regular fa-comment-dots iconOfChat"></i>-->
-    <img src="assets/icons/chat2.png">
-</div>
-<div class="containerForWrapper">
-    <div class="backgroundWrapper backForNav ">
-        <div class="contentWrapperWide ">
-            <div class="divForLogoAndNav">
-                <div class="blockForLogo">
-                    <a href="#" onclick="choosePage('home')">
-                        <img alt="logo" src="./assets/icons/logo.svg">
-                        <span>Operating System</span>
-                    </a>
-                </div>
-                <nav id="mobileMenu">
-                    <div class="leftPartOfNav">
-                        <a class="disabled" href="#">Features</a>
-                        <a class="disabled" href="#">Pricing</a>
-                        <a class="disabled" href="#">Resources</a>
-                        <a class="disabled" href="#">Customers</a>
-                        <a class="disabled" href="#">Gallery</a>
-                        <a class="disabled" href="#">Agencies</a>
-                    </div>
+<!--<div class="blockForIcon iconOfChat" id="iconOfChat">-->
+<!--    &lt;!&ndash;    <span>HarmonyBot</span>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <i class="fa-regular fa-comment-dots iconOfChat"></i>&ndash;&gt;-->
+<!--    <img src="assets/icons/chat2.png">-->
+<!--</div>-->
+<div class="containerForWrapperBanner">
+    <video autoplay class="videoBanner" loop muted>
+        <source src="assets/images/banner.mp4"
+                type="video/mp4">
 
-                    <div class="rightPartOfNav">
-                        <a class="disabled" href="#">Contact support</a>
-                        <a class="disabled" href="#">Log In</a>
-                        <a class="signUpBtn disabled" href="#">Sign Up</a>
-                    </div>
-                </nav>
-                <button class="hamburger hamburger--collapse" id="navHamburger" type="button">
-                      <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                      </span>
-                </button>
+    </video>
+    <div class="bannerContent">
+
+        <div class="divForLogoAndNav">
+            <div class="blockForLogo">
+                <a href="#" onclick="choosePage('home')">
+                    <img alt="logo" src="./assets/icons/logo.svg">
+                    <span>Operating System</span>
+                </a>
             </div>
-        </div>
-    </div>
-
-
-    <div class="backgroundWrapper backForHeader">
-        <div class="contentWrapperWide">
-            <header>
-                <h1>How can we help?</h1>
-                <div class="blockForInputAndBtn ">
-                    <input id='searchInput' placeholder="Search by keyword" type="text">
-                    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <div class="searchHistory " id="searchHistory">
-
-
-                    </div>
-                </div>
-            </header>
-        </div>
-    </div>
-    <div class="backgroundWrapper backForBottomNavUnderHeader">
-        <div class="contentWrapperShort">
-            <nav class="navForOptions">
-                <div class="containerForOptions">
-                    <div class="blockForOptionAndIcon">
-                        <img alt="home icon" src="./assets/icons/home.png">
-                        <a href="#" onclick="choosePage('home')">Home</a>
-                    </div>
-                    <div class="blockForOptionAndIcon" id="categories_button">
-                        <a class="" href="#">Categories</a>
-                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">
-                    </div>
-                    <div class="blockForOptionAndIcon">
-                        <a class="disabled" href="#">Training videos</a>
-                    </div>
-                    <div class="blockForOptionAndIcon">
-                        <a class="disabled" href="#">What’s new</a></div>
-                </div>
-
-                <div class="blockForStatus "><span class="disabled">App status</span>
-                    <div class="blockCircle"></div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div class="backgroundWrapper navOfAllCategories">
-        <div class="contentWrapperShort">
-            <div class="allCategoriesInNav">
-                <div class="leftPart">
-                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>
-                    <a class="disabled" href="#">Automated emails</a>
-                    <a class="disabled" href="#">Account management</a>
-                    <a class="disabled" href="#">Automated emails</a>
-                </div>
-                <div class="rightPart">
-                    <a class="disabled" href="#">Deliverability and bounces</a>
-                    <a class="disabled" href="#">Integrations and API</a>
-                    <a class="disabled" href="#">Lists and subscribers</a>
-                    <a class="disabled" href="#">Reports</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <main id="mainForContent">
-
-    </main>
-    <div class="backgroundWrapper footerBack">
-        <div class="contentWrapperWide">
-            <footer>
-                <div class="blockForLogo">
-                    <a href="#" onclick="choosePage('home')">
-
-                        <img alt="logo" src="./assets/icons/logo.svg">
-                        <span>Operating System </span>
-                    </a>
-                </div>
-                <div class="containerForNavigation">
-                    <a class="disabled" href="#">Email Marketing</a>
+            <nav id="mobileMenu">
+                <div class="leftPartOfNav">
                     <a class="disabled" href="#">Features</a>
                     <a class="disabled" href="#">Pricing</a>
                     <a class="disabled" href="#">Resources</a>
-                    <a class="disabled" href="#">Terms & policies</a>
+                    <a class="disabled" href="#">Customers</a>
+                    <a class="disabled" href="#">Gallery</a>
+                    <a class="disabled" href="#">Agencies</a>
                 </div>
-            </footer>
+
+                <div class="rightPartOfNav">
+                    <a class="disabled" href="#">Contact support</a>
+                    <a class="disabled" href="#">Log In</a>
+                    <a class="signUpBtn disabled" href="#">Sign Up</a>
+                </div>
+            </nav>
+            <button class="hamburger hamburger--collapse" id="navHamburger" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+            </button>
+        </div>
+        <div class="bannerTitle" data-aos="fade-up"
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-offset="200"
+             data-aos-once="true">
+            <h2>Lorem ipsum dolor.</h2>
+            <h1>
+                Lorem ipsum dolor sit<br/> amet, consectetu <br/>radipisicing elit.<br/> Natus, similique?
+            </h1>
+            <button>AI chat</button>
         </div>
     </div>
-    <div class="scroll-to-top" id="scrollToTop">
-        <i class="fa-solid fa-chevron-up"></i>
+    <div class="backgroundWrapper backForNav ">
+        <div class="contentWrapperWide ">
+
+        </div>
+    </div>
+
+
+    <!--    <div class="backgroundWrapper backForHeader">-->
+
+
+    <!--        <div class="contentWrapperWide">-->
+    <!--            <header>-->
+    <!--                <h1>How can we help?</h1>-->
+    <!--                <div class="blockForInputAndBtn ">-->
+    <!--                    <input id='searchInput' placeholder="Search by keyword" type="text">-->
+    <!--                    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+    <!--                    <div class="searchHistory " id="searchHistory">-->
+
+
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </header>-->
+    <!--        </div>-->
+    <!--    </div>-->
+</div>
+<div class="backgroundWrapper backForMainSection2">
+    <div class="contentWrapperShort">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
     </div>
 </div>
+
+
+<!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
+<!--        <div class="contentWrapperShort">-->
+<!--            <nav class="navForOptions">-->
+<!--                <div class="containerForOptions">-->
+<!--                    <div class="blockForOptionAndIcon">-->
+<!--                        <img alt="home icon" src="./assets/icons/home.png">-->
+<!--                        <a href="#" onclick="choosePage('home')">Home</a>-->
+<!--                    </div>-->
+<!--                    <div class="blockForOptionAndIcon" id="categories_button">-->
+<!--                        <a class="" href="#">Categories</a>-->
+<!--                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">-->
+<!--                    </div>-->
+<!--                    <div class="blockForOptionAndIcon">-->
+<!--                        <a class="disabled" href="#">Training videos</a>-->
+<!--                    </div>-->
+<!--                    <div class="blockForOptionAndIcon">-->
+<!--                        <a class="disabled" href="#">What’s new</a></div>-->
+<!--                </div>-->
+
+<!--                <div class="blockForStatus "><span class="disabled">App status</span>-->
+<!--                    <div class="blockCircle"></div>-->
+<!--                </div>-->
+<!--            </nav>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="backgroundWrapper navOfAllCategories">-->
+<!--        <div class="contentWrapperShort">-->
+<!--            <div class="allCategoriesInNav">-->
+<!--                <div class="leftPart">-->
+<!--                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>-->
+<!--                    <a class="disabled" href="#">Automated emails</a>-->
+<!--                    <a class="disabled" href="#">Account management</a>-->
+<!--                    <a class="disabled" href="#">Automated emails</a>-->
+<!--                </div>-->
+<!--                <div class="rightPart">-->
+<!--                    <a class="disabled" href="#">Deliverability and bounces</a>-->
+<!--                    <a class="disabled" href="#">Integrations and API</a>-->
+<!--                    <a class="disabled" href="#">Lists and subscribers</a>-->
+<!--                    <a class="disabled" href="#">Reports</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <main id="mainForContent">-->
+
+<!--    </main>-->
+<!--    <div class="backgroundWrapper footerBack">-->
+<!--        <div class="contentWrapperWide">-->
+<!--            <footer>-->
+<!--                <div class="blockForLogo">-->
+<!--                    <a href="#" onclick="choosePage('home')">-->
+
+<!--                        <img alt="logo" src="./assets/icons/logo.svg">-->
+<!--                        <span>Operating System </span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="containerForNavigation">-->
+<!--                    <a class="disabled" href="#">Email Marketing</a>-->
+<!--                    <a class="disabled" href="#">Features</a>-->
+<!--                    <a class="disabled" href="#">Pricing</a>-->
+<!--                    <a class="disabled" href="#">Resources</a>-->
+<!--                    <a class="disabled" href="#">Terms & policies</a>-->
+<!--                </div>-->
+<!--            </footer>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="scroll-to-top" id="scrollToTop">-->
+<!--        <i class="fa-solid fa-chevron-up"></i>-->
+<!--    </div>-->
+
+
 <script src="pages/text.js"></script>
 <script src="pages/allQuestions.js"></script>
 <script src="index.js"></script>
@@ -254,6 +301,9 @@
 <script src="pages/chatGPT.js"></script>
 <script src="pages/arrow.js"></script>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

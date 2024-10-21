@@ -1,5 +1,5 @@
 body {
-  position: relative;
+  height: max-content;
 }
 
 $fa-font-path: 'assets/fontawesome/webfonts';
@@ -14,6 +14,108 @@ $fa-font-path: 'assets/fontawesome/webfonts';
   box-sizing: border-box;
 }
 
+.containerForWrapperBanner {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+
+  .videoBanner {
+
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+  }
+
+  .bannerContent {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .divForLogoAndNav {
+      position: fixed;
+      top: 0;
+      height: max-content;
+      z-index: 10000;
+      max-width: 1140px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 90Vw;
+    }
+
+    .bannerTitle {
+      gap: 15px;
+      z-index: 10000;
+      max-width: 1140px;
+      width: 90Vw;
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+      height: max-content;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: blueviolet;
+        border-radius: 41px;
+      }
+
+      h1 {
+        color: white;
+        letter-spacing: 5px;
+        font-family: "Orbitron", sans-serif;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 17px;
+        color: white;
+        font-weight: normal;
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+      }
+
+      button {
+        margin-top: 30px;
+        background: linear-gradient(98.73deg, #592fb6 0, #6e6be8 100%);
+        border-right: 1px solid #6e6be8;
+        width: max-content;
+        padding: 13px 36px;
+        border-radius: 7px;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 900;
+        transition: 300ms;
+
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(98.73deg, #5837a5 0, #4d4acd 100%);
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
 .containerForWrapper {
   width: 100%;
   display: flex;
@@ -24,14 +126,10 @@ $fa-font-path: 'assets/fontawesome/webfonts';
     width: 100%;
     display: flex;
     justify-content: center;
+    height: max-content;
+    z-index: 10000;
+    max-width: 1140px;
 
-    &.backForNav {
-      background-color: #000000;
-      position: fixed;
-      top: 0;
-      height: max-content;
-      z-index: 10000;
-    }
 
     &.white {
       background-color: white;
@@ -40,8 +138,12 @@ $fa-font-path: 'assets/fontawesome/webfonts';
 
     &.backForHeader {
       background: rgb(49, 58, 89);
+
       background: linear-gradient(90deg, rgba(49, 58, 89, 1) 0%, rgba(68, 101, 144, 1) 35%, rgba(93, 165, 228, 1) 100%);
+
+
     }
+
 
     &.backForBottomNavUnderHeader {
       background-color: #2A2941;
@@ -134,3 +236,4 @@ main {
     color: #287ac5;
   }
 }
+
