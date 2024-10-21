@@ -166,27 +166,28 @@ $fa-font-path: 'assets/fontawesome/webfonts';
       background-color: #111324;
     }
 
-    .contentWrapperShort {
-      max-width: 1140px;
-      width: 100%;
-      min-height: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
+  }
+}
+
+.contentWrapperShort {
+  max-width: 1240px;
+  width: 100%;
+  min-height: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 
-    }
+}
 
-    .contentWrapperWide {
-      max-width: 1440px;
-      width: 100%;
-      min-height: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
+.contentWrapperWide {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-      &.fixed {
+  &.fixed {
 
-      }
-    }
   }
 }
 

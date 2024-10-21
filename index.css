@@ -10529,14 +10529,16 @@ readers do not read off random characters that represent icons */
 .containerForWrapper .backgroundWrapper.colorForWhyUsLove {
   background-color: #111324;
 }
-.containerForWrapper .backgroundWrapper .contentWrapperShort {
-  max-width: 1140px;
+
+.contentWrapperShort {
+  max-width: 1240px;
   width: 100%;
   min-height: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.containerForWrapper .backgroundWrapper .contentWrapperWide {
+
+.contentWrapperWide {
   max-width: 1440px;
   width: 100%;
   min-height: 10px;

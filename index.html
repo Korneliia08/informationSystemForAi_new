@@ -21,9 +21,14 @@
     <link href="./styles/chatGPT.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
     <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="windowOfChat">
@@ -206,13 +211,37 @@
 <div class="backgroundWrapper backForMainSection2">
     <div class="contentWrapperShort">
         <div class="card">
-
+            <img alt="Card 1" data-tilt src="./assets/images/card1.png">
+            <div class="description card1">
+                <h3>Artificial Intelligence in Daily Life</h3>
+                <p>
+                    Artificial Intelligence (AI) is transforming the way we live, work, and interact. From personal assistants like Siri and Alexa to
+                    AI-driven recommendations on Netflix, it's becoming a part of our everyday experience. AI algorithms analyze our behaviors, making
+                    personalized suggestions and automating tasks to improve convenience and efficiency.
+                </p>
+            </div>
         </div>
         <div class="card">
-
+            <img alt="Card 2" data-tilt src="./assets/images/card2.png">
+            <div class="description card2">
+                <h3>AI in Healthcare</h3>
+                <p>
+                    AI is revolutionizing healthcare by assisting in diagnostics, predicting patient outcomes, and even recommending treatments. Machine
+                    learning models can analyze vast amounts of data to detect patterns that may be missed by human practitioners, improving accuracy and
+                    saving lives.
+                </p>
+            </div>
         </div>
         <div class="card">
-
+            <img alt="Card 3" data-tilt src="./assets/images/card3.png">
+            <div class="description card3">
+                <h3>The Future of AI</h3>
+                <p>
+                    The potential of AI is limitless. With advancements in deep learning, neural networks, and natural language processing, AI is expected
+                    to drive innovation across all sectors. However, it also raises questions about ethics, job displacement, and the need for responsible
+                    use of technology.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -288,7 +317,7 @@
 <!--        <i class="fa-solid fa-chevron-up"></i>-->
 <!--    </div>-->
 
-
+<script src="node_modules/tilt.js/dest/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
 <script src="pages/text.js"></script>
 <script src="pages/allQuestions.js"></script>
 <script src="index.js"></script>
@@ -298,7 +327,6 @@
 <script src="pages/pages.js"></script>
 <script src="pages/chatGPT.js"></script>
 <script src="pages/arrow.js"></script>
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
