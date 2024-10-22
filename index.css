@@ -10408,10 +10408,12 @@ readers do not read off random characters that represent icons */
   width: 100%;
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 .containerForWrapperBanner .videoBanner {
+  top: -5vh;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   position: relative;
   z-index: 10;
@@ -10432,16 +10434,15 @@ readers do not read off random characters that represent icons */
   position: fixed;
   top: 0;
   height: max-content;
-  z-index: 10000;
-  max-width: 1140px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 90Vw;
+  width: 100Vw;
+  padding: 0 20px;
+  transition: 300ms;
+  z-index: 19000;
 }
 .containerForWrapperBanner .bannerContent .bannerTitle {
   gap: 15px;
   z-index: 10000;
-  max-width: 1140px;
+  max-width: 1340px;
   width: 90Vw;
   display: flex;
   flex-direction: column;
@@ -10453,6 +10454,7 @@ readers do not read off random characters that represent icons */
   content: "";
   width: 6px;
   position: absolute;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.55));
   top: 0;
   left: 0;
   bottom: 0;
@@ -10464,6 +10466,7 @@ readers do not read off random characters that represent icons */
   letter-spacing: 5px;
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7803921569);
 }
 .containerForWrapperBanner .bannerContent .bannerTitle h2 {
   font-size: 17px;
@@ -10471,6 +10474,7 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7803921569);
 }
 .containerForWrapperBanner .bannerContent .bannerTitle button {
   margin-top: 30px;

@@ -113,41 +113,6 @@
           }
         }
       }
-    }
-
-    .rightPartOfNav {
-      display: flex;
-      column-gap: 10px;
-      align-items: center;
-      @media (max-width: 1070px) {
-        display: flex;
-        flex-direction: column;
-
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-        letter-spacing: 1px;
-        font-size: 17px;
-        font-weight: 200;
-        transition: 450ms ease;
-        @media (max-width: 1070px) {
-          color: #000000;
-          border-top: 1px solid #acacac;
-          width: 100%;
-          text-align: center;
-          padding: 8px;
-          border-bottom: 1px solid #acacac;
-        }
-
-        &:hover {
-          color: #51CFDB;
-          @media (max-width: 1070px) {
-            color: #1c1c1c;
-          }
-        }
-      }
 
       .signUpBtn {
         background-color: #51CFDB;

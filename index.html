@@ -1,335 +1,464 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Information System</title>
-    <link href="./index.css" rel="stylesheet">
-    <link href="./styles/nav.css" rel="stylesheet">
-    <link href="./styles/footer.css" rel="stylesheet">
-    <link href="./styles/header.css" rel="stylesheet">
-    <link href="./styles/navUnderHeader.css" rel="stylesheet">
-    <link href="./styles/allCategoriesInNav.css" rel="stylesheet">
-    <link href="./styles/headerCards.css" rel="stylesheet">
-    <link href="./styles/findAnswers.css" rel="stylesheet">
-    <link href="./styles/whyLoveOurPage.css" rel="stylesheet">
-    <link href="./styles/documentationPage.css" rel="stylesheet">
-    <link href="./styles/arrow.css" rel="stylesheet">
-    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
-    <link href="./styles/chatGPT.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
-    <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon">
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./styles/nav.css" rel="stylesheet" />
+    <link href="./styles/footer.css" rel="stylesheet" />
+    <link href="./styles/header.css" rel="stylesheet" />
+    <link href="./styles/navUnderHeader.css" rel="stylesheet" />
+    <link href="./styles/headerCards.css" rel="stylesheet" />
+    <link href="./styles/allCategoriesInNav.css" rel="stylesheet" />
+    <link href="./styles/headerSocial.css" rel="stylesheet" />
+    <link href="./styles/findAnswers.css" rel="stylesheet" />
+    <link href="./styles/whyLoveOurPage.css" rel="stylesheet" />
+    <link href="./styles/documentationPage.css" rel="stylesheet" />
+    <link href="./styles/arrow.css" rel="stylesheet" />
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+    <link href="./styles/chatGPT.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="windowOfChat">
-    <div class="popUpNoAnswer">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="windowOfChat">
+      <div class="popUpNoAnswer">
         <div class="popUp">
-            <i class="fa-solid fa-x" id="GPTpopupX"></i>
-            <span class="title">Oppps.... &#128549;</span>
-            <span>Sorry, we don't have an answer to your question at the moment. We'll take this into account to improve our service. Thank you for your understanding!</span>
+          <i class="fa-solid fa-x" id="GPTpopupX"></i>
+          <span class="title">Oppps.... &#128549;</span>
+          <span
+            >Sorry, we don't have an answer to your question at the moment.
+            We'll take this into account to improve our service. Thank you for
+            your understanding!</span
+          >
         </div>
-    </div>
-    <div class="topBeltBackground">
+      </div>
+      <div class="topBeltBackground">
         <i class="fa-solid fa-gear"></i>
 
-
         <button class="login"><i class="fa-solid fa-user"></i> Login</button>
-    </div>
-    <div class="containerForParts">
+      </div>
+      <div class="containerForParts">
         <div class="leftPart">
-            <div class="topBlock">
-
-                <button><i class="fa-solid fa-plus"></i> New chat</button>
-                <button><i class="fa-solid fa-folder-plus"></i></button>
-
+          <div class="topBlock">
+            <button><i class="fa-solid fa-plus"></i> New chat</button>
+            <button><i class="fa-solid fa-folder-plus"></i></button>
+          </div>
+          <input class="search" placeholder="Search conversation" type="text" />
+          <div class="center">
+            <div class="element">
+              <i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
             </div>
-            <input class="search" placeholder="Search conversation" type="text">
-            <div class="center">
-                <div class="element"><i class="fa-regular fa-comment-dots"></i><span>What is AI</span>
-                </div>
-            </div>
-            <div class="bottom">
-                <button class="noFrame">
-                    <i class="fa-regular fa-trash-can"></i> Clear conversation
-                </button>
-                <button class="noFrame" id="aiChangeColor">
-                    <i class="fa-solid fa-circle-half-stroke color"></i>Change theme
-                </button>
-            </div>
+          </div>
+          <div class="bottom">
+            <button class="noFrame">
+              <i class="fa-regular fa-trash-can"></i> Clear conversation
+            </button>
+            <button class="noFrame" id="aiChangeColor">
+              <i class="fa-solid fa-circle-half-stroke color"></i>Change theme
+            </button>
+          </div>
         </div>
         <div class="centerPart">
-            <div class="top">
-                <i class="fa-solid fa-left-long "></i>
-                <div class="topBelt">
-
-                    <div class="blockForImgAndA disabled">
-                        <i class="fa-solid fa-headset"></i>
-                        <a class="disabled" href="#">HarmonyBot</a>
-
-                    </div>
-                    <div class="blockForImgAndA borderIcon">
-                        <!--                        <i class="fa-solid fa-circle-half-stroke color" id="aiChangeColor"></i>-->
-                        <span class="spanClose">
-                          <i class="fa-solid fa-x"></i>
-                        </span>
-                    </div>
-                </div>
-                <i class="fa-solid fa-left-long fa-rotate-180"></i>
+          <div class="top">
+            <i class="fa-solid fa-left-long"></i>
+            <div class="topBelt">
+              <div class="blockForImgAndA disabled">
+                <i class="fa-solid fa-headset"></i>
+                <a class="disabled" href="#">HarmonyBot</a>
+              </div>
+              <div class="blockForImgAndA borderIcon">
+                <!--                        <i class="fa-solid fa-circle-half-stroke color" id="aiChangeColor"></i>-->
+                <span class="spanClose">
+                  <i class="fa-solid fa-x"></i>
+                </span>
+              </div>
             </div>
-            <div class="bottom">
-                <div class="logoAndTitle">
-                    <img alt="chat assistant logo" class="image" src="./assets/images/chatAssistant.png">
-                    <span class="title">HarmonyBot</span></div>
-                <div class="blockForContentAndImage">
-                    <!--                    <p class="content">Your Personal AI Helper</p>-->
-                    <!--                    <img alt="robot" class="imageOfChat" src="./assets/images/robot.png">-->
-                </div>
-                <div class="blockForCommunication">
-                    <div class="chat"></div>
-                </div>
-                <div class="blockForInputAndBtnSend">
-                    <input class="searchInputChat" placeholder="Ask me anything...." type="text">
-                    <button class="btnSend"><i class="fa-solid fa-arrow-up"></i></button>
-                </div>
-                <p class="textUnderInput">Verify important information, as HarmonyBot can make mistakes.</p>
+            <i class="fa-solid fa-left-long fa-rotate-180"></i>
+          </div>
+          <div class="bottom">
+            <div class="logoAndTitle">
+              <img
+                alt="chat assistant logo"
+                class="image"
+                src="./assets/images/chatAssistant.png"
+              />
+              <span class="title">HarmonyBot</span>
             </div>
-
+            <div class="blockForContentAndImage">
+              <!--                    <p class="content">Your Personal AI Helper</p>-->
+              <!--                    <img alt="robot" class="imageOfChat" src="./assets/images/robot.png">-->
+            </div>
+            <div class="blockForCommunication">
+              <div class="chat"></div>
+            </div>
+            <div class="blockForInputAndBtnSend">
+              <input
+                class="searchInputChat"
+                placeholder="Ask me anything...."
+                type="text"
+              />
+              <button class="btnSend">
+                <i class="fa-solid fa-arrow-up"></i>
+              </button>
+            </div>
+            <p class="textUnderInput">
+              Verify important information, as HarmonyBot can make mistakes.
+            </p>
+          </div>
         </div>
         <div class="rightPart">
-            <div class="topBlock">
-
-                <button>New prompt</button>
-                <button><i class="fa-solid fa-folder-plus"></i></button>
-            </div>
-            <input class="search" placeholder="Search" type="text">
-            <!--            <h3>Search history:</h3>-->
-            <div id="gptSearchHistory">
-
-            </div>
-            <div class="noData">
-                <i class="fa-solid fa-not-equal"></i>
-                <span>
-
-                No data
-                </span>
-            </div>
-
+          <div class="topBlock">
+            <button>New prompt</button>
+            <button><i class="fa-solid fa-folder-plus"></i></button>
+          </div>
+          <input class="search" placeholder="Search" type="text" />
+          <!--            <h3>Search history:</h3>-->
+          <div id="gptSearchHistory"></div>
+          <div class="noData">
+            <i class="fa-solid fa-not-equal"></i>
+            <span> No data </span>
+          </div>
         </div>
+      </div>
     </div>
-
-</div>
-<!--<div class="blockForIcon iconOfChat" id="iconOfChat">-->
-<!--    &lt;!&ndash;    <span>HarmonyBot</span>&ndash;&gt;-->
-<!--    &lt;!&ndash;    <i class="fa-regular fa-comment-dots iconOfChat"></i>&ndash;&gt;-->
-<!--    <img src="assets/icons/chat2.png">-->
-<!--</div>-->
-<div class="containerForWrapperBanner">
-    <video autoplay class="videoBanner" loop muted>
-        <source src="assets/images/banner.mp4"
-                type="video/mp4">
-
-    </video>
-    <div class="bannerContent">
-
+    <!--<div class="blockForIcon iconOfChat" id="iconOfChat">-->
+    <!--    &lt;!&ndash;    <span>HarmonyBot</span>&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <i class="fa-regular fa-comment-dots iconOfChat"></i>&ndash;&gt;-->
+    <!--    <img src="assets/icons/chat2.png">-->
+    <!--</div>-->
+    <div class="containerForWrapperBanner">
+      <video autoplay class="videoBanner" loop muted>
+        <source src="assets/images/banner2.mp4" type="video/mp4" />
+      </video>
+      <div class="bannerContent">
         <div class="divForLogoAndNav">
-            <div class="blockForLogo">
-                <a href="#" onclick="choosePage('home')">
-                    <img alt="logo" src="./assets/icons/logo.svg">
-                    <span>Operating System</span>
-                </a>
+          <div class="blockForLogo">
+            <a href="#" onclick="choosePage('home')">
+              <img alt="logo" src="./assets/icons/logo.svg" />
+              <span>Operating System</span>
+            </a>
+          </div>
+          <nav id="mobileMenu">
+            <div class="leftPartOfNav">
+              <a class="disabled" href="#">Features</a>
+              <a class="disabled" href="#">Pricing</a>
+              <a class="disabled" href="#">Resources</a>
+              <a class="disabled" href="#">Customers</a>
+              <a class="disabled" href="#">Gallery</a>
+              <a class="disabled" href="#">Agencies</a>
+              <a class="disabled" href="#">Contact support</a>
+              <a class="disabled" href="#">Log In</a>
+              <a class="signUpBtn disabled" href="#">Sign Up</a>
             </div>
-            <nav id="mobileMenu">
-                <div class="leftPartOfNav">
-                    <a class="disabled" href="#">Features</a>
-                    <a class="disabled" href="#">Pricing</a>
-                    <a class="disabled" href="#">Resources</a>
-                    <a class="disabled" href="#">Customers</a>
-                    <a class="disabled" href="#">Gallery</a>
-                    <a class="disabled" href="#">Agencies</a>
-                </div>
+          </nav>
+          <button
+            class="hamburger hamburger--collapse"
+            id="navHamburger"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="bannerTitle"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
+          <h2>Lorem ipsum dolor.</h2>
+          <h1>
+            Lorem ipsum dolor sit<br />
+            amet, consectetu <br />radipisicing elit.<br />
+            Natus, similique?
+          </h1>
+          <button>AI chat</button>
+        </div>
+      </div>
+      <div class="backgroundWrapper backForNav">
+        <div class="contentWrapperWide"></div>
+      </div>
 
-                <div class="rightPartOfNav">
-                    <a class="disabled" href="#">Contact support</a>
-                    <a class="disabled" href="#">Log In</a>
-                    <a class="signUpBtn disabled" href="#">Sign Up</a>
-                </div>
-            </nav>
-            <button class="hamburger hamburger--collapse" id="navHamburger" type="button">
-                      <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                      </span>
-            </button>
-        </div>
-        <div class="bannerTitle" data-aos="fade-up"
-             data-aos-anchor-placement="top-left"
-             data-aos-duration="1000"
-             data-aos-easing="ease-in-out"
-             data-aos-mirror="true"
-             data-aos-once="true">
-            <h2>Lorem ipsum dolor.</h2>
-            <h1>
-                Lorem ipsum dolor sit<br/> amet, consectetu <br/>radipisicing elit.<br/> Natus, similique?
-            </h1>
-            <button>AI chat</button>
-        </div>
+      <!--    <div class="backgroundWrapper backForHeader">-->
+
+      <!--        <div class="contentWrapperWide">-->
+      <!--            <header>-->
+      <!--                <h1>How can we help?</h1>-->
+      <!--                <div class="blockForInputAndBtn ">-->
+      <!--                    <input id='searchInput' placeholder="Search by keyword" type="text">-->
+      <!--                    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+      <!--                    <div class="searchHistory " id="searchHistory">-->
+
+      <!--                    </div>-->
+      <!--                </div>-->
+      <!--            </header>-->
+      <!--        </div>-->
+      <!--    </div>-->
     </div>
-    <div class="backgroundWrapper backForNav ">
-        <div class="contentWrapperWide ">
-
+    <div class="backgroundWrapper backForMainSection2">
+      <h2 data-aos="zoom-in">Our brands</h2>
+      <div class="contentWrapperShort">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="left"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img alt="Card 1" data-tilt src="./assets/images/card1.png" />
+          <div class="description card1">
+            <h3>Artificial Intelligence in Daily Life</h3>
+            <p>
+              Artificial Intelligence (AI) is transforming the way we live,
+              work, and interact. From personal assistants like Siri and Alexa
+              to AI-driven recommendations on Netflix, it's becoming a part of
+              our everyday experience. AI algorithms analyze our behaviors,
+              making personalized suggestions and automating tasks to improve
+              convenience and efficiency.
+            </p>
+          </div>
         </div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img alt="Card 2" data-tilt src="./assets/images/card2.png" />
+          <div class="description card2">
+            <h3>AI in Healthcare</h3>
+            <p>
+              AI is revolutionizing healthcare by assisting in diagnostics,
+              predicting patient outcomes, and even recommending treatments.
+              Machine learning models can analyze vast amounts of data to detect
+              patterns that may be missed by human practitioners, improving
+              accuracy and saving lives.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img alt="Card 3" data-tilt src="./assets/images/card3.png" />
+          <div class="description card3">
+            <h3>The Future of AI</h3>
+            <p>
+              The potential of AI is limitless. With advancements in deep
+              learning, neural networks, and natural language processing, AI is
+              expected to drive innovation across all sectors. However, it also
+              raises questions about ethics, job displacement, and the need for
+              responsible use of technology.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div class="backgroundWrapper blockForSocial">
+      <h3 data-aos="zoom-in">Questions</h3>
+      <h2 data-aos="zoom-in">Social media</h2>
+      <div class="contentWrapperShort">
+        <div class="socialCard" data-tilt data-tilt-reverse="true">
+          <img
+            class="card1"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/frame-1.svg"
+          />
+          <img
+            class="card2"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/second-layer-1.svg"
+          />
+          <img
+            class="card3"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/third-layer-1.svg"
+          />
+          <img
+            class="card4"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/twitter-glow.svg"
+          />
+        </div>
+        <div class="socialCard" data-tilt data-tilt-reverse="true">
+          <img class="card1" src="./assets/images/frame-1.svg" />
+          <img
+            class="card2"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/second-layer-1.svg"
+          />
+          <img
+            class="card3"
+            data-tilt
+            data-tilt-data-tilt-reverse="true"="true"
+            src="./assets/images/third-layer-1.svg"
+          />
+          <img
+            class="card4"
+            data-tilt
+            data-tilt-reverse="true"
+            src="./assets/images/twitter-glow.svg"
+          />
+        </div>
+        <div class="socialCard" data-tilt>
+          <img class="card1" src="./assets/images/frame-1.svg" />
+          <img
+            class="card2"
+            data-tilt
+            src="./assets/images/second-layer-1.svg"
+          />
+          <img
+            class="card3"
+            data-tilt
+            src="./assets/images/third-layer-1.svg"
+          />
+          <img class="card4" data-tilt src="./assets/images/twitter-glow.svg" />
+        </div>
+        <div class="socialCard" data-tilt>
+          <img class="card1" src="./assets/images/frame-1.svg" />
+          <img
+            class="card2"
+            data-tilt
+            src="./assets/images/second-layer-1.svg"
+          />
+          <img
+            class="card3"
+            data-tilt
+            src="./assets/images/third-layer-1.svg"
+          />
+          <img class="card4" data-tilt src="./assets/images/twitter-glow.svg" />
+        </div>
+      </div>
+    </div>
 
-    <!--    <div class="backgroundWrapper backForHeader">-->
-
-
-    <!--        <div class="contentWrapperWide">-->
-    <!--            <header>-->
-    <!--                <h1>How can we help?</h1>-->
-    <!--                <div class="blockForInputAndBtn ">-->
-    <!--                    <input id='searchInput' placeholder="Search by keyword" type="text">-->
-    <!--                    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>-->
-    <!--                    <div class="searchHistory " id="searchHistory">-->
-
-
+    <!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
+    <!--        <div class="contentWrapperShort">-->
+    <!--            <nav class="navForOptions">-->
+    <!--                <div class="containerForOptions">-->
+    <!--                    <div class="blockForOptionAndIcon">-->
+    <!--                        <img alt="home icon" src="./assets/icons/home.png">-->
+    <!--                        <a href="#" onclick="choosePage('home')">Home</a>-->
     <!--                    </div>-->
+    <!--                    <div class="blockForOptionAndIcon" id="categories_button">-->
+    <!--                        <a class="" href="#">Categories</a>-->
+    <!--                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">-->
+    <!--                    </div>-->
+    <!--                    <div class="blockForOptionAndIcon">-->
+    <!--                        <a class="disabled" href="#">Training videos</a>-->
+    <!--                    </div>-->
+    <!--                    <div class="blockForOptionAndIcon">-->
+    <!--                        <a class="disabled" href="#">What’s new</a></div>-->
     <!--                </div>-->
-    <!--            </header>-->
+
+    <!--                <div class="blockForStatus "><span class="disabled">App status</span>-->
+    <!--                    <div class="blockCircle"></div>-->
+    <!--                </div>-->
+    <!--            </nav>-->
     <!--        </div>-->
     <!--    </div>-->
-</div>
-<div class="backgroundWrapper backForMainSection2">
-    <div class="contentWrapperShort">
-        <div class="card">
-            <img alt="Card 1" data-tilt src="./assets/images/card1.png">
-            <div class="description card1">
-                <h3>Artificial Intelligence in Daily Life</h3>
-                <p>
-                    Artificial Intelligence (AI) is transforming the way we live, work, and interact. From personal assistants like Siri and Alexa to
-                    AI-driven recommendations on Netflix, it's becoming a part of our everyday experience. AI algorithms analyze our behaviors, making
-                    personalized suggestions and automating tasks to improve convenience and efficiency.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <img alt="Card 2" data-tilt src="./assets/images/card2.png">
-            <div class="description card2">
-                <h3>AI in Healthcare</h3>
-                <p>
-                    AI is revolutionizing healthcare by assisting in diagnostics, predicting patient outcomes, and even recommending treatments. Machine
-                    learning models can analyze vast amounts of data to detect patterns that may be missed by human practitioners, improving accuracy and
-                    saving lives.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <img alt="Card 3" data-tilt src="./assets/images/card3.png">
-            <div class="description card3">
-                <h3>The Future of AI</h3>
-                <p>
-                    The potential of AI is limitless. With advancements in deep learning, neural networks, and natural language processing, AI is expected
-                    to drive innovation across all sectors. However, it also raises questions about ethics, job displacement, and the need for responsible
-                    use of technology.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+    <!--    <div class="backgroundWrapper navOfAllCategories">-->
+    <!--        <div class="contentWrapperShort">-->
+    <!--            <div class="allCategoriesInNav">-->
+    <!--                <div class="leftPart">-->
+    <!--                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>-->
+    <!--                    <a class="disabled" href="#">Automated emails</a>-->
+    <!--                    <a class="disabled" href="#">Account management</a>-->
+    <!--                    <a class="disabled" href="#">Automated emails</a>-->
+    <!--                </div>-->
+    <!--                <div class="rightPart">-->
+    <!--                    <a class="disabled" href="#">Deliverability and bounces</a>-->
+    <!--                    <a class="disabled" href="#">Integrations and API</a>-->
+    <!--                    <a class="disabled" href="#">Lists and subscribers</a>-->
+    <!--                    <a class="disabled" href="#">Reports</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <main id="mainForContent">-->
 
+    <!--    </main>-->
+    <!--    <div class="backgroundWrapper footerBack">-->
+    <!--        <div class="contentWrapperWide">-->
+    <!--            <footer>-->
+    <!--                <div class="blockForLogo">-->
+    <!--                    <a href="#" onclick="choosePage('home')">-->
 
-<!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
-<!--        <div class="contentWrapperShort">-->
-<!--            <nav class="navForOptions">-->
-<!--                <div class="containerForOptions">-->
-<!--                    <div class="blockForOptionAndIcon">-->
-<!--                        <img alt="home icon" src="./assets/icons/home.png">-->
-<!--                        <a href="#" onclick="choosePage('home')">Home</a>-->
-<!--                    </div>-->
-<!--                    <div class="blockForOptionAndIcon" id="categories_button">-->
-<!--                        <a class="" href="#">Categories</a>-->
-<!--                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">-->
-<!--                    </div>-->
-<!--                    <div class="blockForOptionAndIcon">-->
-<!--                        <a class="disabled" href="#">Training videos</a>-->
-<!--                    </div>-->
-<!--                    <div class="blockForOptionAndIcon">-->
-<!--                        <a class="disabled" href="#">What’s new</a></div>-->
-<!--                </div>-->
+    <!--                        <img alt="logo" src="./assets/icons/logo.svg">-->
+    <!--                        <span>Operating System </span>-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--                <div class="containerForNavigation">-->
+    <!--                    <a class="disabled" href="#">Email Marketing</a>-->
+    <!--                    <a class="disabled" href="#">Features</a>-->
+    <!--                    <a class="disabled" href="#">Pricing</a>-->
+    <!--                    <a class="disabled" href="#">Resources</a>-->
+    <!--                    <a class="disabled" href="#">Terms & policies</a>-->
+    <!--                </div>-->
+    <!--            </footer>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="scroll-to-top" id="scrollToTop">-->
+    <!--        <i class="fa-solid fa-chevron-up"></i>-->
+    <!--    </div>-->
 
-<!--                <div class="blockForStatus "><span class="disabled">App status</span>-->
-<!--                    <div class="blockCircle"></div>-->
-<!--                </div>-->
-<!--            </nav>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="backgroundWrapper navOfAllCategories">-->
-<!--        <div class="contentWrapperShort">-->
-<!--            <div class="allCategoriesInNav">-->
-<!--                <div class="leftPart">-->
-<!--                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>-->
-<!--                    <a class="disabled" href="#">Automated emails</a>-->
-<!--                    <a class="disabled" href="#">Account management</a>-->
-<!--                    <a class="disabled" href="#">Automated emails</a>-->
-<!--                </div>-->
-<!--                <div class="rightPart">-->
-<!--                    <a class="disabled" href="#">Deliverability and bounces</a>-->
-<!--                    <a class="disabled" href="#">Integrations and API</a>-->
-<!--                    <a class="disabled" href="#">Lists and subscribers</a>-->
-<!--                    <a class="disabled" href="#">Reports</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <main id="mainForContent">-->
-
-<!--    </main>-->
-<!--    <div class="backgroundWrapper footerBack">-->
-<!--        <div class="contentWrapperWide">-->
-<!--            <footer>-->
-<!--                <div class="blockForLogo">-->
-<!--                    <a href="#" onclick="choosePage('home')">-->
-
-<!--                        <img alt="logo" src="./assets/icons/logo.svg">-->
-<!--                        <span>Operating System </span>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="containerForNavigation">-->
-<!--                    <a class="disabled" href="#">Email Marketing</a>-->
-<!--                    <a class="disabled" href="#">Features</a>-->
-<!--                    <a class="disabled" href="#">Pricing</a>-->
-<!--                    <a class="disabled" href="#">Resources</a>-->
-<!--                    <a class="disabled" href="#">Terms & policies</a>-->
-<!--                </div>-->
-<!--            </footer>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="scroll-to-top" id="scrollToTop">-->
-<!--        <i class="fa-solid fa-chevron-up"></i>-->
-<!--    </div>-->
-
-<script src="node_modules/tilt.js/dest/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
-<script src="pages/text.js"></script>
-<script src="pages/allQuestions.js"></script>
-<script src="index.js"></script>
-<script src="pages/home.js"></script>
-<script src="pages/aiInManagement.js"></script>
-<script src="pages/firstPage.js"></script>
-<script src="pages/pages.js"></script>
-<script src="pages/chatGPT.js"></script>
-<script src="pages/arrow.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-</body>
+    <script src="node_modules/tilt.js/dest/tilt.jquery.js"></script>
+    <!-- Load Tilt.js library -->
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <!-- Load Tilt.js library -->
+    <script src="pages/text.js"></script>
+    <script src="pages/allQuestions.js"></script>
+    <script src="index.js"></script>
+    <script src="pages/home.js"></script>
+    <script src="pages/aiInManagement.js"></script>
+    <script src="pages/firstPage.js"></script>
+    <script src="pages/pages.js"></script>
+    <script src="pages/chatGPT.js"></script>
+    <script src="pages/arrow.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

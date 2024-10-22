@@ -103,44 +103,7 @@
     color: #1c1c1c;
   }
 }
-.divForLogoAndNav nav .rightPartOfNav {
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
-}
-@media (max-width: 1070px) {
-  .divForLogoAndNav nav .rightPartOfNav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.divForLogoAndNav nav .rightPartOfNav a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 17px;
-  font-weight: 200;
-  transition: 450ms ease;
-}
-@media (max-width: 1070px) {
-  .divForLogoAndNav nav .rightPartOfNav a {
-    color: #000000;
-    border-top: 1px solid #acacac;
-    width: 100%;
-    text-align: center;
-    padding: 8px;
-    border-bottom: 1px solid #acacac;
-  }
-}
-.divForLogoAndNav nav .rightPartOfNav a:hover {
-  color: #51CFDB;
-}
-@media (max-width: 1070px) {
-  .divForLogoAndNav nav .rightPartOfNav a:hover {
-    color: #1c1c1c;
-  }
-}
-.divForLogoAndNav nav .rightPartOfNav .signUpBtn {
+.divForLogoAndNav nav .leftPartOfNav .signUpBtn {
   background-color: #51CFDB;
   color: black;
   padding: 8px 15px;
@@ -148,11 +111,11 @@
   border-radius: 5px;
 }
 @media (max-width: 1070px) {
-  .divForLogoAndNav nav .rightPartOfNav .signUpBtn {
+  .divForLogoAndNav nav .leftPartOfNav .signUpBtn {
     border-radius: 0;
   }
 }
-.divForLogoAndNav nav .rightPartOfNav .signUpBtn:hover {
+.divForLogoAndNav nav .leftPartOfNav .signUpBtn:hover {
   background-color: #40b3be;
   color: black;
 }
