@@ -9,6 +9,10 @@ body {
   }
 }
 
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+}
 
 $fa-font-path: 'assets/fontawesome/webfonts';
 // importing core styling file

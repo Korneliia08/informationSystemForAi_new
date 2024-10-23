@@ -11,5 +11,6 @@
     <orderEntry type="library" name="aos" level="application" />
     <orderEntry type="library" name="tilt.js" level="application" />
     <orderEntry type="library" name="jquery-3.7.1" level="application" />
+    <orderEntry type="library" name="pagePiling" level="application" />
   </component>
 </module>

@@ -25,6 +25,13 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -150,269 +157,277 @@
     <!--    &lt;!&ndash;    <i class="fa-regular fa-comment-dots iconOfChat"></i>&ndash;&gt;-->
     <!--    <img src="assets/icons/chat2.png">-->
     <!--</div>-->
-    <div class="containerForWrapperBanner">
-      <video autoplay class="videoBanner" loop muted>
-        <source src="assets/images/banner2.mp4" type="video/mp4" />
-      </video>
-      <div class="bannerContent">
-        <div class="divForLogoAndNav">
-          <div class="navWrapper">
-            <div class="blockForLogo">
-              <a href="#" onclick="choosePage('home')">
-                <img alt="logo" src="./assets/icons/logo.svg" />
-                <span>Operating System</span>
-              </a>
-            </div>
-            <nav id="mobileMenu">
-              <div class="leftPartOfNav">
-                <a class="disabled" href="#">Features</a>
-                <a class="disabled" href="#">Pricing</a>
-                <a class="disabled" href="#">Resources</a>
-                <a class="disabled" href="#">Customers</a>
-                <a class="disabled" href="#">Gallery</a>
-                <a class="disabled" href="#">Agencies</a>
-                <a class="disabled" href="#">Contact support</a>
-                <a class="disabled" href="#">Log In</a>
-                <a class="signUpBtn disabled" href="#">Sign Up</a>
+    <div class="MainContainer" id="pagepiling">
+      <div class="section">
+        <div class="containerForWrapperBanner">
+          <video autoplay class="videoBanner" loop muted>
+            <source src="assets/images/banner2.mp4" type="video/mp4" />
+          </video>
+          <div class="bannerContent">
+            <div class="divForLogoAndNav">
+              <div class="navWrapper">
+                <div class="blockForLogo">
+                  <a href="#" onclick="choosePage('home')">
+                    <img alt="logo" src="./assets/icons/logo.svg" />
+                    <span>Operating System</span>
+                  </a>
+                </div>
+                <nav id="mobileMenu">
+                  <div class="leftPartOfNav">
+                    <a class="disabled" href="#">Features</a>
+                    <a class="disabled" href="#">Pricing</a>
+                    <a class="disabled" href="#">Resources</a>
+                    <a class="disabled" href="#">Customers</a>
+                    <a class="disabled" href="#">Gallery</a>
+                    <a class="disabled" href="#">Agencies</a>
+                    <a class="disabled" href="#">Contact support</a>
+                    <a class="disabled" href="#">Log In</a>
+                    <a class="signUpBtn disabled" href="#">Sign Up</a>
+                  </div>
+                </nav>
               </div>
-            </nav>
-          </div>
-          <button
-            class="hamburger hamburger--collapse"
-            id="navHamburger"
-            type="button"
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
-        <div
-          class="bannerTitle"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-left"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <h2>AI Geo Bot</h2>
-          <h1>
-            Get more familiar<br />
-            with our<br />
-            AI Geo Bot
-          </h1>
-          <button id="idButtonOpenChat">AI chat</button>
-        </div>
-      </div>
-      <div class="backgroundWrapper backForNav">
-        <div class="contentWrapperWide"></div>
-      </div>
-    </div>
-
-    <div class="backgroundWrapper blockForSocial">
-      <h3 data-aos="zoom-in">Cooperation</h3>
-      <h2 data-aos="zoom-in">Our Partners</h2>
-      <div class="contentWrapperShort">
-        <div class="socialCard" data-tilt>
-          <img class="card1" src="./assets/images/frame-1.svg" />
-          <img class="card2" src="./assets/images/second-layer-1.svg" />
-          <img class="card3" src="./assets/images/third-layer-1.svg" />
-          <img class="card4" src="./assets/images/openai.svg" />
-          <span>Open AI</span>
-        </div>
-        <div class="socialCard" data-tilt>
-          <img class="card1" src="./assets/images/frame-2.svg" />
-          <img class="card2" src="./assets/images/second-layer-2.svg" />
-          <img class="card3" src="./assets/images/third-layer-2.svg" />
-          <img class="card4" src="./assets/images/nividia.svg" />
-          <span>Nvidia</span>
-        </div>
-        <div class="socialCard" data-tilt data-tilt-reverse="true">
-          <img class="card1" src="./assets/images/frame-3.svg" />
-          <img class="card2" src="./assets/images/second-layer-3.svg" />
-          <img class="card3" src="./assets/images/third-layer-3.svg" />
-          <img class="card4" src="./assets/images/DeepMind.svg" />
-          <span>DeepMind</span>
-        </div>
-        <div class="socialCard" data-tilt data-tilt-reverse="true">
-          <img class="card1" src="./assets/images/frame-4.svg" />
-          <img class="card2" src="./assets/images/second-layer-4.svg" />
-          <img class="card3" src="./assets/images/third-layer-4.svg" />
-          <img class="card4" src="./assets/images/logo4.svg" />
-          <span style="word-break: keep-all; line-break: strict"
-            >Ai-Technology</span
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="backgroundWrapper backForMainSection2">
-      <h2 data-aos="zoom-in">AI documentation</h2>
-      <div class="contentWrapperShort">
-        <div class="cardWrapper">
-          <div
-            class="card"
-            data-aos="fade-up"
-            data-aos-anchor-placement="left"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <img alt="Card 1" data-tilt src="./assets/images/card1.png" />
-            <div class="description card1">
-              <h3>Artificial Intelligence in Daily Life</h3>
-              <p>
-                Artificial Intelligence (AI) is transforming the way we live,
-                work, and interact. From personal assistants like Siri and Alexa
-                to AI-driven recommendations on Netflix, it's becoming a part of
-                our everyday experience. AI algorithms analyze our behaviors,
-                making personalized suggestions and automating tasks to improve
-                convenience and efficiency.
-              </p>
+              <button
+                class="hamburger hamburger--collapse"
+                id="navHamburger"
+                type="button"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <div
+              class="bannerTitle"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              <h2>AI Geo Bot</h2>
+              <h1>
+                Get more familiar<br />
+                with our<br />
+                AI Geo Bot
+              </h1>
+              <button id="idButtonOpenChat">AI chat</button>
             </div>
           </div>
-        </div>
-        <div class="cardWrapper">
-          <div
-            class="card"
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <img alt="Card 2" data-tilt src="./assets/images/card2.png" />
-            <div class="description card2">
-              <h3>AI in Healthcare</h3>
-              <p>
-                AI is revolutionizing healthcare by assisting in diagnostics,
-                predicting patient outcomes, and even recommending treatments.
-                Machine learning models can analyze vast amounts of data to
-                detect patterns that may be missed by human practitioners,
-                improving accuracy and saving lives.
-              </p>
-            </div>
+          <div class="backgroundWrapper backForNav">
+            <div class="contentWrapperWide"></div>
           </div>
         </div>
-        <div class="cardWrapper">
-          <div
-            class="card"
-            data-aos="fade-up"
-            data-aos-anchor-placement="right"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <img alt="Card 3" data-tilt src="./assets/images/card3.png" />
-            <div class="description card3">
-              <h3>The Future of AI</h3>
-              <p>
-                The potential of AI is limitless. With advancements in deep
-                learning, neural networks, and natural language processing, AI
-                is expected to drive innovation across all sectors. However, it
-                also raises questions about ethics, job displacement, and the
-                need for responsible use of technology.
-              </p>
+      </div>
+      <div class="section">
+        <div class="backgroundWrapper blockForSocial">
+          <h3 data-aos="zoom-in">Cooperation</h3>
+          <h2 data-aos="zoom-in">Our Partners</h2>
+          <div class="contentWrapperShort">
+            <div class="socialCard" data-tilt>
+              <img class="card1" src="./assets/images/frame-1.svg" />
+              <img class="card2" src="./assets/images/second-layer-1.svg" />
+              <img class="card3" src="./assets/images/third-layer-1.svg" />
+              <img class="card4" src="./assets/images/openai.svg" />
+              <span>Open AI</span>
+            </div>
+            <div class="socialCard" data-tilt>
+              <img class="card1" src="./assets/images/frame-2.svg" />
+              <img class="card2" src="./assets/images/second-layer-2.svg" />
+              <img class="card3" src="./assets/images/third-layer-2.svg" />
+              <img class="card4" src="./assets/images/nividia.svg" />
+              <span>Nvidia</span>
+            </div>
+            <div class="socialCard" data-tilt data-tilt-reverse="true">
+              <img class="card1" src="./assets/images/frame-3.svg" />
+              <img class="card2" src="./assets/images/second-layer-3.svg" />
+              <img class="card3" src="./assets/images/third-layer-3.svg" />
+              <img class="card4" src="./assets/images/DeepMind.svg" />
+              <span>DeepMind</span>
+            </div>
+            <div class="socialCard" data-tilt data-tilt-reverse="true">
+              <img class="card1" src="./assets/images/frame-4.svg" />
+              <img class="card2" src="./assets/images/second-layer-4.svg" />
+              <img class="card3" src="./assets/images/third-layer-4.svg" />
+              <img class="card4" src="./assets/images/logo4.svg" />
+              <span style="word-break: keep-all; line-break: strict"
+                >Ai-Technology</span
+              >
             </div>
           </div>
         </div>
       </div>
+      <div class="section pp-scrollable">
+        <div class="backgroundWrapper backForMainSection2">
+          <h2 data-aos="zoom-in">AI documentation</h2>
+          <div class="contentWrapperShort">
+            <div class="cardWrapper">
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="left"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <img alt="Card 1" data-tilt src="./assets/images/card1.png" />
+                <div class="description card1">
+                  <h3>Artificial Intelligence in Daily Life</h3>
+                  <p>
+                    Artificial Intelligence (AI) is transforming the way we
+                    live, work, and interact. From personal assistants like Siri
+                    and Alexa to AI-driven recommendations on Netflix, it's
+                    becoming a part of our everyday experience. AI algorithms
+                    analyze our behaviors, making personalized suggestions and
+                    automating tasks to improve convenience and efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cardWrapper">
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <img alt="Card 2" data-tilt src="./assets/images/card2.png" />
+                <div class="description card2">
+                  <h3>AI in Healthcare</h3>
+                  <p>
+                    AI is revolutionizing healthcare by assisting in
+                    diagnostics, predicting patient outcomes, and even
+                    recommending treatments. Machine learning models can analyze
+                    vast amounts of data to detect patterns that may be missed
+                    by human practitioners, improving accuracy and saving lives.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cardWrapper">
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="right"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <img alt="Card 3" data-tilt src="./assets/images/card3.png" />
+                <div class="description card3">
+                  <h3>The Future of AI</h3>
+                  <p>
+                    The potential of AI is limitless. With advancements in deep
+                    learning, neural networks, and natural language processing,
+                    AI is expected to drive innovation across all sectors.
+                    However, it also raises questions about ethics, job
+                    displacement, and the need for responsible use of
+                    technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
+      <!--        <div class="contentWrapperShort">-->
+      <!--            <nav class="navForOptions">-->
+      <!--                <div class="containerForOptions">-->
+      <!--                    <div class="blockForOptionAndIcon">-->
+      <!--                        <img alt="home icon" src="./assets/icons/home.png">-->
+      <!--                        <a href="#" onclick="choosePage('home')">Home</a>-->
+      <!--                    </div>-->
+      <!--                    <div class="blockForOptionAndIcon" id="categories_button">-->
+      <!--                        <a class="" href="#">Categories</a>-->
+      <!--                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">-->
+      <!--                    </div>-->
+      <!--                    <div class="blockForOptionAndIcon">-->
+      <!--                        <a class="disabled" href="#">Training videos</a>-->
+      <!--                    </div>-->
+      <!--                    <div class="blockForOptionAndIcon">-->
+      <!--                        <a class="disabled" href="#">What’s new</a></div>-->
+      <!--                </div>-->
+
+      <!--                <div class="blockForStatus "><span class="disabled">App status</span>-->
+      <!--                    <div class="blockCircle"></div>-->
+      <!--                </div>-->
+      <!--            </nav>-->
+      <!--        </div>-->
+      <!--    </div>-->
+      <!--    <div class="backgroundWrapper navOfAllCategories">-->
+      <!--        <div class="contentWrapperShort">-->
+      <!--            <div class="allCategoriesInNav">-->
+      <!--                <div class="leftPart">-->
+      <!--                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>-->
+      <!--                    <a class="disabled" href="#">Automated emails</a>-->
+      <!--                    <a class="disabled" href="#">Account management</a>-->
+      <!--                    <a class="disabled" href="#">Automated emails</a>-->
+      <!--                </div>-->
+      <!--                <div class="rightPart">-->
+      <!--                    <a class="disabled" href="#">Deliverability and bounces</a>-->
+      <!--                    <a class="disabled" href="#">Integrations and API</a>-->
+      <!--                    <a class="disabled" href="#">Lists and subscribers</a>-->
+      <!--                    <a class="disabled" href="#">Reports</a>-->
+      <!--                </div>-->
+      <!--            </div>-->
+      <!--        </div>-->
+      <!--    </div>-->
+      <!--    <main id="mainForContent">-->
+
+      <!--    </main>-->
+      <!--    <div class="backgroundWrapper footerBack">-->
+      <!--        <div class="contentWrapperWide">-->
+      <!--            <footer>-->
+      <!--                <div class="blockForLogo">-->
+      <!--                    <a href="#" onclick="choosePage('home')">-->
+
+      <!--                        <img alt="logo" src="./assets/icons/logo.svg">-->
+      <!--                        <span>Operating System </span>-->
+      <!--                    </a>-->
+      <!--                </div>-->
+      <!--                <div class="containerForNavigation">-->
+      <!--                    <a class="disabled" href="#">Email Marketing</a>-->
+      <!--                    <a class="disabled" href="#">Features</a>-->
+      <!--                    <a class="disabled" href="#">Pricing</a>-->
+      <!--                    <a class="disabled" href="#">Resources</a>-->
+      <!--                    <a class="disabled" href="#">Terms & policies</a>-->
+      <!--                </div>-->
+      <!--            </footer>-->
+      <!--        </div>-->
+      <!--    </div>-->
+      <!--    <div class="scroll-to-top" id="scrollToTop">-->
+      <!--        <i class="fa-solid fa-chevron-up"></i>-->
+      <!--    </div>-->
     </div>
-
-    <!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
-    <!--        <div class="contentWrapperShort">-->
-    <!--            <nav class="navForOptions">-->
-    <!--                <div class="containerForOptions">-->
-    <!--                    <div class="blockForOptionAndIcon">-->
-    <!--                        <img alt="home icon" src="./assets/icons/home.png">-->
-    <!--                        <a href="#" onclick="choosePage('home')">Home</a>-->
-    <!--                    </div>-->
-    <!--                    <div class="blockForOptionAndIcon" id="categories_button">-->
-    <!--                        <a class="" href="#">Categories</a>-->
-    <!--                        <img alt="white arrow" class="whiteArrowCategories" src="./assets/icons/whiteArrow.png">-->
-    <!--                    </div>-->
-    <!--                    <div class="blockForOptionAndIcon">-->
-    <!--                        <a class="disabled" href="#">Training videos</a>-->
-    <!--                    </div>-->
-    <!--                    <div class="blockForOptionAndIcon">-->
-    <!--                        <a class="disabled" href="#">What’s new</a></div>-->
-    <!--                </div>-->
-
-    <!--                <div class="blockForStatus "><span class="disabled">App status</span>-->
-    <!--                    <div class="blockCircle"></div>-->
-    <!--                </div>-->
-    <!--            </nav>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <div class="backgroundWrapper navOfAllCategories">-->
-    <!--        <div class="contentWrapperShort">-->
-    <!--            <div class="allCategoriesInNav">-->
-    <!--                <div class="leftPart">-->
-    <!--                    <a href="#" onclick="choosePage('aiInMenagement');closeSubMenu()">Account management</a>-->
-    <!--                    <a class="disabled" href="#">Automated emails</a>-->
-    <!--                    <a class="disabled" href="#">Account management</a>-->
-    <!--                    <a class="disabled" href="#">Automated emails</a>-->
-    <!--                </div>-->
-    <!--                <div class="rightPart">-->
-    <!--                    <a class="disabled" href="#">Deliverability and bounces</a>-->
-    <!--                    <a class="disabled" href="#">Integrations and API</a>-->
-    <!--                    <a class="disabled" href="#">Lists and subscribers</a>-->
-    <!--                    <a class="disabled" href="#">Reports</a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <main id="mainForContent">-->
-
-    <!--    </main>-->
-    <!--    <div class="backgroundWrapper footerBack">-->
-    <!--        <div class="contentWrapperWide">-->
-    <!--            <footer>-->
-    <!--                <div class="blockForLogo">-->
-    <!--                    <a href="#" onclick="choosePage('home')">-->
-
-    <!--                        <img alt="logo" src="./assets/icons/logo.svg">-->
-    <!--                        <span>Operating System </span>-->
-    <!--                    </a>-->
-    <!--                </div>-->
-    <!--                <div class="containerForNavigation">-->
-    <!--                    <a class="disabled" href="#">Email Marketing</a>-->
-    <!--                    <a class="disabled" href="#">Features</a>-->
-    <!--                    <a class="disabled" href="#">Pricing</a>-->
-    <!--                    <a class="disabled" href="#">Resources</a>-->
-    <!--                    <a class="disabled" href="#">Terms & policies</a>-->
-    <!--                </div>-->
-    <!--            </footer>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <div class="scroll-to-top" id="scrollToTop">-->
-    <!--        <i class="fa-solid fa-chevron-up"></i>-->
-    <!--    </div>-->
-
     <script src="./node_modules/tilt.js/dest/tilt.jquery.js"></script>
+
     <!-- Load Tilt.js library -->
     <script src="./node_modules/feather-icons/dist/feather.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.com/libraries/pagePiling.js"></script>
     <!-- Load Tilt.js library -->
     <script src="pages/text.js"></script>
     <script src="pages/allQuestions.js"></script>
     <script src="index.js"></script>
     <script src="pages/home.js"></script>
-    <script src="scroll.js "></script>
     <script src="pages/aiInManagement.js"></script>
     <script src="pages/firstPage.js"></script>
     <script src="pages/pages.js"></script>
     <script src="pages/chatGPT.js"></script>
     <script src="pages/arrow.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       feather.replace();
     </script>
     <script>
       AOS.init();
     </script>
+    <script src="scroll.js "></script>
   </body>
 </html>
