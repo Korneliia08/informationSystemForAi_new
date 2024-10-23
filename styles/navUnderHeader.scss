@@ -79,35 +79,37 @@
       }
     }
   }
+}
 
-  .blockForStatus {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    @media (max-width: 900px) {
-      justify-content: center;
-      padding: 10px;
-    }
+.blockForStatus {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 9999;
+  right: 10px;
+  @media (max-width: 900px) {
+    justify-content: center;
+    padding: 10px;
+  }
 
-    span {
-      color: white;
-      font-size: 19px;
-      letter-spacing: 1px;
-      font-weight: 200;
-      text-transform: uppercase;
-      transition: 450ms ease;
+  span {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: 450ms ease;
 
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
 
-    .blockCircle {
-      width: 18px;
-      height: 18px;
-      border-radius: 100%;
-      background-color: #B6EB7A;
-    }
+  }
+
+  .blockCircle {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #B6EB7A;
   }
 }
+

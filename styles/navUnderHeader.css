@@ -70,30 +70,31 @@
 .navForOptions .containerForOptions .blockForOptionAndIcon:last-child:after {
   display: none !important;
 }
-.navForOptions .blockForStatus {
+
+.blockForStatus {
   display: flex;
   align-items: center;
   column-gap: 15px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 9999;
+  right: 10px;
 }
 @media (max-width: 900px) {
-  .navForOptions .blockForStatus {
+  .blockForStatus {
     justify-content: center;
     padding: 10px;
   }
 }
-.navForOptions .blockForStatus span {
+.blockForStatus span {
   color: white;
-  font-size: 19px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 200;
   text-transform: uppercase;
   transition: 450ms ease;
 }
-.navForOptions .blockForStatus span:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-.navForOptions .blockForStatus .blockCircle {
+.blockForStatus .blockCircle {
   width: 18px;
   height: 18px;
   border-radius: 100%;
