@@ -1,88 +1,72 @@
-let isScrolling = false; // Blokada podczas przewijania
-
-// Na początku upewniamy się, że strona startuje z góry
-window.scrollTo({
-  top: 0,
-  behavior: "smooth",
-});
-
-window.addEventListener(
-  "wheel",
-  function (e) {
-    const scrollPositions = [0, window.innerHeight, window.innerHeight * 2]; // Pozycje 0, 100vh, 200vh
-    let currentScroll = window.scrollY; // Aktualna pozycja przewinięcia
-    let targetScroll; // Docelowa pozycja do przewinięcia
-
-    // Przewijanie w dół
-    if (e.deltaY > 0) {
-      // Sprawdzamy, czy jesteśmy poniżej 200vh, wtedy przewijanie działa normalnie
-      if (currentScroll >= scrollPositions[2]) {
-        return; // Normalne przewijanie powyżej 200vh
-      }
-
-      if (isScrolling) {
-        e.preventDefault(); // Jeżeli strona już się przewija, nie wykonujemy kolejnej akcji
-        return;
-      }
-
-      e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w dół
-      isScrolling = true; // Blokujemy przewijanie
-
-      // Ustalamy docelową pozycję
-      if (currentScroll < scrollPositions[1]) {
-        targetScroll = scrollPositions[1]; // Przewiń do 100vh
-      } else if (currentScroll < scrollPositions[2]) {
-        targetScroll = scrollPositions[2]; // Przewiń do 200vh
-      }
-
-      // Jeżeli ustalono docelową pozycję, przewijamy
-      if (targetScroll !== undefined) {
-        window.scrollTo({
-          top: targetScroll,
-          behavior: "smooth", // Płynne przewijanie
-        });
-
-        // Zdejmujemy blokadę po przewinięciu
-        setTimeout(() => {
-          isScrolling = false;
-        }, 100); // Krótsze opóźnienie
-      }
-    }
-
-    // Przewijanie w górę
-    if (e.deltaY < 0) {
-      // Jeśli jesteśmy poniżej 200vh, pozwalamy na normalne przewijanie
-      if (currentScroll > scrollPositions[2]) {
-        return; // Normalne przewijanie poniżej 200vh
-      }
-
-      if (isScrolling) {
-        e.preventDefault(); // Jeżeli strona już się przewija, nie wykonujemy kolejnej akcji
-        return;
-      }
-
-      e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w górę
-
-      // Ustalamy docelową pozycję
-      if (currentScroll > scrollPositions[1]) {
-        targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh
-      } else if (currentScroll > scrollPositions[0]) {
-        targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh
-      }
-
-      // Jeżeli ustalono docelową pozycję, przewijamy
-      if (targetScroll !== undefined) {
-        window.scrollTo({
-          top: targetScroll,
-          behavior: "smooth", // Płynne przewijanie w górę
-        });
-
-        // Zdejmujemy blokadę po przewinięciu
-        setTimeout(() => {
-          isScrolling = false;
-        }, 100); // Krótsze opóźnienie
-      }
-    }
-  },
-  { passive: false },
-);
+// let isScrolling = false; // Flaga informująca, czy przewijanie jest w toku
+// const scrollPositions = [0, window.innerHeight, window.innerHeight * 2]; // Pozycje: 0, 100vh, 200vh
+//
+// // Ustawiamy na początku stronę na górę
+// window.scrollTo({
+//   top: 0,
+//   behavior: "smooth",
+// });
+//
+// // Obsługa zdarzenia scrolla
+// window.addEventListener(
+//   "wheel",
+//   function (e) {
+//     const currentScroll = window.scrollY; // Aktualna pozycja przewinięcia
+//
+//     // Sprawdzamy kierunek przewijania
+//     if (isScrolling) {
+//       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu, gdy przewijanie jest w toku
+//       return;
+//     }
+//
+//     if (e.deltaY > 0) {
+//       // Przewijanie w dół
+//       if (currentScroll < scrollPositions[2]) {
+//         // Przewijanie tylko do 200vh
+//         e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
+//
+//         isScrolling = true; // Blokujemy dalsze przewijanie
+//         let targetScroll =
+//           currentScroll < scrollPositions[1]
+//             ? scrollPositions[1]
+//             : scrollPositions[2];
+//
+//         window.scrollTo({
+//           top: targetScroll,
+//           behavior: "smooth",
+//         });
+//
+//         setTimeout(() => {
+//           isScrolling = false; // Odblokowujemy przewijanie po zakończeniu animacji
+//         }, 1000); // Ustalanie opóźnienia w ms
+//       }
+//     } else if (e.deltaY < 0) {
+//       // Przewijanie w górę
+//       if (currentScroll > 0) {
+//         // Normalne przewijanie gdy jesteśmy nad 0
+//         e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
+//
+//         isScrolling = true; // Blokujemy dalsze przewijanie
+//         let targetScroll;
+//
+//         if (currentScroll > scrollPositions[1]) {
+//           targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh
+//         } else if (currentScroll > scrollPositions[0] + 10) {
+//           targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh
+//         }
+//
+//         if (targetScroll !== undefined) {
+//           window.scrollTo({
+//             top: targetScroll,
+//             behavior: "smooth",
+//           });
+//
+//           setTimeout(() => {
+//             isScrolling = false; // Odblokowujemy przewijanie po zakończeniu animacji
+//           }, 1000); // Ustalanie opóźnienia w ms
+//         }
+//       }
+//     }
+//   },
+//   { passive: false },
+// );
