@@ -28,7 +28,7 @@ window.addEventListener(
       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w dół
       isScrolling = true; // Blokujemy przewijanie
 
-      // Sprawdzanie, na której sekcji jest użytkownik i ustawienie docelowej pozycji
+      // Ustalamy docelową pozycję
       if (currentScroll < scrollPositions[1]) {
         targetScroll = scrollPositions[1]; // Przewiń do 100vh
       } else if (currentScroll < scrollPositions[2]) {
@@ -63,11 +63,11 @@ window.addEventListener(
 
       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w górę
 
-      // Sprawdzamy, na której sekcji jesteśmy
-      if (currentScroll > scrollPositions[1] + 50) {
-        targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh, tolerancja 50px
-      } else if (currentScroll > scrollPositions[0] + 150) {
-        targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh, tolerancja 50px
+      // Ustalamy docelową pozycję
+      if (currentScroll > scrollPositions[1]) {
+        targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh
+      } else if (currentScroll > scrollPositions[0]) {
+        targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh
       }
 
       // Jeżeli ustalono docelową pozycję, przewijamy
