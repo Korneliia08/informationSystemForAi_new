@@ -24,14 +24,14 @@ footer {
 
 
     img {
-      width: 28px;
+      width: 45px;
       margin-right: 5px;
     }
 
     span {
       color: #1c1c1c;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 25px;
       text-shadow: 0px 0px 1px #cbcbcb;
     }
   }
@@ -53,6 +53,7 @@ footer {
       font-size: 16px;
       position: relative;
       text-decoration: none;
+
       &:hover {
         color: #142e61;
       }

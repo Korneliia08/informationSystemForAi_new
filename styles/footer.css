@@ -23,13 +23,13 @@ footer .blockForLogo a {
   text-decoration: none !important;
 }
 footer .blockForLogo img {
-  width: 28px;
+  width: 45px;
   margin-right: 5px;
 }
 footer .blockForLogo span {
   color: #1c1c1c;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 25px;
   text-shadow: 0px 0px 1px #cbcbcb;
 }
 footer .containerForNavigation {

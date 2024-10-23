@@ -20,10 +20,15 @@ window.addEventListener(
 
     // Przewijanie w dół
     if (e.deltaY > 0) {
+      // Sprawdzamy, czy jesteśmy poniżej 200vh, wtedy przewijanie działa normalnie
+      if (currentScroll >= scrollPositions[2]) {
+        return; // Normalne przewijanie powyżej 200vh
+      }
+
       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w dół
       isScrolling = true; // Blokujemy przewijanie
 
-      // Sprawdzenie, gdzie znajduje się użytkownik i ustawienie docelowej pozycji przewinięcia
+      // Sprawdzanie, na której sekcji jest użytkownik i ustawienie docelowej pozycji
       if (currentScroll < scrollPositions[1]) {
         targetScroll = scrollPositions[1]; // Przewiń do 100vh
       } else if (currentScroll < scrollPositions[2]) {
@@ -40,20 +45,31 @@ window.addEventListener(
         // Zdejmujemy blokadę po przewinięciu
         setTimeout(() => {
           isScrolling = false;
-        }, 1000); // Opóźnienie 1 sekunda
+        }, 100); // Krótsze opóźnienie
       }
     }
 
     // Przewijanie w górę
     if (e.deltaY < 0) {
+      // Jeśli jesteśmy poniżej 200vh, pozwalamy na normalne przewijanie
+      if (currentScroll > scrollPositions[2]) {
+        return; // Normalne przewijanie poniżej 200vh
+      }
+
       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu w górę
       isScrolling = true; // Blokujemy przewijanie
 
-      // Sprawdzenie, gdzie znajduje się użytkownik i ustawienie docelowej pozycji przewinięcia
-      if (currentScroll >= scrollPositions[2]) {
-        targetScroll = scrollPositions[1]; // Przewiń do 100vh
-      } else if (currentScroll >= scrollPositions[1]) {
-        targetScroll = scrollPositions[0]; // Przewiń do 0vh
+      // Sprawdzamy, gdzie jesteśmy i ustawiamy docelową pozycję przewinięcia
+      if (
+        currentScroll > scrollPositions[1] &&
+        currentScroll < scrollPositions[2]
+      ) {
+        targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh
+      } else if (
+        currentScroll <= scrollPositions[1] &&
+        currentScroll > scrollPositions[0]
+      ) {
+        targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh
       }
 
       // Jeżeli ustalono docelową pozycję, przewijamy
@@ -66,7 +82,7 @@ window.addEventListener(
         // Zdejmujemy blokadę po przewinięciu
         setTimeout(() => {
           isScrolling = false;
-        }, 100); // Opóźnienie 1 sekunda
+        }, 100); // Krótsze opóźnienie
       }
     }
   },

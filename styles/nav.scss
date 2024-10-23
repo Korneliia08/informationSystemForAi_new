@@ -1,8 +1,14 @@
 .divForLogoAndNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 
+  .navWrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
   .blockForLogo {
     display: flex;
@@ -18,10 +24,11 @@
     }
 
     img {
-      width: 20px;
+      width: 30px;
     }
 
     span {
+      font-size: 20px;
       margin-left: 10px;
       color: rgba(255, 255, 255, 0.71);
     }
