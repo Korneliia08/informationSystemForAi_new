@@ -6,9 +6,10 @@
   align-items: center;
   padding-top: 50px;
   min-height: 100vh;
-  background: url("../assets/images/blue3.png");
+  background: url("../assets/images/brands-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 10vw;
 }
 .backForMainSection2 h2 {
   font-size: 45px;
@@ -37,22 +38,26 @@
     justify-content: center;
   }
 }
-.backForMainSection2 .contentWrapperShort .card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.backForMainSection2 .contentWrapperShort .cardWrapper {
   width: 30%;
-  background: rgba(32, 24, 24, 0);
+  position: relative;
 }
 @media (max-width: 1200px) {
-  .backForMainSection2 .contentWrapperShort .card {
+  .backForMainSection2 .contentWrapperShort .cardWrapper {
     width: 38%;
   }
 }
 @media (max-width: 700px) {
-  .backForMainSection2 .contentWrapperShort .card {
+  .backForMainSection2 .contentWrapperShort .cardWrapper {
     width: 100%;
   }
+}
+.backForMainSection2 .contentWrapperShort .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(32, 24, 24, 0);
 }
 .backForMainSection2 .contentWrapperShort .card img {
   width: auto;

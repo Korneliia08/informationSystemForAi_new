@@ -6,9 +6,10 @@
   align-items: center;
   padding-top: 50px;
   min-height: 100vh;
-  background: url('../assets/images/blue3.png');
+  background: url('../assets/images/brands-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 10vw;
 
   h2 {
 
@@ -38,21 +39,53 @@
       justify-content: center;
     }
 
-    .card {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    .cardWrapper {
       width: 30%;
-
-
-      background: rgba(32, 24, 24, 0);
-
+      position: relative;
       @media (max-width: 1200px) {
         width: 38%;
       }
       @media (max-width: 700px) {
         width: 100%;
       }
+
+      //&:before {
+      //  width: 100%;
+      //  min-width: 10px;
+      //  height: 400px;
+      //  content: "";
+      //  top: 0;
+      //  left: 0;
+      //  position: absolute;
+      //  //background: red;
+      //
+      //
+      //  filter: drop-shadow(0 0 100px rgba(86, 255, 235, 0.72));
+      //
+      //
+      //  &:nth-of-type(2) {
+      //
+      //    box-shadow: (0 0 100px 100px rgba(128, 68, 255, 0.74));
+      //  }
+      //
+      //  &:nth-of-type(3) {
+      //
+      //    box-shadow: (0 0 100px 100px rgba(240, 10, 254, 0.76));
+      //  }
+      //
+      //}
+
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+
+      background: rgba(32, 24, 24, 0);
+
 
       img {
         width: auto;

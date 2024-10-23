@@ -2,6 +2,11 @@ body {
   height: max-content;
 }
 
+@media screen {
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate {
+    transform: inherit !important;
+  }
+}
 /*!
  * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

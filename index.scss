@@ -2,6 +2,14 @@ body {
   height: max-content;
 }
 
+@media screen {
+  html:not(.no-js) [data-aos^="fade"][data-aos^="fade"].aos-animate {
+
+    transform: inherit !important;
+  }
+}
+
+
 $fa-font-path: 'assets/fontawesome/webfonts';
 // importing core styling file
 @import 'assets/fontawesome/scss/fontawesome.scss';
