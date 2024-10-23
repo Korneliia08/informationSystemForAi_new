@@ -1,10 +1,10 @@
-$(document).ready(function () {
-  console.log(123);
-  $("#pagepiling").pagepiling({
-    scrollingSpeed: 200,
-    easing: "linear",
-  });
-});
+// $(document).ready(function () {
+//   console.log(123);
+//   $("#pagepiling").pagepiling({
+//     scrollingSpeed: 50,
+//     easing: "linear",
+//   });
+// });
 // let isScrolling = false; // Flaga informująca, czy przewijanie jest w toku
 // const scrollPositions = [0, window.innerHeight, window.innerHeight * 2]; // Pozycje: 0, 100vh, 200vh
 //

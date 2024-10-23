@@ -26,11 +26,11 @@
     <link href="/assets/icons/logo.svg" rel="icon" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>
+<!--    <link-->
+<!--      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"-->
+<!--      rel="stylesheet"-->
+<!--    />-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>-->
 
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
@@ -157,8 +157,7 @@
     <!--    &lt;!&ndash;    <i class="fa-regular fa-comment-dots iconOfChat"></i>&ndash;&gt;-->
     <!--    <img src="assets/icons/chat2.png">-->
     <!--</div>-->
-    <div class="MainContainer" id="pagepiling">
-      <div class="section">
+
         <div class="containerForWrapperBanner">
           <video autoplay class="videoBanner" loop muted>
             <source src="assets/images/banner2.mp4" type="video/mp4" />
@@ -212,18 +211,25 @@
                 AI Geo Bot
               </h1>
               <button id="idButtonOpenChat">AI chat</button>
+              <div class="blockForStatus "><span class="disabled">App status</span>-->
+                                    <div class="blockCircle"></div>
+                                </div>
             </div>
           </div>
           <div class="backgroundWrapper backForNav">
             <div class="contentWrapperWide"></div>
           </div>
         </div>
-      </div>
-      <div class="section">
+
         <div class="backgroundWrapper blockForSocial">
           <h3 data-aos="zoom-in">Cooperation</h3>
           <h2 data-aos="zoom-in">Our Partners</h2>
-          <div class="contentWrapperShort">
+          <div class="contentWrapperShort"   data-aos="fade-up"
+               data-aos-anchor-placement="left"
+               data-aos-duration="2000"
+               data-aos-easing="ease-in-out"
+               data-aos-mirror="true"
+               data-aos-once="false">
             <div class="socialCard" data-tilt>
               <img class="card1" src="./assets/images/frame-1.svg" />
               <img class="card2" src="./assets/images/second-layer-1.svg" />
@@ -245,7 +251,7 @@
               <img class="card4" src="./assets/images/DeepMind.svg" />
               <span>DeepMind</span>
             </div>
-            <div class="socialCard" data-tilt data-tilt-reverse="true">
+            <div class="socialCard" data-tilt data-tilt-reverse="true" >
               <img class="card1" src="./assets/images/frame-4.svg" />
               <img class="card2" src="./assets/images/second-layer-4.svg" />
               <img class="card3" src="./assets/images/third-layer-4.svg" />
@@ -256,8 +262,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section pp-scrollable">
+
         <div class="backgroundWrapper backForMainSection2">
           <h2 data-aos="zoom-in">AI documentation</h2>
           <div class="contentWrapperShort">
@@ -405,7 +410,7 @@
       <!--    <div class="scroll-to-top" id="scrollToTop">-->
       <!--        <i class="fa-solid fa-chevron-up"></i>-->
       <!--    </div>-->
-    </div>
+
     <script src="./node_modules/tilt.js/dest/tilt.jquery.js"></script>
 
     <!-- Load Tilt.js library -->
@@ -423,10 +428,10 @@
     <script src="pages/chatGPT.js"></script>
     <script src="pages/arrow.js"></script>
     <script>
-      feather.replace();
+      AOS.init();
     </script>
     <script>
-      AOS.init();
+      feather.replace();
     </script>
     <script src="scroll.js "></script>
   </body>
