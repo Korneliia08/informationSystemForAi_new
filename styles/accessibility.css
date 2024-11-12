@@ -1,0 +1,51 @@
+#accessibility-icon {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 40000;
+  right: 10px;
+  bottom: 35px;
+  transition: 300ms;
+}
+#accessibility-icon:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+#accessibility-icon img {
+  width: 50px;
+}
+
+.accessibility-container {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  display: flex;
+  z-index: 50000;
+  align-items: center;
+  cursor: pointer;
+}
+.accessibility-container .accessibility-block {
+  display: none;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.accessibility-container .accessibility-block.open {
+  display: flex;
+}
+.accessibility-container .accessibility-block button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.accessibility-container .accessibility-block button:hover {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=accessibility.css.map */

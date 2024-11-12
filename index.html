@@ -16,6 +16,7 @@
     <link href="./styles/bigLines.css" rel="stylesheet" />
     <link href="./styles/headerCards.css" rel="stylesheet" />
     <link href="./styles/allCategoriesInNav.css" rel="stylesheet" />
+    <link href="./styles/accessibility.css" rel="stylesheet" />
     <link href="./styles/headerSocial.css" rel="stylesheet" />
     <link href="./styles/findAnswers.css" rel="stylesheet" />
     <link href="./styles/whyLoveOurPage.css" rel="stylesheet" />
@@ -347,7 +348,7 @@
         <div class="bigLine1 bigmarquee">
           aigeobot@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aigeobot@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aigeobot@gmail.com
         </div>
-        <div class="bigLine2 bigmarquee">
+        <div class="bigLine2 bigmarqueeSlow">
           <div class="text">
             aigeobot@gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot@gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot@gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot@gmail.com
           </div>
@@ -380,6 +381,22 @@
         </div>
       </div>
     </footer>
+    <div id="accessibility-icon"><img src="assets/icons/wcag.png" /></div>
+    <div class="accessibility-container">
+      <div class="accessibility-block">
+        <button id="increase-font">Zwiększ czcionkę</button>
+        <button id="decrease-font">Zmniejsz czcionkę</button>
+        <button id="toggle-underline">Podkreśl linki</button>
+        <button id="toggle-grayscale">Odcienie szarości</button>
+        <button id="toggle-invert">Odwróć kolory</button>
+        <button id="toggle-low-saturation">Niska saturacja</button>
+        <button id="toggle-high-saturation">Wysoka saturacja</button>
+        <button id="increase-line-height">Zwiększ wysokość linii</button>
+        <button id="decrease-line-height">Zmniejsz wysokość linii</button>
+        <button id="reset-options">Resetuj opcje</button>
+      </div>
+    </div>
+
     <script
       src="//cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
       type="text/javascript"
@@ -389,31 +406,7 @@
       type="text/javascript"
     ></script>
 
-    <script>
-      $(".marquee").marquee({
-        // duration in milliseconds of the marquee
-        duration: 7000,
-        // gap in pixels between the tickers
-        gap: 50,
-        // time in milliseconds before the marquee will start animating
-        delayBeforeStart: 0,
-        // 'left' or 'right'
-        direction: "left",
-        // true or false - should the marquee be duplicated to show an effect of continues flow
-        duplicated: true,
-      });
-      $(".bigmarquee").marquee({
-        // duration in milliseconds of the marquee
-        duration: 7000,
-        // gap in pixels between the tickers
-        gap: 50,
-        // time in milliseconds before the marquee will start animating
-        delayBeforeStart: 0,
-        // 'left' or 'right'
-        direction: "left",
-        // true or false - should the marquee be duplicated to show an effect of continues flow
-        duplicated: true,
-      });
+
     </script>
     <!--    <div class="backgroundWrapper backForBottomNavUnderHeader">-->
     <!--        <div class="contentWrapperShort">-->
@@ -500,6 +493,7 @@
     <script src="pages/firstPage.js"></script>
     <script src="pages/pages.js"></script>
     <script src="pages/chatGPT.js"></script>
+    <script src="accessibility.js"></script>
     <script src="pages/arrow.js"></script>
     <script>
       AOS.init();

@@ -10,7 +10,7 @@
   justify-items: center;
   justify-content: center;
 }
-.linesContainer .bigmarquee.bigLine1 {
+.linesContainer .bigmarquee.bigLine1, .linesContainer .bigmarqueeSlow.bigLine1 {
   left: -50px;
   position: relative;
   width: 110%;
@@ -26,7 +26,7 @@
   font-weight: 800;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.linesContainer .bigmarquee.bigLine2 {
+.linesContainer .bigmarquee.bigLine2, .linesContainer .bigmarqueeSlow.bigLine2 {
   position: relative;
   left: -50px;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   background-color: black;
   padding: 10px 0;
 }
-.linesContainer .bigmarquee.bigLine2 .text {
+.linesContainer .bigmarquee.bigLine2 .text, .linesContainer .bigmarqueeSlow.bigLine2 .text {
   padding-bottom: 5px;
   color: white;
   background: linear-gradient(to right, #4bd8ff, #d661ff, #0511cc, #4bd8ff);
