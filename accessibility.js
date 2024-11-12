@@ -2,11 +2,11 @@
 $(document).ready(function () {
   let open = false;
   let isUnderlined = false;
-  let fontSize = 16; // Domyślny rozmiar czcionki
+  let fontSize = 16;
   let showLine = false;
   let grayscale = false;
   let invertColors = false;
-  let lineHeight = 1; // Domyślna wysokość linii
+  let lineHeight = 1;
   let lowSaturation = false;
   let highSaturation = false;
 
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
   $("#accessibility-icon").click(function () {
     open = !open;
-    $(".accessibility-block").toggleClass("open", open);
+    $(".accessibility-container").toggleClass("open", open);
   });
 
   $(".accessibility-block").on("click", stopPropagation);
@@ -111,4 +111,14 @@ $(document).ready(function () {
   $("#increase-line-height").click(increaseLineHeight);
   $("#decrease-line-height").click(decreaseLineHeight);
   $("#reset-options").click(resetOptions);
+
+  $(document).click(function (e) {
+    if (
+      !$(e.target).closest("#accessibility-icon").length &&
+      !$(e.target).closest(".accessibility-container").length
+    ) {
+      open = false;
+      $(".accessibility-container").removeClass("open");
+    }
+  });
 });
