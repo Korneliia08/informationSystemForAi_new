@@ -10,6 +10,7 @@ footer .leftPanel {
   border-right: 1px solid rgba(255, 255, 255, 0.6);
   flex-grow: 10;
   width: calc(50% - 102px);
+  padding-bottom: 25px;
 }
 footer .leftPanel .block {
   display: flex;
@@ -20,7 +21,7 @@ footer .leftPanel .block {
   color: white;
 }
 footer .leftPanel .block img {
-  width: 60px;
+  width: 45px;
 }
 footer .centerPanel {
   flex-grow: 2;
@@ -39,7 +40,7 @@ footer .centerPanel .top a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 footer .centerPanel .bottom {
   height: 50%;
@@ -64,7 +65,7 @@ footer .rightPanel {
   position: relative;
   top: 11%;
   letter-spacing: 2px;
-  font-size: 150px;
+  font-size: 6.875rem;
   left: 3px;
   font-weight: 800;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -107,7 +108,7 @@ footer {
     span {
       color: #1c1c1c;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 1.5625rem;
       text-shadow: 0px 0px 1px #cbcbcb;
     }
   }
@@ -126,7 +127,7 @@ footer {
 
     a {
       color: black;
-      font-size: 16px;
+      font-size: 1rem;
       position: relative;
       text-decoration: none;
 

@@ -5,13 +5,13 @@
   row-gap: 10px;
 
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #1c1c1c;
     letter-spacing: 1px;
   }
 
   p {
-    font-size: 19px;
+    font-size: 1.1875rem;
     color: #2f2f2f;
   }
 
@@ -52,12 +52,12 @@
       }
 
       span {
-        font-size: 18px;
+        font-size: 1.125rem;
         transition: 450ms ease;
         letter-spacing: 1px;
         padding-right: 20px;
         @media (max-width: 800px) {
-          font-size: 17px;
+          font-size: 1.0625rem;
         }
       }
 
