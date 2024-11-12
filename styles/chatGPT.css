@@ -129,6 +129,90 @@
     padding: 10px 10px;
   }
 }
+.windowOfChat .containerForParts .rightPart {
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 7px;
+  padding: 10px;
+  color: white;
+}
+.windowOfChat .containerForParts .rightPart h4 {
+  color: White;
+  text-align: center;
+}
+.windowOfChat .containerForParts .rightPart button, .windowOfChat .containerForParts .rightPart input {
+  color: white;
+}
+.windowOfChat .containerForParts .rightPart button:hover, .windowOfChat .containerForParts .rightPart input:hover {
+  background-color: rgba(237, 237, 237, 0.11);
+  cursor: pointer;
+}
+.windowOfChat .containerForParts .rightPart .noData {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #7c7c7c;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.windowOfChat .containerForParts .rightPart .topBlock {
+  display: flex;
+  width: 100%;
+  column-gap: 10px;
+}
+.windowOfChat .containerForParts .rightPart .topBlock button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #5a5a5a;
+  padding: 17px;
+}
+.windowOfChat .containerForParts .rightPart .topBlock button:hover {
+  background-color: rgba(237, 237, 237, 0.11);
+  cursor: pointer;
+}
+.windowOfChat .containerForParts .rightPart .topBlock button:first-of-type {
+  flex-grow: 100;
+}
+.windowOfChat .containerForParts .rightPart .search {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #5a5a5a;
+  padding: 17px;
+  height: min-content;
+  flex: 0;
+  box-sizing: border-box;
+}
+.windowOfChat .containerForParts .rightPart .history .bottom {
+  border-top: 1px solid #5a5a5a;
+  padding-top: 10px;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: self-start;
+}
+.windowOfChat .containerForParts .rightPart .history .bottom button {
+  display: flex;
+  column-gap: 15px;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #5a5a5a;
+  padding: 17px;
+}
+.windowOfChat .containerForParts .rightPart .history .bottom button.noFrame {
+  border: none;
+}
+.windowOfChat .containerForParts .rightPart .history .bottom button:hover {
+  background-color: rgba(237, 237, 237, 0.11);
+  cursor: pointer;
+}
 .windowOfChat .containerForParts .leftPart, .windowOfChat .containerForParts .rightPart {
   background-color: #212224;
   min-width: 20vw;
@@ -234,6 +318,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 100;
+  flex-shrink: 100;
 }
 @media (max-width: 600px) {
   .windowOfChat .containerForParts .centerPart {

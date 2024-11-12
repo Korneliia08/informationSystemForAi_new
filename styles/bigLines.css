@@ -16,7 +16,7 @@
   width: 110%;
   letter-spacing: 3px;
   color: white;
-  font-size: 7.5rem;
+  font-size: 80px;
   transform: rotate(-9deg);
   backdrop-filter: blur(200px);
   text-transform: uppercase;
@@ -34,7 +34,7 @@
   font-weight: 800;
   font-family: "Plus Jakarta Sans", sans-serif;
   width: 110%;
-  font-size: 4.375rem;
+  font-size: 50px;
   transform: rotate(-9deg);
   background-color: black;
   padding: 10px 0;

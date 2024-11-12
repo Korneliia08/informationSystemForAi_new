@@ -95,10 +95,10 @@
           <div class="top">
             <i class="fa-solid fa-left-long"></i>
             <div class="topBelt">
-              <div class="blockForImgAndA disabled">
-                <i class="fa-solid fa-headset"></i>
-                <a class="disabled" href="#">HarmonyBot</a>
-              </div>
+<!--              <div class="blockForImgAndA disabled">-->
+<!--                <i class="fa-solid fa-headset"></i>-->
+<!--                <a class="disabled" href="#">HarmonyBot</a>-->
+<!--              </div>-->
               <div class="blockForImgAndA borderIcon">
                 <!--                        <i class="fa-solid fa-circle-half-stroke color" id="aiChangeColor"></i>-->
                 <span class="spanClose">
@@ -140,17 +140,38 @@
           </div>
         </div>
         <div class="rightPart">
-          <div class="topBlock">
-            <button>New prompt</button>
-            <button><i class="fa-solid fa-folder-plus"></i></button>
-          </div>
-          <input class="search" placeholder="Search" type="text" />
-          <!--            <h3>Search history:</h3>-->
-          <div id="gptSearchHistory"></div>
-          <div class="noData">
-            <i class="fa-solid fa-not-equal"></i>
-            <span> No data </span>
-          </div>
+
+            <div class="top">
+              <h4>Data source:</h4>
+            </div>
+            <div class="dataSource">
+              <input type="checkbox" checked="checked" class="example-margin"> General Data Source<br>
+              <input type="checkbox" class="example-margin"> 123<br>
+              <input type="checkbox" class="example-margin"> DS 1<br>
+              <input type="checkbox" class="example-margin"> 5234<br>
+            </div>
+            <div class="historyData">
+              <h4>Questions history:</h4>
+              <i class="fa-solid fa-not-equal"></i>
+              <ul>
+                <li>Question 1</li>
+                <li>Question 2</li>
+                <li>Question 3</li>
+
+              </ul>
+              <div class="paggCenter" style="width: max-content">
+                <button>></button>
+                <button><</button>
+              </div>
+            </div>
+
+            <div class="chooseAiVersion">
+              <h4>AI version:</h4>
+              <input type="radio" name="aiVersion" value="4.5"> v4.5<br>
+              <input type="radio" name="aiVersion" value="5"> v5<br>
+              <input type="radio" name="aiVersion" value="9"> v9<br>
+            </div>
+
         </div>
       </div>
     </div>
