@@ -153,7 +153,7 @@ $fa-font-path: 'assets/fontawesome/webfonts';
       }
 
       h2 {
-        font-size: 17px;
+        font-size: 1.0625rem;
         color: white;
         font-weight: normal;
         font-family: Arial, sans-serif;
@@ -169,7 +169,7 @@ $fa-font-path: 'assets/fontawesome/webfonts';
         padding: 13px 36px;
         border-radius: 7px;
         color: white;
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-family: "Orbitron", sans-serif;
@@ -286,7 +286,7 @@ main {
   }
 
   .iconOfChat {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #599AD5;
     filter: drop-shadow(1px 2px 2px black);
     transition: 400ms ease;
@@ -300,7 +300,7 @@ main {
     right: 4px;
     text-shadow: 0px 1px 1px black;
     z-index: 2005;
-    font-size: 14px;
+    font-size: 0.875rem;
     transform: rotate(330deg);
   }
 

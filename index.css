@@ -10530,7 +10530,7 @@ readers do not read off random characters that represent icons */
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.7803921569);
 }
 .containerForWrapperBanner .bannerContent .bannerTitle h2 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: white;
   font-weight: normal;
   font-family: Arial, sans-serif;
@@ -10545,7 +10545,7 @@ readers do not read off random characters that represent icons */
   padding: 13px 36px;
   border-radius: 7px;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
@@ -10631,7 +10631,7 @@ main {
   width: 50px;
 }
 .blockForIcon .iconOfChat {
-  font-size: 50px;
+  font-size: 3.125rem;
   color: #599AD5;
   filter: drop-shadow(1px 2px 2px black);
   transition: 400ms ease;
@@ -10644,7 +10644,7 @@ main {
   right: 4px;
   text-shadow: 0px 1px 1px black;
   z-index: 2005;
-  font-size: 14px;
+  font-size: 0.875rem;
   transform: rotate(330deg);
 }
 .blockForIcon:hover {
