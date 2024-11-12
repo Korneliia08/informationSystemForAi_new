@@ -10,6 +10,7 @@ footer .leftPanel {
   border-right: 1px solid rgba(255, 255, 255, 0.6);
   flex-grow: 10;
   width: calc(50% - 102px);
+  padding-bottom: 25px;
 }
 footer .leftPanel .block {
   display: flex;
@@ -20,7 +21,7 @@ footer .leftPanel .block {
   color: white;
 }
 footer .leftPanel .block img {
-  width: 60px;
+  width: 45px;
 }
 footer .centerPanel {
   flex-grow: 2;
@@ -64,7 +65,7 @@ footer .rightPanel {
   position: relative;
   top: 11%;
   letter-spacing: 2px;
-  font-size: 150px;
+  font-size: 110px;
   left: 3px;
   font-weight: 800;
   font-family: "Plus Jakarta Sans", sans-serif;
