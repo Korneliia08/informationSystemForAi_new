@@ -1,58 +1,74 @@
 // accessibility.scss
 $icon-size: 24px;
+$dark-background: #333;
+$dark-background-light: #444;
+$dark-text: #f0f0f0;
+$dark-button-background: #555;
+$dark-button-hover: #666;
+$dark-hover: #888;
+
 #accessibility-icon {
   font-size: $icon-size;
-
-  padding: 10px;
   border-radius: 50%;
-  position: fixed;
   z-index: 40000;
-  right: 10px;
-  bottom: 35px;
+  position: relative;
+  top: 5px;
   transition: 300ms;
+
+  // Tło ikony
+  //  background-color: $dark-background-light;
+  color: $dark-text;
 
   &:hover {
     cursor: pointer;
     scale: 1.1;
+   // background-color: $dark-hover; // Zmiana tła przy hoverze
   }
 
   img {
-    width: 50px;
+    width: 40px;
   }
 }
 
 .accessibility-container {
   position: fixed;
-  bottom: 120px;
-  right: 20px;
-  display: flex;
+  top: 110px;
   z-index: 50000;
   align-items: center;
   cursor: pointer;
+  display: flex;
+  transition: 500ms;
 
+  // Ustawienia tła i animacji
+  //background-color: $dark-background;
+  opacity: 0;
+  right: -220px;
+
+  &.open {
+    opacity: 1;
+    right: 20px;
+  }
 
   .accessibility-block {
-    display: none;
+    display: flex;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: $dark-background-light;
     padding: 10px;
     border-radius: 8px;
     margin-left: 10px;
 
-    &.open {
-      display: flex;
-    }
-
+    // Przycisk
     button {
-      background-color: #ddd;
+      background-color: $dark-button-background;
       border: none;
       border-radius: 4px;
       padding: 5px;
       margin: 5px 0;
       cursor: pointer;
+      color: $dark-text;
 
       &:hover {
-        background-color: #ccc;
+        background-color: $dark-button-hover;
       }
     }
   }
