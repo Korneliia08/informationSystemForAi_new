@@ -142,6 +142,9 @@
   color: White;
   text-align: center;
 }
+.windowOfChat .containerForParts .rightPart .paggCenter button {
+  background: transparent;
+}
 .windowOfChat .containerForParts .rightPart button, .windowOfChat .containerForParts .rightPart input {
   color: white;
 }
