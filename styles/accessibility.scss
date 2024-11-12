@@ -12,7 +12,7 @@ $dark-hover: #888;
   border-radius: 50%;
   z-index: 40000;
   position: relative;
-  top: 5px;
+  top: 1px;
   transition: 300ms;
 
   // Tło ikony
@@ -22,7 +22,7 @@ $dark-hover: #888;
   &:hover {
     cursor: pointer;
     scale: 1.1;
-   // background-color: $dark-hover; // Zmiana tła przy hoverze
+    background-color: $dark-hover; // Zmiana tła przy hoverze
   }
 
   img {

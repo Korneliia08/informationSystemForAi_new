@@ -3,13 +3,14 @@
   border-radius: 50%;
   z-index: 40000;
   position: relative;
-  top: 5px;
+  top: 1px;
   transition: 300ms;
   color: #f0f0f0;
 }
 #accessibility-icon:hover {
   cursor: pointer;
   scale: 1.1;
+  background-color: #888;
 }
 #accessibility-icon img {
   width: 40px;

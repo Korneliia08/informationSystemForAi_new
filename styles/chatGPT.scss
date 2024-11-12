@@ -158,8 +158,13 @@
       color: white;
 
       .paggCenter {
-        button {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
 
+        button {
+          border: none;
           background: transparent;
         }
       }
