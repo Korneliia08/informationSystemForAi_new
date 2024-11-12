@@ -2,12 +2,53 @@ body {
   height: max-content;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+a,
+li,
+span {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+button,
+input,
+textarea {
+  font-size: 1rem;
+}
+
 @media screen {
   html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate {
     transform: inherit !important;
   }
 }
-.bigmarquee {
+.bigmarquee, .bigmarqueeSlow {
   overflow: hidden;
 }
 
