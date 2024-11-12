@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{aos, jquery-3.7.1, pagePiling, tilt.js}" />
+    <file url="PROJECT" libraries="{aos, dynamic-marquee, jquery-3.7.1, jquery.marquee, pagePiling, tilt.js}" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

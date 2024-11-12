@@ -64,14 +64,20 @@
 .blockForSocial .contentWrapperShort .socialCard:nth-of-type(1) .card4 {
   transform: translateX(3px);
 }
-.blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card2, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card3, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card4 {
+.blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card2, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card3 {
   transform: translateX(4px);
+}
+.blockForSocial .contentWrapperShort .socialCard:nth-of-type(2) .card4 {
+  transform: translateX(-4px);
 }
 .blockForSocial .contentWrapperShort .socialCard:nth-of-type(3) .card2, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(3) .card3, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(3) .card4 {
   transform: translateX(10px);
 }
-.blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card2, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card3, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card4 {
+.blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card2, .blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card3 {
   transform: translateX(4px);
+}
+.blockForSocial .contentWrapperShort .socialCard:nth-of-type(4) .card4 {
+  transform: translateX(-4px);
 }
 .blockForSocial .contentWrapperShort .socialCard .card1 {
   position: absolute;
@@ -94,7 +100,7 @@
 }
 .blockForSocial .contentWrapperShort .socialCard .card4 {
   padding: 33% 17%;
-  transform: translateZ(-20px);
+  transform: translateZ(-20px) translateX(-10px);
   position: absolute;
   box-sizing: border-box;
   width: 165px;

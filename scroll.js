@@ -1,64 +1,56 @@
-// let isScrolling = false; // Flaga informująca, czy przewijanie jest w toku
-// const scrollPositions = [0, window.innerHeight, window.innerHeight * 2]; // Pozycje: 0, 100vh, 200vh
-//
-// // Ustawiamy na początku stronę na górę
-// window.scrollTo({
-//   top: 0,
-//   behavior: "smooth",
-// });
-//
-// // Obsługa zdarzenia scrolla
-// window.addEventListener(
-//   "wheel",
-//   function (e) {
-//     const currentScroll = window.scrollY; // Aktualna pozycja przewinięcia
-//
-//     // Sprawdzamy, czy przewijanie jest już w toku
-//     if (isScrolling) {
-//       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu, gdy przewijanie jest w toku
-//       return;
-//     }
-//
-//     let targetScroll;
-//
-//     if (e.deltaY > 0) {
-//       // Przewijanie w dół
-//       if (currentScroll < scrollPositions[2]) {
-//         e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
-//         isScrolling = true; // Blokujemy dalsze przewijanie
-//         targetScroll =
-//           currentScroll < scrollPositions[1]
-//             ? scrollPositions[1]
-//             : scrollPositions[2];
-//
-//         window.scrollTo({
-//           top: targetScroll,
-//           behavior: "smooth",
-//         });
-//       }
-//     } else if (e.deltaY < 0) {
-//       // Przewijanie w górę
-//       e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
-//       isScrolling = true; // Blokujemy dalsze przewijanie
-//
-//       if (currentScroll > scrollPositions[0]) {
-//         if (currentScroll > scrollPositions[1]) {
-//           targetScroll = scrollPositions[1]; // Przewiń z 200vh do 100vh
-//         } else {
-//           targetScroll = scrollPositions[0]; // Przewiń z 100vh do 0vh
-//         }
-//
-//         window.scrollTo({
-//           top: targetScroll,
-//           behavior: "smooth",
-//         });
-//       }
-//     }
-//
-//     // Ustalanie opóźnienia w ms
-//     setTimeout(() => {
-//       isScrolling = false; // Odblokowujemy przewijanie po zakończeniu animacji
-//     }, 300);
-//   },
-//   { passive: false },
-// );
+let isScrolling = false; // Flaga informująca, czy przewijanie jest w toku
+window.scrollTo({
+  top: 0,
+  behavior: "smooth",
+});
+
+// Funkcja zaokrąglająca `scrollY` do najbliższego pełnego `100vh`
+function roundToFullHeight(scrollY) {
+  return Math.round(scrollY / window.innerHeight) * window.innerHeight;
+}
+
+// Obsługa zdarzenia scrolla
+window.addEventListener(
+  "wheel",
+  function (e) {
+    // Sprawdzamy, czy przewijanie jest już w toku
+    if (isScrolling) {
+      e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu, gdy przewijanie jest w toku
+      return;
+    }
+
+    // Sprawdzamy, czy ekran jest poniżej 300vh
+    let currentScroll = window.scrollY; // Zaokrąglona aktualna pozycja przewinięcia
+    if (e.deltaY > 0) {
+      if (currentScroll >= window.innerHeight * 2) {
+        // Jeśli jesteśmy poniżej 300vh, scroll działa normalnie
+        return;
+      }
+    } else {
+      if (currentScroll > window.innerHeight * 2) {
+        // Jeśli jesteśmy poniżej 300vh, scroll działa normalnie
+        return;
+      }
+    }
+
+    // Jeśli ekran jest powyżej 300vh, przewijamy o 100vh na raz
+    e.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
+    isScrolling = true; // Blokujemy dalsze przewijanie
+    currentScroll = roundToFullHeight(currentScroll);
+
+    const targetScroll =
+      e.deltaY > 0
+        ? currentScroll + window.innerHeight // Przewijanie w dół o 100vh
+        : currentScroll - window.innerHeight; // Przewijanie w górę o 100vh
+    window.scrollTo({
+      top: targetScroll,
+      behavior: "smooth",
+    });
+
+    // Ustalanie opóźnienia w ms
+    setTimeout(() => {
+      isScrolling = false; // Odblokowujemy przewijanie po zakończeniu animacji
+    }, 400);
+  },
+  { passive: false },
+);

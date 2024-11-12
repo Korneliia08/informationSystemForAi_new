@@ -75,8 +75,14 @@
       }
 
       &:nth-of-type(2) {
-        .card2, .card3, .card4 {
+        .card2, .card3, {
           transform: translateX(4px);
+        }
+      }
+
+      &:nth-of-type(2) {
+        .card4 {
+          transform: translateX(-4px);
         }
       }
 
@@ -87,8 +93,14 @@
       }
 
       &:nth-of-type(4) {
-        .card2, .card3, .card4 {
+        .card2, .card3 {
           transform: translateX(4px);
+        }
+      }
+
+      &:nth-of-type(4) {
+        .card4 {
+          transform: translateX(-4px);
         }
       }
 
@@ -118,11 +130,12 @@
 
       .card4 {
         padding: 33% 17%;
-        transform: translateZ(-20px);
+        transform: translateZ(-20px) translateX(-10px);
         position: absolute;
         box-sizing: border-box;
         width: 165px;
         filter: drop-shadow(0 0 10px white);
+
 
         font-size: 30px;
       }

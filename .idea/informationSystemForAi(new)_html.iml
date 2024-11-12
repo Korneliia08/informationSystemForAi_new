@@ -12,5 +12,7 @@
     <orderEntry type="library" name="tilt.js" level="application" />
     <orderEntry type="library" name="jquery-3.7.1" level="application" />
     <orderEntry type="library" name="pagePiling" level="application" />
+    <orderEntry type="library" name="jquery.marquee" level="application" />
+    <orderEntry type="library" name="dynamic-marquee" level="application" />
   </component>
 </module>

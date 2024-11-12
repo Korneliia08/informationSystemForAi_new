@@ -7,6 +7,16 @@ body {
     transform: inherit !important;
   }
 }
+.bigmarquee {
+  overflow: hidden;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  color: White;
+}
+
 .MainContainer {
   display: flex;
   flex-direction: column;
