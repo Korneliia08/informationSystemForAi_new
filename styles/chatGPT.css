@@ -141,15 +141,31 @@
 .windowOfChat .containerForParts .rightPart h4 {
   color: White;
   text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5a5a5a;
+  margin-bottom: 20px;
+}
+.windowOfChat .containerForParts .rightPart input {
+  margin-top: 10px;
+}
+.windowOfChat .containerForParts .rightPart ul li {
+  padding-top: 2px;
 }
 .windowOfChat .containerForParts .rightPart .paggCenter {
+  padding-top: 14px;
   display: flex;
   justify-content: center;
   gap: 20px;
   width: 100%;
 }
+.windowOfChat .containerForParts .rightPart .paggCenter span {
+  color: grey;
+  position: relative;
+  top: 2px;
+}
 .windowOfChat .containerForParts .rightPart .paggCenter button {
   border: none;
+  color: grey;
   background: transparent;
 }
 .windowOfChat .containerForParts .rightPart button, .windowOfChat .containerForParts .rightPart input {
@@ -463,6 +479,35 @@
   color: var(--content-color);
   text-shadow: 0px 0px 1px gray;
   letter-spacing: 4px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(300deg);
+  }
+  66% {
+    transform: rotate(600deg);
+  }
+  100% {
+    transform: rotate(900deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.windowOfChat .containerForParts .centerPart .bottom .logoAndTitle i {
+  font-size: 50px;
+  opacity: 0.9;
+  margin-top: 30vh;
+  animation: spin 5s linear, fadeOut 5s forwards;
 }
 .windowOfChat .containerForParts .centerPart .bottom .blockForContentAndImage {
   display: flex;
