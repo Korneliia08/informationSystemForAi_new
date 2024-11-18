@@ -7,7 +7,7 @@
   padding-top: 100px;
   min-height: 100vh;
   //background: url('../assets/images/socials-bg.jpg');
-  background: url('../assets/images/banner10.jpeg');
+  background: url('../assets/images/pexels-background.jpg');
   background-size: cover;
   padding-bottom: 10vw;
 
@@ -136,9 +136,10 @@
         }
 
         &.color1 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/triangle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
 
             background: #761fc8;
@@ -146,9 +147,10 @@
         }
 
         &.color2 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/circle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
             background: #1fc88d;
           }
@@ -156,9 +158,10 @@
         }
 
         &.color3 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/pinkTriangle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
 
             background: rgba(0, 179, 255, 0.56);
