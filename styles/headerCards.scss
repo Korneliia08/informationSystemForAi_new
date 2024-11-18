@@ -102,7 +102,7 @@
       }
 
       .ownCard {
-        background-color: rgba(32, 35, 101, 0.29);
+        background-color: rgba(32, 35, 101, 0.59);
         position: relative;
         width: 295px;
         height: 390px;
@@ -116,7 +116,7 @@
           position: absolute;
           content: "";
           display: flex;
-          background-image: url("./../assets/images/triangle.png");
+
           background-size: 90%;
           background-position: center;
           opacity: 0.5;
@@ -125,13 +125,45 @@
           height: 100%;
           top: 0;
           left: 0;
+
         }
 
         .smallPart1, .smallPart2, .smallPart3 {
           position: absolute;
           width: 7px;
           height: 100px;
-          background: #761fc8;
+          //    background: #761fc8;
+        }
+
+        &.color1 {
+          &:after{
+            background-image: url("./../assets/images/triangle.png");
+          }
+          .smallPart1, .smallPart2, .smallPart3 {
+
+            background: #761fc8;
+          }
+        }
+
+        &.color2 {
+          &:after{
+            background-image: url("./../assets/images/circle.png");
+          }
+          .smallPart1, .smallPart2, .smallPart3 {
+            background: #1fc88d;
+          }
+
+        }
+
+        &.color3 {
+          &:after{
+            background-image: url("./../assets/images/pinkTriangle.png");
+          }
+          .smallPart1, .smallPart2, .smallPart3 {
+
+            background: rgba(0, 179, 255, 0.56);
+          }
+
         }
 
         .smallPart1 {

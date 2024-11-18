@@ -73,7 +73,7 @@
   }
 }
 .backForMainSection2 .contentWrapperShort .card .ownCard {
-  background-color: rgba(32, 35, 101, 0.29);
+  background-color: rgba(32, 35, 101, 0.59);
   position: relative;
   width: 295px;
   height: 390px;
@@ -87,7 +87,6 @@
   position: absolute;
   content: "";
   display: flex;
-  background-image: url("./../assets/images/triangle.png");
   background-size: 90%;
   background-position: center;
   opacity: 0.5;
@@ -101,7 +100,24 @@
   position: absolute;
   width: 7px;
   height: 100px;
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color1:after {
+  background-image: url("./../assets/images/triangle.png");
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color1 .smallPart1, .backForMainSection2 .contentWrapperShort .card .ownCard.color1 .smallPart2, .backForMainSection2 .contentWrapperShort .card .ownCard.color1 .smallPart3 {
   background: #761fc8;
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color2:after {
+  background-image: url("./../assets/images/circle.png");
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color2 .smallPart1, .backForMainSection2 .contentWrapperShort .card .ownCard.color2 .smallPart2, .backForMainSection2 .contentWrapperShort .card .ownCard.color2 .smallPart3 {
+  background: #1fc88d;
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color3:after {
+  background-image: url("./../assets/images/pinkTriangle.png");
+}
+.backForMainSection2 .contentWrapperShort .card .ownCard.color3 .smallPart1, .backForMainSection2 .contentWrapperShort .card .ownCard.color3 .smallPart2, .backForMainSection2 .contentWrapperShort .card .ownCard.color3 .smallPart3 {
+  background: rgba(0, 179, 255, 0.56);
 }
 .backForMainSection2 .contentWrapperShort .card .ownCard .smallPart1 {
   left: -18px;
