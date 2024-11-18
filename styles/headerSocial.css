@@ -37,6 +37,98 @@
     justify-content: center;
   }
 }
+.blockForSocial .contentWrapperShort .mySocialCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 25%;
+  position: relative;
+  top: 20px;
+  height: 350px;
+  background-color: rgba(32, 35, 101, 0.29);
+  box-shadow: 0 0 5px 1px white;
+  border-radius: 20px;
+  border-left: 1.5px inset #56ffeb;
+  border-top: 1.5px inset rgb(240, 10, 254);
+  border-bottom: 1.5px inset rgb(240, 10, 254);
+  border-right: 1.5px inset #56ffeb;
+}
+.blockForSocial .contentWrapperShort .mySocialCard.color1 > .inside > .inside {
+  background-color: rgba(31, 155, 186, 0.56);
+}
+.blockForSocial .contentWrapperShort .mySocialCard.color2 > .inside > .inside {
+  background-color: rgba(88, 31, 186, 0.56);
+}
+.blockForSocial .contentWrapperShort .mySocialCard.color3 > .inside > .inside {
+  background-color: rgba(31, 186, 168, 0.56);
+}
+.blockForSocial .contentWrapperShort .mySocialCard.color4 > .inside > .inside {
+  background-color: rgba(142, 186, 31, 0.56);
+}
+.blockForSocial .contentWrapperShort .mySocialCard .inside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 1px white;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(32, 35, 101, 0.1);
+}
+.blockForSocial .contentWrapperShort .mySocialCard .smallPart1, .blockForSocial .contentWrapperShort .mySocialCard .smallPart2, .blockForSocial .contentWrapperShort .mySocialCard .smallPart3 {
+  position: absolute;
+  width: 7px;
+  height: 100px;
+  background: #c688ff;
+}
+.blockForSocial .contentWrapperShort .mySocialCard .smallPart1 {
+  left: 0px;
+  top: 65%;
+  height: 30px;
+  clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+}
+.blockForSocial .contentWrapperShort .mySocialCard .smallPart2 {
+  left: 50%;
+  top: 0%;
+  width: 100px;
+  height: 10px;
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+}
+.blockForSocial .contentWrapperShort .mySocialCard .smallPart3 {
+  right: 0px;
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 85%);
+  top: 40%;
+}
+.blockForSocial .contentWrapperShort .mySocialCard > .inside {
+  background-color: rgba(32, 35, 101, 0.1);
+  width: 90%;
+  height: 90%;
+}
+.blockForSocial .contentWrapperShort .mySocialCard > .inside > .inside {
+  background-color: rgba(31, 155, 186, 0.56);
+  width: 97%;
+  height: 97%;
+}
+.blockForSocial .contentWrapperShort .mySocialCard span {
+  position: absolute;
+  left: 50%;
+  font-size: 23px;
+  transform: translateX(-50%);
+  color: white;
+  bottom: 60px;
+  font-family: "Turret Road", sans-serif;
+}
+.blockForSocial .contentWrapperShort .mySocialCard .card4 {
+  padding: 33% 17%;
+  transform: translateZ(-20px) translateX(3px);
+  position: absolute;
+  box-sizing: border-box;
+  width: 165px;
+  filter: drop-shadow(0 0 10px white);
+  font-size: 1.875rem;
+}
 .blockForSocial .contentWrapperShort .socialCard {
   display: flex;
   align-items: center;

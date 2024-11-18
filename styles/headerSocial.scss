@@ -40,6 +40,141 @@
       justify-content: center;
     }
 
+    .mySocialCard {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 25%;
+      position: relative;
+      top: 20px;
+      height: 350px;
+      //transform-style: preserve-3d;
+      background-color: rgba(32, 35, 101, 0.29);
+      box-shadow: 0 0 5px 1px white;
+
+      border-radius: 20px;
+      border-left: 1.5px inset #56ffeb;
+      border-top: 1.5px inset rgba(240, 10, 254, 1);
+      border-bottom: 1.5px inset rgba(240, 10, 254, 1);
+      border-right: 1.5px inset #56ffeb;
+
+      &.color1 {
+        & > .inside {
+          & > .inside {
+            background-color: rgba(31, 155, 186, 0.56);
+          }
+        }
+      }
+
+      &.color2 {
+        & > .inside {
+          & > .inside {
+            background-color: rgba(88, 31, 186, 0.56);
+          }
+        }
+      }
+
+      &.color3 {
+        & > .inside {
+          & > .inside {
+            background-color: rgba(31, 186, 168, 0.56);
+          }
+        }
+      }
+
+      &.color4 {
+        & > .inside {
+          & > .inside {
+            background-color: rgba(142, 186, 31, 0.56);
+          }
+        }
+      }
+
+      .inside {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0 0 2px 1px white;
+
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(32, 35, 101, 0.1);
+      }
+
+      .smallPart1, .smallPart2, .smallPart3 {
+        position: absolute;
+        width: 7px;
+        height: 100px;
+        background: #c688ff;
+
+
+      }
+
+      .smallPart1 {
+        left: 0px;
+        top: 65%;
+        height: 30px;
+        //        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 85%);
+        // background-image: url("./../assets/images/new.jpg");
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+
+      }
+
+      .smallPart2 {
+        left: 50%;
+        top: 0%;
+        width: 100px;
+        height: 10px;
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+      }
+
+      .smallPart3 {
+        right: 0px;
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 85%);
+        top: 40%;
+      }
+
+
+      & > .inside {
+        background-color: rgba(32, 35, 101, 0.1);
+        width: 90%;
+        height: 90%;
+
+        & > .inside {
+          background-color: rgba(31, 155, 186, 0.56);
+          width: 97%;
+          height: 97%;
+
+
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 50%;
+        font-size: 23px;
+        transform: translateX(-50%);
+        color: white;
+        bottom: 60px;
+        font-family: "Turret Road", sans-serif;
+      }
+
+      .card4 {
+        padding: 33% 17%;
+        transform: translateZ(-20px) translateX(3px);
+        position: absolute;
+        box-sizing: border-box;
+        width: 165px;
+        filter: drop-shadow(0 0 10px white);
+
+
+        font-size: 1.875rem;
+      }
+    }
+
     .socialCard {
       display: flex;
       align-items: center;
