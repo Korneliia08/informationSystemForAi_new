@@ -50,7 +50,7 @@ window.addEventListener(
     // Ustalanie opóźnienia w ms
     setTimeout(() => {
       isScrolling = false; // Odblokowujemy przewijanie po zakończeniu animacji
-    }, 400);
+    }, 700);
   },
   { passive: false },
 );
