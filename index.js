@@ -107,7 +107,7 @@ $(window).scroll(function () {
 
 $(".marquee").marquee({
   // duration in milliseconds of the marquee
-  duration: 7000,
+  duration: 11000,
   // gap in pixels between the tickers
   gap: 50,
   // time in milliseconds before the marquee will start animating
@@ -119,7 +119,7 @@ $(".marquee").marquee({
 });
 $(".bigmarquee").marquee({
   // duration in milliseconds of the marquee
-  duration: 7000,
+  duration: 11000,
   // gap in pixels between the tickers
   gap: 50,
   // time in milliseconds before the marquee will start animating
@@ -131,7 +131,7 @@ $(".bigmarquee").marquee({
 });
 $(".bigmarqueeSlow").marquee({
   // duration in milliseconds of the marquee
-  duration: 11000,
+  duration: 18000,
   // gap in pixels between the tickers
   gap: 50,
   // time in milliseconds before the marquee will start animating
