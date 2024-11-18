@@ -119,7 +119,7 @@
 
           background-size: 90%;
           background-position: center;
-          opacity: 0.5;
+          opacity: 0.7;
           background-repeat: no-repeat;
           width: 100%;
           height: 100%;
@@ -136,9 +136,10 @@
         }
 
         &.color1 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/triangle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
 
             background: #761fc8;
@@ -146,9 +147,10 @@
         }
 
         &.color2 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/circle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
             background: #1fc88d;
           }
@@ -156,9 +158,10 @@
         }
 
         &.color3 {
-          &:after{
+          &:after {
             background-image: url("./../assets/images/pinkTriangle.png");
           }
+
           .smallPart1, .smallPart2, .smallPart3 {
 
             background: rgba(0, 179, 255, 0.56);
