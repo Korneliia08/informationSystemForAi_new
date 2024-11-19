@@ -9,6 +9,7 @@
   background: url("../assets/images/pexels-background.jpg");
   background-size: cover;
   padding-bottom: 10vw;
+  max-width: 100%;
 }
 .backForMainSection2 h2 {
   font-size: 2.8125rem;
